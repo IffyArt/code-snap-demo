@@ -10,6 +10,7 @@ import {
   Monitor,
   Settings,
 } from 'lucide-react';
+import Link from 'next/link';
 import { useRef, useState } from 'react';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import {
@@ -188,6 +189,15 @@ export default function Home() {
         >
           IFFYART CodeSnap Pro
         </h1>
+        <div style={{ display: 'flex', justifyContent: 'center' }}>
+          <Link
+            href='/screen-reader-demo'
+            className='btn btn-secondary'
+            style={{ textDecoration: 'none' }}
+          >
+            前往無障礙對話展示 Demo
+          </Link>
+        </div>
       </header>
 
       <section
