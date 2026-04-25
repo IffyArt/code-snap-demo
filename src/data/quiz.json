@@ -2,7 +2,7 @@
   {
     "id": 243,
     "chapter": "第零章",
-    "question": "在「線上報名頁面」案例中，負責建立姓名、Email 與送出按鈕的是哪一項技術？",
+    "question": "在前端開發中，哪一項技術主要負責定義表單欄位與按鈕等頁面結構？",
     "options": {
       "A": "CSS",
       "B": "JavaScript",
@@ -12,23 +12,23 @@
     "answer": "C",
     "metadata": {
       "source": "第零章 前言與環境介紹 - 網站應用介紹",
-      "note": "本題以課文案例延伸考前端三大技術的分工。正確答案是 A，因為 HTML 負責建立欄位、按鈕與頁面內容結構。"
+      "note": "本題考前端三大技術的職責分工。正確答案是 C，因為 HTML 負責定義內容結構與表單元素，CSS 負責樣式，JavaScript 負責互動行為。"
     }
   },
   {
     "id": 244,
     "chapter": "第零章",
-    "question": "若把網站比喻成房子，下列哪個配對最符合書中的說法？",
+    "question": "下列哪個配對最符合 HTML、CSS、JavaScript 在前端中的技術職責？",
     "options": {
-      "A": "HTML 是裝潢，CSS 是電線，JavaScript 是地基",
-      "B": "HTML 是資料庫，CSS 是伺服器，JavaScript 是瀏覽器",
-      "C": "HTML 是圖片格式，CSS 是文字編碼，JavaScript 是壓縮工具",
-      "D": "HTML 是骨架，CSS 是外觀裝潢，JavaScript 是互動行為"
+      "A": "HTML 負責動畫運算，CSS 負責資料儲存，JavaScript 負責結構標記",
+      "B": "HTML 負責 API 呼叫，CSS 負責資料驗證，JavaScript 負責資料庫連線",
+      "C": "HTML 負責權限驗證，CSS 負責路由切換，JavaScript 負責伺服器部署",
+      "D": "HTML 負責內容結構，CSS 負責視覺樣式，JavaScript 負責互動邏輯"
     },
     "answer": "D",
     "metadata": {
       "source": "第零章 前言與環境介紹 - 網站的三大基礎",
-      "note": "本題是課後練習分工題的情境變化。正確答案是 B，因為書中用骨架、裝潢與電力/開關來說明 HTML、CSS、JavaScript 的角色。"
+      "note": "本題考技術職責分工。正確答案是 D，因為 HTML 用於結構與語意、CSS 用於樣式與版面、JavaScript 用於事件處理與動態互動。"
     }
   },
   {
