@@ -1520,22 +1520,6 @@
         }
     },
     {
-        "id": 69,
-        "chapter": "第二章",
-        "question": "關於 placeholder 與 value，下列敘述何者正確？",
-        "options": {
-            "A": "value 是欄位的實際值，placeholder 是提示文字",
-            "B": "兩者都只會顯示提示，不會成為欄位值",
-            "C": "placeholder 會在使用者輸入後保留不變",
-            "D": "value 只能用在 <textarea>，不能用在 <input>"
-        },
-        "answer": "A",
-        "metadata": {
-            "source": "第二章 HTML的內容結構 - 2.4 表單與使用者輸入",
-            "note": "本題考表單欄位與屬性用途。正確答案是 C，因為 value 是欄位的實際值，placeholder 是提示文字 正是此情境下對應的表單設定方式。"
-        }
-    },
-    {
         "id": 70,
         "chapter": "第二章",
         "question": "讓使用者在群組中僅能單選的 input type？",
@@ -1597,22 +1581,6 @@
         "metadata": {
             "source": "第二章 HTML的內容結構 - 2.4 表單與使用者輸入",
             "note": "本題考表單欄位與屬性用途。正確答案是 A，因為 <label for=\"email\"> 搭配 <input id=\"email\"> 正是此情境下對應的表單設定方式。"
-        }
-    },
-    {
-        "id": 74,
-        "chapter": "第二章",
-        "question": "若要讓 <span> 可以設定寬高並與其他元素同列，最常見的做法是？",
-        "options": {
-            "A": "將 <span> 改成 <p>",
-            "B": "套用 display: inline-block",
-            "C": "套用 position: fixed",
-            "D": "套用 float: left"
-        },
-        "answer": "B",
-        "metadata": {
-            "source": "第二章 HTML的內容結構 - 2.5 通用容器與與版面概念",
-            "note": "本題考行內元素與版面概念。正確答案是 B，inline-block 能讓行內元素保留同列排列且可設定寬高。"
         }
     },
     {
@@ -2100,7 +2068,7 @@
         "chapter": "第三章",
         "question": "SEO 代表什麼？",
         "options": {
-            "A": "Search Engine Optimization (搜尋引擎最佳化)",
+            "A": "Search Engine Optimization",
             "B": "Site Expansion Output",
             "C": "Server Environment Organization",
             "D": "Standard Elements of Objects"
@@ -2117,7 +2085,7 @@
         "question": "開發網頁時，常常使用 <meta name=\"viewport\">，其主要目的是？",
         "options": {
             "A": "限制網頁載入速度",
-            "B": "讓網頁可以在行動裝置上獲得正確的縮放及排版",
+            "B": "讓網站在手機上正常顯示,Google 優先索引行動版網站",
             "C": "加速資料庫連線",
             "D": "防止別人複製網址"
         },
@@ -2348,7 +2316,7 @@
         "answer": "D",
         "metadata": {
             "source": "第四章 CSS與JavaScript整合入門 - 4.1 HTML 與前端整合入門",
-            "note": "本題考 「<script src=\"app.js\"></script> 這行程式碼通常建議放在哪裡」的核心概念。正確答案是 C，因為 <body> 結尾標籤之前 與題目所描述的用途與語意一致。"
+            "note": "教材說明 JavaScript 放在 <body> 結尾，可確保 DOM 已載入完成，程式碼才能正確操作元素。"
         }
     },
     {
@@ -2364,7 +2332,7 @@
         "answer": "B",
         "metadata": {
             "source": "第四章 CSS與JavaScript整合入門 - 4.1 HTML 與前端整合入門",
-            "note": "本題考超連結/清單的正確標記。正確答案是 C，因為 <link rel=\"stylesheet\" href=\"style.css\"> 與題目描述的連結或清單語意相符。"
+            "note": "教材在外部樣式表範例中使用 <link rel=\"stylesheet\" href=\"style.css\"> 引入 CSS 檔案。"
         }
     },
     {
@@ -2380,7 +2348,7 @@
         "answer": "C",
         "metadata": {
             "source": "第四章 CSS與JavaScript整合入門 - 4.1 HTML 與前端整合入門",
-            "note": "本題考 CSS 屬性與排版行為。正確答案是 C，因為 <style> 正是題目所描述效果的正確設定。"
+            "note": "教材說明內部樣式表是在 <head> 區塊內使用 <style> 標籤。"
         }
     },
     {
@@ -2395,29 +2363,13 @@
         },
         "answer": "D",
         "metadata": {
-            "source": "第四章 CSS與JavaScript整合入門 - 4.1 HTML 與前端整合入門",
-            "note": "本題考 CSS 屬性與排版行為。正確答案是 B，因為 #header 正是題目所描述效果的正確設定。"
-        }
-    },
-    {
-        "id": 125,
-        "chapter": "第四章",
-        "question": "在 CSS 中，#header 代表選取什麼？",
-        "options": {
-            "A": "id 為 header 的元素",
-            "B": "class 為 header 的元素",
-            "C": "標籤為 header 的元素",
-            "D": "name 為 header 的元素"
-        },
-        "answer": "A",
-        "metadata": {
-            "source": "第四章 CSS與JavaScript整合入門 - 4.1 HTML 與前端整合入門",
-            "note": "本題考 CSS 屬性與排版行為。正確答案是 C，因為 id 為 header 的元素 正是題目所描述效果的正確設定。"
+            "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
+            "note": "教材在 ID 選擇器範例中使用 #header 選取特定 ID 的元素。"
         }
     },
     {
         "id": 126,
-        "chapter": "CSS樣式設計與版面基礎應用",
+        "chapter": "第四章",
         "question": "width: 100% 通常是指？",
         "options": {
             "A": "100px",
@@ -2428,28 +2380,12 @@
         "answer": "B",
         "metadata": {
             "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
-            "note": "本題考 「width: 100% 通常是指」的核心概念。正確答案是 B，因為 填滿父元素的內容寬度 與題目所描述的用途與語意一致。"
-        }
-    },
-    {
-        "id": 127,
-        "chapter": "CSS樣式設計與版面基礎應用",
-        "question": "CSS 的全名為？",
-        "options": {
-            "A": "Creative Style System",
-            "B": "Computer Style Sheets",
-            "C": "Cascading Style Sheets",
-            "D": "Colorful Style System"
-        },
-        "answer": "C",
-        "metadata": {
-            "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
-            "note": "本題考 CSS 屬性與排版行為。正確答案是 A，因為 Cascading Style Sheets 正是題目所描述效果的正確設定。"
+            "note": "教材說明 % 主要相對於父元素大小，width: 100% 可理解為填滿父元素可用寬度。"
         }
     },
     {
         "id": 128,
-        "chapter": "CSS樣式設計與版面基礎應用",
+        "chapter": "第四章",
         "question": "將標籤內文字置中對齊的 CSS 屬性是？",
         "options": {
             "A": "align-items: center",
@@ -2460,12 +2396,12 @@
         "answer": "D",
         "metadata": {
             "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
-            "note": "本題考 CSS 屬性與排版行為。正確答案是 A，因為 text-align: center 正是題目所描述效果的正確設定。"
+            "note": "教材在文字排版屬性中說明 text-align 可設定文字對齊方式，center 代表置中。"
         }
     },
     {
         "id": 129,
-        "chapter": "CSS樣式設計與版面基礎應用",
+        "chapter": "第四章",
         "question": "下列哪個單位是相對單位，適合用於響應式字體大小？",
         "options": {
             "A": "rem",
@@ -2476,12 +2412,12 @@
         "answer": "A",
         "metadata": {
             "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
-            "note": "本題考 CSS 屬性與排版行為。正確答案是 C，因為 rem 正是題目所描述效果的正確設定。"
+            "note": "教材建議字體大小使用 rem，讓文字能隨瀏覽器預設字體設定縮放。"
         }
     },
     {
         "id": 130,
-        "chapter": "CSS樣式設計與版面基礎應用",
+        "chapter": "第四章",
         "question": "若要讓 <a> 超連結變成按鈕的樣子，通常需要設定？",
         "options": {
             "A": "display: table",
@@ -2492,12 +2428,12 @@
         "answer": "B",
         "metadata": {
             "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
-            "note": "本題考超連結/清單的正確標記。正確答案是 A，因為 display: inline-block 或 block，搭配 padding 與背景色 與題目描述的連結或清單語意相符。"
+            "note": "教材提醒若要讓 <a> 連結變成有寬高的大按鈕，可設定 display: inline-block 或 display: block。"
         }
     },
     {
         "id": 131,
-        "chapter": "CSS樣式設計與版面基礎應用",
+        "chapter": "第四章",
         "question": "當我們寫 font-family: Arial, sans-serif; 時，sans-serif 的作用是？",
         "options": {
             "A": "指定特定字體名稱",
@@ -2508,12 +2444,12 @@
         "answer": "C",
         "metadata": {
             "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
-            "note": "本題考 CSS 屬性與排版行為。正確答案是 B，因為 當 Arial 無法顯示時的通用後備字體 (無襯線體) 正是題目所描述效果的正確設定。"
+            "note": "教材說明 font-family 會依序尋找可用字體，Arial 找不到時會使用系統無襯線字體。"
         }
     },
     {
         "id": 132,
-        "chapter": "CSS樣式設計與版面基礎應用",
+        "chapter": "第四章",
         "question": "內容與外框間的內部距離 CSS 屬性是？",
         "options": {
             "A": "margin",
@@ -2524,12 +2460,12 @@
         "answer": "D",
         "metadata": {
             "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
-            "note": "本題考 CSS 屬性與排版行為。正確答案是 C，因為 padding 正是題目所描述效果的正確設定。"
+            "note": "教材說明 Padding 是內容與邊框之間的距離。"
         }
     },
     {
         "id": 133,
-        "chapter": "CSS樣式設計與版面基礎應用",
+        "chapter": "第四章",
         "question": "Flexbox 的 display: flex; 預設方向為何？",
         "options": {
             "A": "水平",
@@ -2540,44 +2476,12 @@
         "answer": "A",
         "metadata": {
             "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
-            "note": "本題考 CSS 屬性與排版行為。正確答案是 B，因為 水平 正是題目所描述效果的正確設定。"
-        }
-    },
-    {
-        "id": 134,
-        "chapter": "CSS樣式設計與版面基礎應用",
-        "question": "隱藏文字超連結底線的 CSS？",
-        "options": {
-            "A": "underline: hidden",
-            "B": "text-decoration: none",
-            "C": "border: none",
-            "D": "style: normal"
-        },
-        "answer": "B",
-        "metadata": {
-            "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
-            "note": "本題考超連結/清單的正確標記。正確答案是 A，因為 text-decoration: none 與題目描述的連結或清單語意相符。"
-        }
-    },
-    {
-        "id": 135,
-        "chapter": "CSS樣式設計與版面基礎應用",
-        "question": "指定字體大小的相對根元素單位是？",
-        "options": {
-            "A": "px",
-            "B": "cm",
-            "C": "rem",
-            "D": "vh"
-        },
-        "answer": "C",
-        "metadata": {
-            "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
-            "note": "本題考 CSS 屬性與排版行為。正確答案是 B，因為 rem 正是題目所描述效果的正確設定。"
+            "note": "教材說明 flex-direction: row 是預設值，主軸為橫向，項目從左到右排列。"
         }
     },
     {
         "id": 136,
-        "chapter": "CSS樣式設計與版面基礎應用",
+        "chapter": "第四章",
         "question": "改變字體顏色的 CSS 屬性為？",
         "options": {
             "A": "text-color",
@@ -2588,28 +2492,12 @@
         "answer": "D",
         "metadata": {
             "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
-            "note": "本題考 CSS 屬性與排版行為。正確答案是 B，因為 color 正是題目所描述效果的正確設定。"
-        }
-    },
-    {
-        "id": 137,
-        "chapter": "CSS樣式設計與版面基礎應用",
-        "question": "CSS 中 id 選擇器的符號是？",
-        "options": {
-            "A": "#",
-            "B": ".",
-            "C": "\\*",
-            "D": "$"
-        },
-        "answer": "A",
-        "metadata": {
-            "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
-            "note": "本題考 CSS 屬性與排版行為。正確答案是 B，因為 # 正是題目所描述效果的正確設定。"
+            "note": "教材在文字排版範例中使用 color 設定文字顏色。"
         }
     },
     {
         "id": 138,
-        "chapter": "CSS樣式設計與版面基礎應用",
+        "chapter": "第四章",
         "question": "建立 HTML 文件時，CSS 樣式表最好放在？",
         "options": {
             "A": "<body> 尾端",
@@ -2619,13 +2507,13 @@
         },
         "answer": "B",
         "metadata": {
-            "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
-            "note": "本題考 CSS 屬性與排版行為。正確答案是 B，因為 <head> 區塊內 正是題目所描述效果的正確設定。"
+            "source": "第四章 CSS與JavaScript整合入門 - 4.1 HTML 與前端整合入門",
+            "note": "教材說明 CSS 放在 <head>，可確保網頁解析時已經有樣式。"
         }
     },
     {
         "id": 139,
-        "chapter": "CSS樣式設計與版面基礎應用",
+        "chapter": "第四章",
         "question": "CSS 設定背景顏色的屬性是？",
         "options": {
             "A": "color",
@@ -2636,12 +2524,12 @@
         "answer": "C",
         "metadata": {
             "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
-            "note": "本題考 CSS 屬性與排版行為。正確答案是 B，因為 background-color 正是題目所描述效果的正確設定。"
+            "note": "教材在背景處理範例中使用 background-color 設定背景顏色。"
         }
     },
     {
         "id": 140,
-        "chapter": "CSS樣式設計與版面基礎應用",
+        "chapter": "第四章",
         "question": "讓 Flexbox 內容自動換行的屬性設定為？",
         "options": {
             "A": "overflow: auto",
@@ -2652,12 +2540,12 @@
         "answer": "D",
         "metadata": {
             "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
-            "note": "本題考 CSS 屬性與排版行為。正確答案是 A，因為 flex-wrap: wrap 正是題目所描述效果的正確設定。"
+            "note": "教材說明 flex-wrap: wrap 會讓項目在空間不足時自動換到下一行。"
         }
     },
     {
         "id": 141,
-        "chapter": "CSS樣式設計與版面基礎應用",
+        "chapter": "第四章",
         "question": "CSS 中 box-sizing: border-box 的主要作用是？",
         "options": {
             "A": "讓 Padding 和 Border 包含在設定的 Width 內",
@@ -2668,12 +2556,12 @@
         "answer": "A",
         "metadata": {
             "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
-            "note": "本題考 CSS 屬性與排版行為。正確答案是 B，因為 讓 Padding 和 Border 包含在設定的 Width 內 正是題目所描述效果的正確設定。"
+            "note": "教材說明 border-box 會讓 padding 和 border 被包在 width 裡，不會撐大盒子。"
         }
     },
     {
         "id": 142,
-        "chapter": "CSS樣式設計與版面基礎應用",
+        "chapter": "第四章",
         "question": "在 Flexbox 中，若要將排列方向改為「由上而下」，應設定？",
         "options": {
             "A": "flex-direction: row",
@@ -2684,12 +2572,12 @@
         "answer": "B",
         "metadata": {
             "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
-            "note": "本題考 CSS 屬性與排版行為。正確答案是 A，因為 flex-direction: column 正是題目所描述效果的正確設定。"
+            "note": "教材說明 flex-direction: column 會讓主軸改為直向，項目從上到下排列。"
         }
     },
     {
         "id": 143,
-        "chapter": "CSS樣式設計與版面基礎應用",
+        "chapter": "第四章",
         "question": "若只想改變背景圖在容器中的對齊位置（例如置中），應優先使用哪個屬性？",
         "options": {
             "A": "background-size",
@@ -2700,28 +2588,12 @@
         "answer": "C",
         "metadata": {
             "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
-            "note": "本題考背景屬性分工。正確答案是 B，background-position 用於控制背景圖對齊位置，不負責縮放。"
-        }
-    },
-    {
-        "id": 144,
-        "chapter": "CSS樣式設計與版面基礎應用",
-        "question": "關於 rem 單位的描述，何者正確？",
-        "options": {
-            "A": "相對於父元素的大小",
-            "B": "固定像素值，不會變動",
-            "C": "相對於視窗寬度",
-            "D": "相對於根元素 (html) 的字體大小"
-        },
-        "answer": "D",
-        "metadata": {
-            "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
-            "note": "本題考 CSS 屬性與排版行為。正確答案是 B，因為 相對於根元素 (html) 的字體大小 正是題目所描述效果的正確設定。"
+            "note": "教材說明 background-position 可設定背景圖片的位置，center 代表圖片置中。"
         }
     },
     {
         "id": 145,
-        "chapter": "CSS樣式設計與版面基礎應用",
+        "chapter": "第四章",
         "question": "下列哪個 CSS 屬性是用來設定「外距」？",
         "options": {
             "A": "margin",
@@ -2732,13 +2604,13 @@
         "answer": "A",
         "metadata": {
             "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
-            "note": "本題考 CSS 屬性與排版行為。正確答案是 C，因為 margin 正是題目所描述效果的正確設定。"
+            "note": "教材在盒模型中說明 Margin 是盒子與外部的距離。"
         }
     },
     {
         "id": 146,
-        "chapter": "CSS樣式設計與版面基礎應用",
-        "question": "想要讓行內元素 (如 <span>) 可以設定寬高，應將 display 設定為？",
+        "chapter": "第四章",
+        "question": "想要讓行內元素可以設定寬高，應將 display 設定為？",
         "options": {
             "A": "block",
             "B": "inline-block",
@@ -2748,45 +2620,13 @@
         "answer": "B",
         "metadata": {
             "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
-            "note": "本題考 CSS 屬性與排版行為。正確答案是 B，因為 inline-block 正是題目所描述效果的正確設定。"
-        }
-    },
-    {
-        "id": 147,
-        "chapter": "CSS樣式設計與版面基礎應用",
-        "question": "在 CSS 中，* 選擇器代表什麼意思？",
-        "options": {
-            "A": "選取所有 div",
-            "B": "選取根元素",
-            "C": "全域選擇器，選取網頁上所有元素",
-            "D": "選取重要元素"
-        },
-        "answer": "C",
-        "metadata": {
-            "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
-            "note": "本題考 CSS 屬性與排版行為。正確答案是 C，因為 全域選擇器，選取網頁上所有元素 正是題目所描述效果的正確設定。"
-        }
-    },
-    {
-        "id": 148,
-        "chapter": "CSS樣式設計與版面基礎應用",
-        "question": "若要讓 Flex 容器內的項目「換行」，應設定？",
-        "options": {
-            "A": "flex-direction: column",
-            "B": "white-space: normal",
-            "C": "overflow: hidden",
-            "D": "flex-wrap: wrap"
-        },
-        "answer": "D",
-        "metadata": {
-            "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
-            "note": "本題考 CSS 屬性與排版行為。正確答案是 A，因為 flex-wrap: wrap 正是題目所描述效果的正確設定。"
+            "note": "教材說明 inline-block 能和其他元素排在同一行，同時也能設定寬高。"
         }
     },
     {
         "id": 149,
-        "chapter": "CSS樣式設計與版面基礎應用",
-        "question": "若要讓文字變粗（例如小標題加強視覺層次），應設定哪個屬性？",
+        "chapter": "第四章",
+        "question": "若要讓文字變粗，應設定哪個屬性？",
         "options": {
             "A": "font-weight",
             "B": "line-height",
@@ -2796,12 +2636,12 @@
         "answer": "A",
         "metadata": {
             "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
-            "note": "本題考文字樣式屬性。正確答案是 B，font-weight 用來控制字重，與行高 line-height 不同。"
+            "note": "教材說明 font-weight 用來設定文字粗細，常見值包含 bold 與 normal。"
         }
     },
     {
         "id": 150,
-        "chapter": "CSS樣式設計與版面基礎應用",
+        "chapter": "第四章",
         "question": "關於 CSS 盒模型（Box Model），由內而外的正確順序是？",
         "options": {
             "A": "Content → Border → Padding → Margin",
@@ -2812,44 +2652,12 @@
         "answer": "B",
         "metadata": {
             "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
-            "note": "本題考 CSS 屬性與排版行為。正確答案是 B，因為 Content → Padding → Border → Margin 正是題目所描述效果的正確設定。"
-        }
-    },
-    {
-        "id": 151,
-        "chapter": "CSS樣式設計與版面基礎應用",
-        "question": "在 CSS 中，ID 選擇器正確的語法是？",
-        "options": {
-            "A": ".header",
-            "B": "header#",
-            "C": "#header",
-            "D": "*header"
-        },
-        "answer": "C",
-        "metadata": {
-            "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
-            "note": "本題考 CSS 屬性與排版行為。正確答案是 B，因為 #header 正是題目所描述效果的正確設定。"
-        }
-    },
-    {
-        "id": 152,
-        "chapter": "CSS樣式設計與版面基礎應用",
-        "question": "在 Flexbox 中，若要把主軸方向改成垂直排列，應設定哪個屬性值？",
-        "options": {
-            "A": "flex-direction: row",
-            "B": "justify-content: column",
-            "C": "align-items: column",
-            "D": "flex-direction: column"
-        },
-        "answer": "D",
-        "metadata": {
-            "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
-            "note": "本題考 CSS 屬性與排版行為。正確答案是 C，因為 flex-direction: column 正是題目所描述效果的正確設定。"
+            "note": "教材說明盒模型由內而外依序為 Content、Padding、Border、Margin。"
         }
     },
     {
         "id": 153,
-        "chapter": "CSS樣式設計與版面基礎應用",
+        "chapter": "第四章",
         "question": "在 CSS 中，哪一個屬性用來設定文字的字體？",
         "options": {
             "A": "font-family",
@@ -2860,29 +2668,13 @@
         "answer": "A",
         "metadata": {
             "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
-            "note": "本題考 CSS 屬性與排版行為。正確答案是 C，因為 font-family 正是題目所描述效果的正確設定。"
-        }
-    },
-    {
-        "id": 154,
-        "chapter": "CSS樣式設計與版面基礎應用",
-        "question": "CSS 中 vh 單位代表什麼？",
-        "options": {
-            "A": "視窗寬度的百分比",
-            "B": "視窗高度的百分比 (Viewport Height)",
-            "C": "垂直高度像素",
-            "D": "虛擬高度"
-        },
-        "answer": "B",
-        "metadata": {
-            "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
-            "note": "本題考 CSS 屬性與排版行為。正確答案是 B，因為 視窗高度的百分比 (Viewport Height) 正是題目所描述效果的正確設定。"
+            "note": "教材在文字排版範例中使用 font-family 設定字體。"
         }
     },
     {
         "id": 155,
-        "chapter": "CSS樣式設計與版面基礎應用",
-        "question": "在 Flex 排版中，要讓項目在主軸（水平）置中對齊，應設定？",
+        "chapter": "第四章",
+        "question": "在 Flex 排版中，要讓項目在主軸置中對齊，應設定？",
         "options": {
             "A": "align-items: center",
             "B": "text-align: center",
@@ -2892,13 +2684,13 @@
         "answer": "C",
         "metadata": {
             "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
-            "note": "本題考 CSS 屬性與排版行為。正確答案是 B，因為 justify-content: center 正是題目所描述效果的正確設定。"
+            "note": "教材說明 justify-content: center 會讓項目在主軸上置中對齊。"
         }
     },
     {
         "id": 156,
-        "chapter": "CSS樣式設計與版面基礎應用",
-        "question": "在 Flexbox 排版中，若想讓導覽列的 Logo 靠左、選單靠右 (左右推開)，最適合設定主軸對齊為？",
+        "chapter": "第四章",
+        "question": "在 Flexbox 排版中，若想讓導覽列的 Logo 靠左、選單靠右，最適合設定主軸對齊為？",
         "options": {
             "A": "justify-content: center",
             "B": "justify-content: flex-start",
@@ -2908,76 +2700,12 @@
         "answer": "D",
         "metadata": {
             "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
-            "note": "本題考 CSS 屬性與排版行為。正確答案是 C，因為 justify-content: space-between 正是題目所描述效果的正確設定。"
-        }
-    },
-    {
-        "id": 157,
-        "chapter": "CSS樣式設計與版面基礎應用",
-        "question": "CSS 的 padding: 20px 代表什麼意思？",
-        "options": {
-            "A": "上下左右內距皆為 20px",
-            "B": "只有上方內距為 20px",
-            "C": "只有左右內距為 20px",
-            "D": "字體大小增加 20px"
-        },
-        "answer": "A",
-        "metadata": {
-            "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
-            "note": "本題考 CSS 屬性與排版行為。正確答案是 A，因為 上下左右內距皆為 20px 正是題目所描述效果的正確設定。"
-        }
-    },
-    {
-        "id": 158,
-        "chapter": "CSS樣式設計與版面基礎應用",
-        "question": "關於 rem 單位，它是相對於哪個元素的字體大小？",
-        "options": {
-            "A": "父元素",
-            "B": "根元素 <html>",
-            "C": "自己的寬度",
-            "D": "瀏覽器視窗高度"
-        },
-        "answer": "B",
-        "metadata": {
-            "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
-            "note": "本題考 CSS 屬性與排版行為。正確答案是 C，因為 根元素 <html> 正是題目所描述效果的正確設定。"
-        }
-    },
-    {
-        "id": 159,
-        "chapter": "CSS樣式設計與版面基礎應用",
-        "question": "若希望一個區塊元素 (div) 能夠與其他元素並排顯示，且仍能設定寬高，應設定 display 為？",
-        "options": {
-            "A": "block",
-            "B": "inline",
-            "C": "inline-block",
-            "D": "none"
-        },
-        "answer": "C",
-        "metadata": {
-            "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
-            "note": "本題考 CSS 屬性與排版行為。正確答案是 C，因為 inline-block 正是題目所描述效果的正確設定。"
-        }
-    },
-    {
-        "id": 160,
-        "chapter": "CSS樣式設計與版面基礎應用",
-        "question": "關於 box-sizing: border-box，下列敘述何者正確？",
-        "options": {
-            "A": "元素的 padding 會往外長，導致總寬度增加",
-            "B": "會取消元素的 border 樣式",
-            "C": "只能用於圖片",
-            "D": "元素的總寬度會包含 padding 與 border，不會因這兩者而額外變大"
-        },
-        "answer": "D",
-        "metadata": {
-            "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
-            "note": "本題考 CSS 屬性與排版行為。正確答案是 A，因為 元素的總寬度會包含 padding 與 border，不會因這兩者而額外變大 正是題目所描述效果的正確設定。"
+            "note": "教材說明 justify-content: space-between 會讓第一個與最後一個項目貼齊容器邊緣，中間空白平均分配。"
         }
     },
     {
         "id": 161,
-        "chapter": "CSS樣式設計與版面基礎應用",
+        "chapter": "第四章",
         "question": "CSS 的 border-radius: 50% 通常用於製作什麼形狀？",
         "options": {
             "A": "正圓形 (若寬高相等)",
@@ -2988,127 +2716,15 @@
         "answer": "A",
         "metadata": {
             "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
-            "note": "本題考 CSS 屬性與排版行為。正確答案是 B，因為 正圓形 (若寬高相等) 正是題目所描述效果的正確設定。"
-        }
-    },
-    {
-        "id": 162,
-        "chapter": "CSS樣式設計與版面基礎應用",
-        "question": "下列哪個屬性可以設定文字的粗細？",
-        "options": {
-            "A": "font-size",
-            "B": "font-weight",
-            "C": "font-style",
-            "D": "text-decoration"
-        },
-        "answer": "B",
-        "metadata": {
-            "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
-            "note": "本題考 CSS 屬性與排版行為。正確答案是 C，因為 font-weight 正是題目所描述效果的正確設定。"
-        }
-    },
-    {
-        "id": 163,
-        "chapter": "CSS樣式設計與版面基礎應用",
-        "question": "若要將文字水平置中，應設定？",
-        "options": {
-            "A": "vertical-align: middle",
-            "B": "justify-content: center",
-            "C": "text-align: center",
-            "D": "align-items: center"
-        },
-        "answer": "C",
-        "metadata": {
-            "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
-            "note": "本題考「若要將文字水平置中，應設定」的核心概念。正確答案是 B，因為 text-align: center 與題目所描述的用途與語意一致。"
-        }
-    },
-    {
-        "id": 164,
-        "chapter": "CSS樣式設計與版面基礎應用",
-        "question": "background-repeat: no-repeat; 的主要效果是？",
-        "options": {
-            "A": "背景圖會自動縮放填滿容器",
-            "B": "背景圖固定在視窗不捲動",
-            "C": "背景圖改為透明",
-            "D": "背景圖只顯示一次，不做平鋪重複"
-        },
-        "answer": "D",
-        "metadata": {
-            "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
-            "note": "本題考背景屬性差異。正確答案是 B，no-repeat 會停止背景平鋪，僅保留單一圖像。"
-        }
-    },
-    {
-        "id": 165,
-        "chapter": "CSS樣式設計與版面基礎應用",
-        "question": "若想要為網頁加上背景顏色 /f0f0f0，CSS 應如何寫？",
-        "options": {
-            "A": "background-color: #f0f0f0;",
-            "B": "color: #f0f0f0;",
-            "C": "bg: #f0f0f0;",
-            "D": "back: #f0f0f0;"
-        },
-        "answer": "A",
-        "metadata": {
-            "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
-            "note": "本題考 CSS 屬性與排版行為。正確答案是 A，因為 background-color: #f0f0f0; 正是題目所描述效果的正確設定。"
-        }
-    },
-    {
-        "id": 166,
-        "chapter": "CSS樣式設計與版面基礎應用",
-        "question": "CSS 中，vh 單位是指？",
-        "options": {
-            "A": "Viewport Width (視窗寬度的百分比)",
-            "B": "Viewport Height (視窗高度的百分比)",
-            "C": "Visible Height (可見高度)",
-            "D": "Virtual Height (虛擬高度)"
-        },
-        "answer": "B",
-        "metadata": {
-            "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
-            "note": "本題考 CSS 屬性與排版行為。正確答案是 A，因為 Viewport Height (視窗高度的百分比) 正是題目所描述效果的正確設定。"
-        }
-    },
-    {
-        "id": 167,
-        "chapter": "CSS樣式設計與版面基礎應用",
-        "question": "關於 flex-wrap: wrap 的功能，下列何者正確？",
-        "options": {
-            "A": "禁止項目換行",
-            "B": "強制項目垂直排列",
-            "C": "當空間不足時，讓項目自動換行",
-            "D": "隱藏多餘的項目"
-        },
-        "answer": "C",
-        "metadata": {
-            "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
-            "note": "本題考 CSS 屬性與排版行為。正確答案是 B，因為 當空間不足時，讓項目自動換行 正是題目所描述效果的正確設定。"
-        }
-    },
-    {
-        "id": 168,
-        "chapter": "CSS樣式設計與版面基礎應用",
-        "question": "若要調整「字與字之間」的距離，應使用哪個屬性？",
-        "options": {
-            "A": "line-height",
-            "B": "word-spacing",
-            "C": "text-decoration",
-            "D": "letter-spacing"
-        },
-        "answer": "D",
-        "metadata": {
-            "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
-            "note": "本題考文字排版細節。正確答案是 C，letter-spacing 影響字元間距，而非行距或裝飾線。"
+            "note": "教材說明 border-radius: 50% 可以讓正方形元素變成圓形，常用於頭像。"
         }
     },
     {
         "id": 169,
-        "chapter": "CSS樣式設計與版面基礎應用",
+        "chapter": "第四章",
         "question": "關於 display: none，下列敘述何者正確？",
         "options": {
-            "A": "元素會被隱藏，且不佔據任何空間 (排版上消失)",
+            "A": "元素會被隱藏，且不佔據任何空間",
             "B": "元素會變成透明，但仍佔據空間",
             "C": "元素會變成灰色",
             "D": "元素會縮小到 0px"
@@ -3116,76 +2732,12 @@
         "answer": "A",
         "metadata": {
             "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
-            "note": "本題考 CSS 屬性與排版行為。正確答案是 B，因為 元素會被隱藏，且不佔據任何空間 (排版上消失) 正是題目所描述效果的正確設定。"
-        }
-    },
-    {
-        "id": 170,
-        "chapter": "CSS樣式設計與版面基礎應用",
-        "question": "在 Flexbox 中，哪個屬性決定了主軸的方向 (水平或垂直)？",
-        "options": {
-            "A": "justify-content",
-            "B": "flex-direction",
-            "C": "align-items",
-            "D": "flex-wrap"
-        },
-        "answer": "B",
-        "metadata": {
-            "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
-            "note": "本題考 CSS 屬性與排版行為。正確答案是 A，因為 flex-direction 正是題目所描述效果的正確設定。"
-        }
-    },
-    {
-        "id": 171,
-        "chapter": "CSS樣式設計與版面基礎應用",
-        "question": "關於盒模型（Box Model），下列哪一個屬性負責控制「元素邊框與內容之間的距離（內距）」？",
-        "options": {
-            "A": "margin",
-            "B": "border",
-            "C": "padding",
-            "D": "width"
-        },
-        "answer": "C",
-        "metadata": {
-            "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
-            "note": "本題考 CSS 屬性與排版行為。正確答案是 B，因為 padding 正是題目所描述效果的正確設定。"
-        }
-    },
-    {
-        "id": 172,
-        "chapter": "CSS樣式設計與版面基礎應用",
-        "question": "在 Flexbox 中，justify-content: center 的作用是什麼？",
-        "options": {
-            "A": "讓項目沿交叉軸置中",
-            "B": "讓文字置中",
-            "C": "讓容器垂直方向換行",
-            "D": "讓項目沿主軸置中"
-        },
-        "answer": "D",
-        "metadata": {
-            "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
-            "note": "本題考 CSS 屬性與排版行為。正確答案是 B，因為 讓項目沿主軸置中 正是題目所描述效果的正確設定。"
-        }
-    },
-    {
-        "id": 173,
-        "chapter": "CSS樣式設計與版面基礎應用",
-        "question": "CSS 屬性 margin: 10px 20px; 的意義是？",
-        "options": {
-            "A": "上下 10px，左右 20px",
-            "B": "左右 10px，上下 20px",
-            "C": "四周皆為 10px",
-            "D": "上 10px，右 20px，下左 0px"
-        },
-        "answer": "A",
-        "metadata": {
-            "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
-            "note": "本題考 CSS 屬性與排版行為。正確答案是 A，因為 上下 10px，左右 20px 正是題目所描述效果的正確設定。"
+            "note": "教材說明 display: none 代表元素完全消失，不佔據空間。"
         }
     },
     {
         "id": 174,
-        "chapter": "CSS樣式設計與版面基礎應用",
+        "chapter": "第四章",
         "question": "在 CSS 中，若要設定文字大小，應使用哪個屬性？",
         "options": {
             "A": "font-family",
@@ -3196,60 +2748,12 @@
         "answer": "B",
         "metadata": {
             "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
-            "note": "本題考 CSS 屬性與排版行為。正確答案是 B，因為 font-size 正是題目所描述效果的正確設定。"
-        }
-    },
-    {
-        "id": 175,
-        "chapter": "CSS樣式設計與版面基礎應用",
-        "question": "flex-direction: column 會讓佈局？",
-        "options": {
-            "A": "水平排",
-            "B": "不變",
-            "C": "垂直排列",
-            "D": "絕對定位"
-        },
-        "answer": "C",
-        "metadata": {
-            "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
-            "note": "本題考 CSS 屬性與排版行為。正確答案是 B，因為 垂直排列 正是題目所描述效果的正確設定。"
-        }
-    },
-    {
-        "id": 176,
-        "chapter": "CSS樣式設計與版面基礎應用",
-        "question": "控制元素整體高度的 CSS 屬性是？",
-        "options": {
-            "A": "tall",
-            "B": "long",
-            "C": "y-axis",
-            "D": "height"
-        },
-        "answer": "D",
-        "metadata": {
-            "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
-            "note": "本題考 CSS 屬性與排版行為。正確答案是 A，因為 height 正是題目所描述效果的正確設定。"
-        }
-    },
-    {
-        "id": 177,
-        "chapter": "CSS樣式設計與版面基礎應用",
-        "question": "如果要把一個標籤隱藏起來，且在實體排版上不佔據空間，可透過 CSS 設定？",
-        "options": {
-            "A": "display: none;",
-            "B": "visibility: hidden;",
-            "C": "opacity: 0;",
-            "D": "z-index: -1;"
-        },
-        "answer": "A",
-        "metadata": {
-            "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
-            "note": "本題考 CSS 屬性與排版行為。正確答案是 A，因為 display: none; 正是題目所描述效果的正確設定。"
+            "note": "教材在 CSS 範例與 rem 說明中使用 font-size 設定文字大小。"
         }
     },
     {
         "id": 178,
-        "chapter": "CSS樣式設計與版面基礎應用",
+        "chapter": "第四章",
         "question": "想要選取所有擁有 \"btn\" 類別的元素，在 CSS 中的選擇器是？",
         "options": {
             "A": "#btn",
@@ -3260,28 +2764,12 @@
         "answer": "B",
         "metadata": {
             "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
-            "note": "本題考 CSS 屬性與排版行為。正確答案是 B，因為 .btn 正是題目所描述效果的正確設定。"
-        }
-    },
-    {
-        "id": 179,
-        "chapter": "CSS樣式設計與版面基礎應用",
-        "question": "CSS 設定文字大小的屬性是？",
-        "options": {
-            "A": "width",
-            "B": "text-align",
-            "C": "font-size",
-            "D": "size"
-        },
-        "answer": "C",
-        "metadata": {
-            "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
-            "note": "本題考 CSS 屬性與排版行為。正確答案是 C，因為 font-size 正是題目所描述效果的正確設定。"
+            "note": "教材說明類別選擇器使用點號，例如 .highlight 會選取有特定 class 的元素。"
         }
     },
     {
         "id": 180,
-        "chapter": "CSS樣式設計與版面基礎應用",
+        "chapter": "第四章",
         "question": "CSS 中設定元素的寬度屬性為？",
         "options": {
             "A": "height",
@@ -3292,29 +2780,13 @@
         "answer": "D",
         "metadata": {
             "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
-            "note": "本題考 CSS 屬性與排版行為。正確答案是 B，因為 width 正是題目所描述效果的正確設定。"
-        }
-    },
-    {
-        "id": 181,
-        "chapter": "CSS樣式設計與版面基礎應用",
-        "question": "在 CSS 內選取所有任意元素的通用選擇器符號是？",
-        "options": {
-            "A": "\\*",
-            "B": "all",
-            "C": "none",
-            "D": "body"
-        },
-        "answer": "A",
-        "metadata": {
-            "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
-            "note": "本題考 CSS 屬性與排版行為。正確答案是 A，因為 \\* 正是題目所描述效果的正確設定。"
+            "note": "教材在盒模型與範例中使用 width 設定元素寬度。"
         }
     },
     {
         "id": 182,
-        "chapter": "CSS樣式設計與版面基礎應用",
-        "question": "CSS 裡面控制滑鼠點擊前游標形狀的屬性？",
+        "chapter": "第四章",
+        "question": "CSS 裡面控制滑鼠移到元素上方時游標形狀的屬性是？",
         "options": {
             "A": "mouse",
             "B": "cursor",
@@ -3324,28 +2796,12 @@
         "answer": "B",
         "metadata": {
             "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
-            "note": "本題考 CSS 屬性與排版行為。正確答案是 C，因為 cursor 正是題目所描述效果的正確設定。"
-        }
-    },
-    {
-        "id": 183,
-        "chapter": "CSS樣式設計與版面基礎應用",
-        "question": "display: none; 會達到何種效果？",
-        "options": {
-            "A": "佔據空間但變透明",
-            "B": "顏色變黑",
-            "C": "隱藏且不佔據版面空間",
-            "D": "不可點擊"
-        },
-        "answer": "C",
-        "metadata": {
-            "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
-            "note": "本題考 CSS 屬性與排版行為。正確答案是 B，因為 隱藏且不佔據版面空間 正是題目所描述效果的正確設定。"
+            "note": "教材說明 cursor 可設定滑鼠移到元素上方時的游標樣式。"
         }
     },
     {
         "id": 184,
-        "chapter": "CSS樣式設計與版面基礎應用",
+        "chapter": "第四章",
         "question": "下列哪個 CSS 設定可以讓按鈕在滑鼠滑過時顯示「手指」游標？",
         "options": {
             "A": "cursor: hand",
@@ -3356,76 +2812,12 @@
         "answer": "D",
         "metadata": {
             "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
-            "note": "本題考 CSS 屬性與排版行為。正確答案是 C，因為 cursor: pointer 正是題目所描述效果的正確設定。"
-        }
-    },
-    {
-        "id": 185,
-        "chapter": "CSS樣式設計與版面基礎應用",
-        "question": "CSS 裡面 .container 代表什麼意思？",
-        "options": {
-            "A": "選取 class 為 container 的元素",
-            "B": "選取 id 為 container 的元素",
-            "C": "選取所有的 container",
-            "D": "HTML標籤"
-        },
-        "answer": "A",
-        "metadata": {
-            "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
-            "note": "本題考 CSS 屬性與排版行為。正確答案是 C，因為 選取 class 為 container 的元素 正是題目所描述效果的正確設定。"
-        }
-    },
-    {
-        "id": 186,
-        "chapter": "JavaScript互動基礎應用",
-        "question": "若希望超連結點擊後在「新分頁或新視窗」開啟，應設定哪個屬性與值？",
-        "options": {
-            "A": "target=\"_self\"",
-            "B": "target=\"_blank\"",
-            "C": "target=\"_new\"",
-            "D": "rel=\"noopener\""
-        },
-        "answer": "B",
-        "metadata": {
-            "source": "第四章 CSS與JavaScript整合入門 - 4.3 基礎 JavaScript 入門學習",
-            "note": "本題考超連結/清單的正確標記。正確答案是 C，因為 target=\"_blank\" 與題目描述的連結或清單語意相符。"
-        }
-    },
-    {
-        "id": 187,
-        "chapter": "JavaScript互動基礎應用",
-        "question": "若希望超連結點擊後直接下載檔案，而非在瀏覽器開啟，應使用？",
-        "options": {
-            "A": "save 屬性",
-            "B": "export 屬性",
-            "C": "download 屬性",
-            "D": "file 屬性"
-        },
-        "answer": "C",
-        "metadata": {
-            "source": "第四章 CSS與JavaScript整合入門 - 4.3 基礎 JavaScript 入門學習",
-            "note": "本題考超連結/清單的正確標記。正確答案是 A，因為 download 屬性 與題目描述的連結或清單語意相符。"
-        }
-    },
-    {
-        "id": 188,
-        "chapter": "JavaScript互動基礎應用",
-        "question": "在 HTML 中引入 JavaScript 檔案的最佳位置通常是？",
-        "options": {
-            "A": "<head> 標籤內",
-            "B": "<body> 的最上方",
-            "C": "<html> 標籤之外",
-            "D": "<body> 的結束標籤 </body> 之前"
-        },
-        "answer": "D",
-        "metadata": {
-            "source": "第四章 CSS與JavaScript整合入門 - 4.3 基礎 JavaScript 入門學習",
-            "note": "本題考 JavaScript 基礎語法與 DOM 操作。正確答案是 C，因為 <body> 的結束標籤 </body> 之前 是題目情境下正確的語法或 API。"
+            "note": "教材說明 cursor: pointer 會顯示手指形狀，表示元素可以點擊。"
         }
     },
     {
         "id": 189,
-        "chapter": "JavaScript互動基礎應用",
+        "chapter": "第四章",
         "question": "條件判斷執行的基礎語句是？",
         "options": {
             "A": "if ... else",
@@ -3436,13 +2828,13 @@
         "answer": "A",
         "metadata": {
             "source": "第四章 CSS與JavaScript整合入門 - 4.3 基礎 JavaScript 入門學習",
-            "note": "本題考 JavaScript 基礎語法與 DOM 操作。正確答案是 C，因為 if ... else 是題目情境下正確的語法或 API。"
+            "note": "教材說明 If...Else 可讓程式根據情況做不同的事。"
         }
     },
     {
         "id": 190,
-        "chapter": "JavaScript互動基礎應用",
-        "question": "Javascript 中印出訊息到控制台的方法是？",
+        "chapter": "第四章",
+        "question": "JavaScript 中印出訊息到控制台的方法是？",
         "options": {
             "A": "alert()",
             "B": "console.log()",
@@ -3452,60 +2844,28 @@
         "answer": "B",
         "metadata": {
             "source": "第四章 CSS與JavaScript整合入門 - 4.3 基礎 JavaScript 入門學習",
-            "note": "本題考 JavaScript 基礎語法與 DOM 操作。正確答案是 B，因為 console.log() 是題目情境下正確的語法或 API。"
+            "note": "教材在條件判斷與事件監聽範例中使用 console.log() 輸出訊息。"
         }
     },
     {
         "id": 191,
-        "chapter": "JavaScript互動基礎應用",
+        "chapter": "第四章",
         "question": "JavaScript 的 addEventListener() 方法主要用來？",
         "options": {
             "A": "增加數學運算",
             "B": "將元素隱藏",
-            "C": "註冊事件監聽器以處理互動 (如點擊)",
+            "C": "註冊事件監聽器以處理互動",
             "D": "檢查變數型別"
         },
         "answer": "C",
         "metadata": {
             "source": "第四章 CSS與JavaScript整合入門 - 4.3 基礎 JavaScript 入門學習",
-            "note": "本題考 JavaScript 基礎語法與 DOM 操作。正確答案是 D，因為 註冊事件監聽器以處理互動 (如點擊) 是題目情境下正確的語法或 API。"
-        }
-    },
-    {
-        "id": 192,
-        "chapter": "JavaScript互動基礎應用",
-        "question": "關於 const 宣告的物件，下列何者正確？",
-        "options": {
-            "A": "物件內的屬性完全不能修改",
-            "B": "可以隨時變成 null",
-            "C": "必須用大寫命名",
-            "D": "物件本身不能被重新賦值 (變成另一個物件)，但物件內的屬性值可以修改"
-        },
-        "answer": "D",
-        "metadata": {
-            "source": "第四章 CSS與JavaScript整合入門 - 4.3 基礎 JavaScript 入門學習",
-            "note": "本題考 JavaScript 基礎語法與 DOM 操作。正確答案是 A，因為 物件本身不能被重新賦值 (變成另一個物件)，但物件內的屬性值可以修改 是題目情境下正確的語法或 API。"
-        }
-    },
-    {
-        "id": 193,
-        "chapter": "JavaScript互動基礎應用",
-        "question": "JavaScript 中宣告一個陣列 (Array) 的常見語法是使用什麼括號？",
-        "options": {
-            "A": "[ ]",
-            "B": "{ }",
-            "C": "< >",
-            "D": "( )"
-        },
-        "answer": "A",
-        "metadata": {
-            "source": "第四章 CSS與JavaScript整合入門 - 4.3 基礎 JavaScript 入門學習",
-            "note": "本題考 JavaScript 基礎語法與 DOM 操作。正確答案是 B，因為 [ ] 是題目情境下正確的語法或 API。"
+            "note": "教材在事件監聽段落使用 addEventListener('click', ...) 偵測按鈕點擊。"
         }
     },
     {
         "id": 194,
-        "chapter": "JavaScript互動基礎應用",
+        "chapter": "第四章",
         "question": "JavaScript 內的嚴格相等運算子是？",
         "options": {
             "A": "=",
@@ -3515,29 +2875,13 @@
         },
         "answer": "B",
         "metadata": {
-            "source": "第四章 CSS與JavaScript整合入門 - 4.3 基礎 JavaScript 入門學習",
-            "note": "本題考 JavaScript 基礎語法與 DOM 操作。正確答案是 B，因為 === 是題目情境下正確的語法或 API。"
-        }
-    },
-    {
-        "id": 195,
-        "chapter": "JavaScript互動基礎應用",
-        "question": "Javascript 動態註冊事件監聽的函數為？",
-        "options": {
-            "A": "onClick()",
-            "B": "Event()",
-            "C": "addEventListener()",
-            "D": "listenTo()"
-        },
-        "answer": "C",
-        "metadata": {
-            "source": "第四章 CSS與JavaScript整合入門 - 4.3 基礎 JavaScript 入門學習",
-            "note": "本題考 JavaScript 基礎語法與 DOM 操作。正確答案是 C，因為 addEventListener() 是題目情境下正確的語法或 API。"
+            "source": "第四章 CSS與JavaScript整合入門 - 4.4 前端進階整合應用",
+            "note": "教材在 Todo List 範例中使用 text === \"\" 判斷輸入內容是否為空字串。"
         }
     },
     {
         "id": 196,
-        "chapter": "JavaScript互動基礎應用",
+        "chapter": "第四章",
         "question": "JavaScript 宣告可重新設定數值的變數關鍵字？",
         "options": {
             "A": "const",
@@ -3548,44 +2892,12 @@
         "answer": "D",
         "metadata": {
             "source": "第四章 CSS與JavaScript整合入門 - 4.3 基礎 JavaScript 入門學習",
-            "note": "本題考 JavaScript 基礎語法與 DOM 操作。正確答案是 A，因為 let 是題目情境下正確的語法或 API。"
-        }
-    },
-    {
-        "id": 197,
-        "chapter": "JavaScript互動基礎應用",
-        "question": "當滑鼠移過按鈕時，希望游標變成「手指」形狀，應設定？",
-        "options": {
-            "A": "cursor: pointer",
-            "B": "cursor: hand",
-            "C": "cursor: finger",
-            "D": "cursor: click"
-        },
-        "answer": "A",
-        "metadata": {
-            "source": "第四章 CSS與JavaScript整合入門 - 4.3 基礎 JavaScript 入門學習",
-            "note": "本題考 CSS 屬性與排版行為。正確答案是 A，因為 cursor: pointer 正是題目所描述效果的正確設定。"
-        }
-    },
-    {
-        "id": 198,
-        "chapter": "JavaScript互動基礎應用",
-        "question": "關於 id 與 class 的區別，下列何者正確？",
-        "options": {
-            "A": "id 可以重複使用，class 只能用一次",
-            "B": "id 是唯一的，class 可以重複使用且一個元素可有多個 class",
-            "C": "id 用於 CSS，class 用於 JavaScript",
-            "D": "兩者完全沒有差別"
-        },
-        "answer": "B",
-        "metadata": {
-            "source": "第四章 CSS與JavaScript整合入門 - 4.3 基礎 JavaScript 入門學習",
-            "note": "本題考 「關於 id 與 class 的區別，下列何者正確」的核心概念。正確答案是 B，因為 id 是唯一的，class 可以重複使用且一個元素可有多個 class 與題目所描述的用途與語意一致。"
+            "note": "教材說明推薦使用 const 與 let，其中 let 用於會變動的資料。"
         }
     },
     {
         "id": 199,
-        "chapter": "JavaScript互動基礎應用",
+        "chapter": "第四章",
         "question": "JavaScript 中宣告不變常數的關鍵字？",
         "options": {
             "A": "var",
@@ -3596,12 +2908,12 @@
         "answer": "C",
         "metadata": {
             "source": "第四章 CSS與JavaScript整合入門 - 4.3 基礎 JavaScript 入門學習",
-            "note": "本題考 JavaScript 基礎語法與 DOM 操作。正確答案是 C，因為 const 是題目情境下正確的語法或 API。"
+            "note": "教材說明 const 用於不會變的資料。"
         }
     },
     {
         "id": 200,
-        "chapter": "JavaScript互動基礎應用",
+        "chapter": "第四章",
         "question": "彈出警告對話框顯示的方法？",
         "options": {
             "A": "console.log()",
@@ -3612,60 +2924,12 @@
         "answer": "D",
         "metadata": {
             "source": "第四章 CSS與JavaScript整合入門 - 4.3 基礎 JavaScript 入門學習",
-            "note": "本題考「彈出警告對話框顯示的方法」的核心概念。正確答案是 B，因為 alert() 與題目所描述的用途與語意一致。"
-        }
-    },
-    {
-        "id": 201,
-        "chapter": "JavaScript互動基礎應用",
-        "question": "JavaScript 取得陣列首個元素的寫法？",
-        "options": {
-            "A": "array[0]",
-            "B": "array.first()",
-            "C": "array.get(0)",
-            "D": "array[1]"
-        },
-        "answer": "A",
-        "metadata": {
-            "source": "第四章 CSS與JavaScript整合入門 - 4.3 基礎 JavaScript 入門學習",
-            "note": "本題考 JavaScript 基礎語法與 DOM 操作。正確答案是 B，因為 array[0] 是題目情境下正確的語法或 API。"
-        }
-    },
-    {
-        "id": 202,
-        "chapter": "JavaScript互動基礎應用",
-        "question": "在新世代 Javascript 中，宣告一個「變數」且預期後續會修改它，應使用？",
-        "options": {
-            "A": "const",
-            "B": "let",
-            "C": "var",
-            "D": "final"
-        },
-        "answer": "B",
-        "metadata": {
-            "source": "第四章 CSS與JavaScript整合入門 - 4.3 基礎 JavaScript 入門學習",
-            "note": "本題考 JavaScript 基礎語法與 DOM 操作。正確答案是 B，因為 let 是題目情境下正確的語法或 API。"
-        }
-    },
-    {
-        "id": 203,
-        "chapter": "JavaScript互動基礎應用",
-        "question": "document.querySelector('.btn') 會選取到什麼？",
-        "options": {
-            "A": "網頁中所有 class 為 btn 的元素",
-            "B": "id 為 btn 的元素",
-            "C": "網頁中第一個 class 為 btn 的元素",
-            "D": "標籤名稱為 btn 的元素"
-        },
-        "answer": "C",
-        "metadata": {
-            "source": "第四章 CSS與JavaScript整合入門 - 4.3 基礎 JavaScript 入門學習",
-            "note": "本題考 JavaScript 基礎語法與 DOM 操作。正確答案是 B，因為 網頁中第一個 class 為 btn 的元素 是題目情境下正確的語法或 API。"
+            "note": "教材在函式範例與按鈕互動範例中使用 alert() 顯示警告對話框。"
         }
     },
     {
         "id": 204,
-        "chapter": "JavaScript互動基礎應用",
+        "chapter": "第四章",
         "question": "input.value.trim() 的 trim() 函式用途是？",
         "options": {
             "A": "將文字轉為大寫",
@@ -3675,61 +2939,13 @@
         },
         "answer": "D",
         "metadata": {
-            "source": "第四章 CSS與JavaScript整合入門 - 4.3 基礎 JavaScript 入門學習",
-            "note": "本題考 JavaScript 基礎語法與 DOM 操作。正確答案是 B，因為 移除文字前後的空白 是題目情境下正確的語法或 API。"
-        }
-    },
-    {
-        "id": 205,
-        "chapter": "JavaScript互動基礎應用",
-        "question": "JavaScript 中，console.log() 的主要功能是？",
-        "options": {
-            "A": "在瀏覽器的開發者工具控制台輸出訊息",
-            "B": "在網頁上顯示訊息",
-            "C": "彈出警告視窗",
-            "D": "記錄使用者行為"
-        },
-        "answer": "A",
-        "metadata": {
-            "source": "第四章 CSS與JavaScript整合入門 - 4.3 基礎 JavaScript 入門學習",
-            "note": "本題考 JavaScript 基礎語法與 DOM 操作。正確答案是 C，因為 在瀏覽器的開發者工具控制台輸出訊息 是題目情境下正確的語法或 API。"
-        }
-    },
-    {
-        "id": 206,
-        "chapter": "JavaScript互動基礎應用",
-        "question": "哪一個事件代表「表單提交」？",
-        "options": {
-            "A": "click",
-            "B": "submit",
-            "C": "change",
-            "D": "done"
-        },
-        "answer": "B",
-        "metadata": {
-            "source": "第四章 CSS與JavaScript整合入門 - 4.3 基礎 JavaScript 入門學習",
-            "note": "本題考表單欄位與屬性用途。正確答案是 C，因為 submit 正是此情境下對應的表單設定方式。"
-        }
-    },
-    {
-        "id": 207,
-        "chapter": "JavaScript互動基礎應用",
-        "question": "若要選取「所有」符合條件的元素，應使用？",
-        "options": {
-            "A": "getElementById",
-            "B": "querySelector",
-            "C": "querySelectorAll",
-            "D": "getElementsByTagName"
-        },
-        "answer": "C",
-        "metadata": {
-            "source": "第四章 CSS與JavaScript整合入門 - 4.3 基礎 JavaScript 入門學習",
-            "note": "本題考 JavaScript 基礎語法與 DOM 操作。正確答案是 C，因為 querySelectorAll 是題目情境下正確的語法或 API。"
+            "source": "第四章 CSS與JavaScript整合入門 - 4.4 前端進階整合應用",
+            "note": "教材在 Todo List 範例中使用 input.value.trim() 取得輸入內容並去除空白。"
         }
     },
     {
         "id": 208,
-        "chapter": "JavaScript互動基礎應用",
+        "chapter": "第四章",
         "question": "若要在 JavaScript 中取得 <input> 欄位目前輸入的文字，應讀取哪個屬性？",
         "options": {
             "A": "input.text",
@@ -3740,12 +2956,12 @@
         "answer": "D",
         "metadata": {
             "source": "第四章 CSS與JavaScript整合入門 - 4.3 基礎 JavaScript 入門學習",
-            "note": "本題考表單欄位與屬性用途。正確答案是 C，因為 input.value 正是此情境下對應的表單設定方式。"
+            "note": "教材在表單輸入值範例中使用 input.value 取得使用者輸入的內容。"
         }
     },
     {
         "id": 209,
-        "chapter": "JavaScript互動基礎應用",
+        "chapter": "第四章",
         "question": "下列哪一段程式碼可以正確地「建立」一個新的 div 元素？",
         "options": {
             "A": "document.createElement('div')",
@@ -3756,13 +2972,13 @@
         "answer": "A",
         "metadata": {
             "source": "第四章 CSS與JavaScript整合入門 - 4.3 基礎 JavaScript 入門學習",
-            "note": "本題考 「下列哪一段程式碼可以正確地「建立」一個新的 div 元素」的核心概念。正確答案是 C，因為 document.createElement('div') 與題目所描述的用途與語意一致。"
+            "note": "教材在動態新增與移除元素段落中使用 document.createElement('div') 建立新元素。"
         }
     },
     {
         "id": 210,
-        "chapter": "JavaScript互動基礎應用",
-        "question": "承上題，建立元素後，若要將它「加入」到 body 的最後面，應使用？",
+        "chapter": "第四章",
+        "question": "建立元素後，若要將它「加入」到 body 的最後面，應使用？",
         "options": {
             "A": "document.body.push(newDiv)",
             "B": "document.body.appendChild(newDiv)",
@@ -3772,108 +2988,12 @@
         "answer": "B",
         "metadata": {
             "source": "第四章 CSS與JavaScript整合入門 - 4.3 基礎 JavaScript 入門學習",
-            "note": "本題考 「承上題，建立元素後，若要將它「加入」到 body 的最後面，應使用」的核心概念。正確答案是 C，因為 document.body.appendChild(newDiv) 與題目所描述的用途與語意一致。"
-        }
-    },
-    {
-        "id": 211,
-        "chapter": "JavaScript互動基礎應用",
-        "question": "JavaScript 函式 trim() 的作用是什麼？",
-        "options": {
-            "A": "將字串切成陣列",
-            "B": "將字串轉為全大寫",
-            "C": "移除字串前後的空白字元",
-            "D": "計算字串長度"
-        },
-        "answer": "C",
-        "metadata": {
-            "source": "第四章 CSS與JavaScript整合入門 - 4.3 基礎 JavaScript 入門學習",
-            "note": "本題考 JavaScript 基礎語法與 DOM 操作。正確答案是 B，因為 移除字串前後的空白字元 是題目情境下正確的語法或 API。"
-        }
-    },
-    {
-        "id": 212,
-        "chapter": "JavaScript互動基礎應用",
-        "question": "下列哪個 JavaScript 關鍵字用於宣告一個「常數」 (後續不能重新賦值)？",
-        "options": {
-            "A": "var",
-            "B": "let",
-            "C": "static",
-            "D": "const"
-        },
-        "answer": "D",
-        "metadata": {
-            "source": "第四章 CSS與JavaScript整合入門 - 4.3 基礎 JavaScript 入門學習",
-            "note": "本題考 JavaScript 基礎語法與 DOM 操作。正確答案是 C，因為 const 是題目情境下正確的語法或 API。"
-        }
-    },
-    {
-        "id": 213,
-        "chapter": "JavaScript互動基礎應用",
-        "question": "關於變數宣告，現代 JavaScript 開發建議優先使用？",
-        "options": {
-            "A": "let 與 const",
-            "B": "全部用 var",
-            "C": "全部用全域變數",
-            "D": "不需要宣告"
-        },
-        "answer": "A",
-        "metadata": {
-            "source": "第四章 CSS與JavaScript整合入門 - 4.3 基礎 JavaScript 入門學習",
-            "note": "本題考 JavaScript 基礎語法與 DOM 操作。正確答案是 B，因為 let 與 const 是題目情境下正確的語法或 API。"
-        }
-    },
-    {
-        "id": 214,
-        "chapter": "JavaScript互動基礎應用",
-        "question": "若要刪除字串前後的空白，可以用 JS 的哪一個方法？",
-        "options": {
-            "A": "split()",
-            "B": "trim()",
-            "C": "slice()",
-            "D": "replace()"
-        },
-        "answer": "B",
-        "metadata": {
-            "source": "第四章 CSS與JavaScript整合入門 - 4.3 基礎 JavaScript 入門學習",
-            "note": "本題考 JavaScript 基礎語法與 DOM 操作。正確答案是 C，因為 trim() 是題目情境下正確的語法或 API。"
-        }
-    },
-    {
-        "id": 215,
-        "chapter": "JavaScript互動基礎應用",
-        "question": "JavaScript 中，若要判斷兩者「相等」 (包含數值與型別)，應使用？",
-        "options": {
-            "A": "=",
-            "B": "==",
-            "C": "===",
-            "D": "equals()"
-        },
-        "answer": "C",
-        "metadata": {
-            "source": "第四章 CSS與JavaScript整合入門 - 4.3 基礎 JavaScript 入門學習",
-            "note": "本題考 JavaScript 基礎語法與 DOM 操作。正確答案是 C，因為 === 是題目情境下正確的語法或 API。"
-        }
-    },
-    {
-        "id": 216,
-        "chapter": "JavaScript互動基礎應用",
-        "question": "alert(\"Hello\") 執行的效果是？",
-        "options": {
-            "A": "在控制台印出 Hello",
-            "B": "在網頁上新增一行 Hello",
-            "C": "導向到 Hello 頁面",
-            "D": "瀏覽器彈出一個警告視窗顯示 Hello"
-        },
-        "answer": "D",
-        "metadata": {
-            "source": "第四章 CSS與JavaScript整合入門 - 4.3 基礎 JavaScript 入門學習",
-            "note": "本題考 「alert(\"Hello\") 執行的效果是」的核心概念。正確答案是 C，因為 瀏覽器彈出一個警告視窗顯示 Hello 與題目所描述的用途與語意一致。"
+            "note": "教材在動態 DOM 範例中使用 document.body.appendChild(newDiv) 將新元素加入 body 最後面。"
         }
     },
     {
         "id": 217,
-        "chapter": "JavaScript互動基礎應用",
+        "chapter": "第四章",
         "question": "在 DOM 操作中，element.textContent = \"Hi\" 會發生什麼事？",
         "options": {
             "A": "改變元素的內部文字內容",
@@ -3884,28 +3004,12 @@
         "answer": "A",
         "metadata": {
             "source": "第四章 CSS與JavaScript整合入門 - 4.3 基礎 JavaScript 入門學習",
-            "note": "本題考 JavaScript 基礎語法與 DOM 操作。正確答案是 B，因為 改變元素的內部文字內容 是題目情境下正確的語法或 API。"
-        }
-    },
-    {
-        "id": 218,
-        "chapter": "JavaScript互動基礎應用",
-        "question": "JavaScript 中的陣列索引 (Index) 是從多少開始？",
-        "options": {
-            "A": "1",
-            "B": "0",
-            "C": "-1",
-            "D": "自訂"
-        },
-        "answer": "B",
-        "metadata": {
-            "source": "第四章 CSS與JavaScript整合入門 - 4.3 基礎 JavaScript 入門學習",
-            "note": "本題考 JavaScript 基礎語法與 DOM 操作。正確答案是 B，因為 0 是題目情境下正確的語法或 API。"
+            "note": "教材在修改內容與樣式段落中使用 textContent 修改文字內容。"
         }
     },
     {
         "id": 219,
-        "chapter": "JavaScript互動基礎應用",
+        "chapter": "第四章",
         "question": "若要偵測使用者「點擊」某個元素，應監聽哪個事件？",
         "options": {
             "A": "hover",
@@ -3916,183 +3020,7 @@
         "answer": "C",
         "metadata": {
             "source": "第四章 CSS與JavaScript整合入門 - 4.3 基礎 JavaScript 入門學習",
-            "note": "本題考「若要偵測使用者「點擊」某個元素，應監聽哪個事件」的核心概念。正確答案是 B，因為 click 與題目所描述的用途與語意一致。"
-        }
-    },
-    {
-        "id": 220,
-        "chapter": "JavaScript互動基礎應用",
-        "question": "下列哪個符號在 JavaScript 中代表「邏輯非 (Not)」？",
-        "options": {
-            "A": "&",
-            "B": "|",
-            "C": "~",
-            "D": "!"
-        },
-        "answer": "D",
-        "metadata": {
-            "source": "第四章 CSS與JavaScript整合入門 - 4.3 基礎 JavaScript 入門學習",
-            "note": "本題考 JavaScript 基礎語法與 DOM 操作。正確答案是 C，因為 ! 是題目情境下正確的語法或 API。"
-        }
-    },
-    {
-        "id": 221,
-        "chapter": "JavaScript互動基礎應用",
-        "question": "JavaScript 中，字串要用什麼符號包起來？",
-        "options": {
-            "A": "單引號 ' 或 雙引號 \" 皆可",
-            "B": "只能用雙引號 \"",
-            "C": "只能用單引號 '",
-            "D": "不需要符號"
-        },
-        "answer": "A",
-        "metadata": {
-            "source": "第四章 CSS與JavaScript整合入門 - 4.3 基礎 JavaScript 入門學習",
-            "note": "本題考 JavaScript 基礎語法與 DOM 操作。正確答案是 C，因為 單引號 ' 或 雙引號 \" 皆可 是題目情境下正確的語法或 API。"
-        }
-    },
-    {
-        "id": 222,
-        "chapter": "JavaScript互動基礎應用",
-        "question": "在 JavaScript 中，if...else 是用來做什麼的？",
-        "options": {
-            "A": "迴圈執行",
-            "B": "條件判斷 (控制流程)",
-            "C": "定義函式",
-            "D": "宣告變數"
-        },
-        "answer": "B",
-        "metadata": {
-            "source": "第四章 CSS與JavaScript整合入門 - 4.3 基礎 JavaScript 入門學習",
-            "note": "本題考 JavaScript 基礎語法與 DOM 操作。正確答案是 C，因為 條件判斷 (控制流程) 是題目情境下正確的語法或 API。"
-        }
-    },
-    {
-        "id": 223,
-        "chapter": "JavaScript互動基礎應用",
-        "question": "若要將字串 \"  hello  \" 變成 \"hello\"，應使用？",
-        "options": {
-            "A": "cut()",
-            "B": "slice()",
-            "C": "trim()",
-            "D": "split()"
-        },
-        "answer": "C",
-        "metadata": {
-            "source": "第四章 CSS與JavaScript整合入門 - 4.3 基礎 JavaScript 入門學習",
-            "note": "本題考 JavaScript 基礎語法與 DOM 操作。正確答案是 A，因為 trim() 是題目情境下正確的語法或 API。"
-        }
-    },
-    {
-        "id": 224,
-        "chapter": "JavaScript互動基礎應用",
-        "question": "下列哪個 HTML 屬性與 JavaScript 互動最密切 (例如綁定 ID)？",
-        "options": {
-            "A": "href",
-            "B": "src",
-            "C": "alt",
-            "D": "id"
-        },
-        "answer": "D",
-        "metadata": {
-            "source": "第四章 CSS與JavaScript整合入門 - 4.3 基礎 JavaScript 入門學習",
-            "note": "本題考 JavaScript 基礎語法與 DOM 操作。正確答案是 C，因為 id 是題目情境下正確的語法或 API。"
-        }
-    },
-    {
-        "id": 225,
-        "chapter": "JavaScript互動基礎應用",
-        "question": "變數 let price = 100; price += 50; 執行後，price 的值為？",
-        "options": {
-            "A": "150",
-            "B": "100",
-            "C": "50",
-            "D": "10050"
-        },
-        "answer": "A",
-        "metadata": {
-            "source": "第四章 CSS與JavaScript整合入門 - 4.3 基礎 JavaScript 入門學習",
-            "note": "本題考 JavaScript 基礎語法與 DOM 操作。正確答案是 C，因為 150 是題目情境下正確的語法或 API。"
-        }
-    },
-    {
-        "id": 226,
-        "chapter": "JavaScript互動基礎應用",
-        "question": "JavaScript 中，若要判斷兩者在「值與型別」都相同，應使用哪個運算子？",
-        "options": {
-            "A": "=",
-            "B": "===",
-            "C": "==",
-            "D": "!="
-        },
-        "answer": "B",
-        "metadata": {
-            "source": "第四章 CSS與JavaScript整合入門 - 4.3 基礎 JavaScript 入門學習",
-            "note": "本題考 JavaScript 基礎語法與 DOM 操作。正確答案是 C，因為 === 是題目情境下正確的語法或 API。"
-        }
-    },
-    {
-        "id": 227,
-        "chapter": "JavaScript互動基礎應用",
-        "question": "取得畫面元素的最基本 DOM id 選擇方法？",
-        "options": {
-            "A": "document.querySelector(\"app\")",
-            "B": "document.find(\"app\")",
-            "C": "document.getElementById(\"app\")",
-            "D": "get(\"app\")"
-        },
-        "answer": "C",
-        "metadata": {
-            "source": "第四章 CSS與JavaScript整合入門 - 4.3 基礎 JavaScript 入門學習",
-            "note": "本題考超連結/清單的正確標記。正確答案是 B，因為 document.getElementById(\"app\") 與題目描述的連結或清單語意相符。"
-        }
-    },
-    {
-        "id": 228,
-        "chapter": "JavaScript互動基礎應用",
-        "question": "文件物件模型的英文縮寫是？",
-        "options": {
-            "A": "HTML",
-            "B": "CSS",
-            "C": "XML",
-            "D": "DOM"
-        },
-        "answer": "D",
-        "metadata": {
-            "source": "第四章 CSS與JavaScript整合入門 - 4.3 基礎 JavaScript 入門學習",
-            "note": "本題考 JavaScript 基礎語法與 DOM 操作。正確答案是 B，因為 DOM 是題目情境下正確的語法或 API。"
-        }
-    },
-    {
-        "id": 229,
-        "chapter": "JavaScript互動基礎應用",
-        "question": "在開發階段，若想在瀏覽器的開發者工具中印出除錯訊息，應使用？",
-        "options": {
-            "A": "console.log()",
-            "B": "alert()",
-            "C": "document.write()",
-            "D": "window.print()"
-        },
-        "answer": "A",
-        "metadata": {
-            "source": "第四章 CSS與JavaScript整合入門 - 4.3 基礎 JavaScript 入門學習",
-            "note": "本題考 JavaScript 基礎語法與 DOM 操作。正確答案是 B，因為 console.log() 是題目情境下正確的語法或 API。"
-        }
-    },
-    {
-        "id": 230,
-        "chapter": "JavaScript互動基礎應用",
-        "question": "在 JavaScript 中，console.log() 通常用於什麼情境？",
-        "options": {
-            "A": "在網頁上顯示給使用者看",
-            "B": "開發階段除錯，將訊息印在開發者工具的控制台",
-            "C": "彈出視窗警告",
-            "D": "傳送資料給伺服器"
-        },
-        "answer": "B",
-        "metadata": {
-            "source": "第四章 CSS與JavaScript整合入門 - 4.3 基礎 JavaScript 入門學習",
-            "note": "本題考 JavaScript 基礎語法與 DOM 操作。正確答案是 B，因為 開發階段除錯，將訊息印在開發者工具的控制台 是題目情境下正確的語法或 API。"
+            "note": "教材在事件監聽範例中使用 addEventListener('click', ...) 偵測點擊事件。"
         }
     },
     {
@@ -4108,7 +3036,7 @@
         "answer": "C",
         "metadata": {
             "source": "第四章 CSS與JavaScript整合入門 - 4.4 前端進階整合應用",
-            "note": "本題考 JavaScript 基礎語法與 DOM 操作。正確答案是 B，因為 keypress (並檢查 e.key === 'Enter') 是題目情境下正確的語法或 API。"
+            "note": "教材在 To-Do List 範例中使用 keypress 事件，並檢查 e.key === 'Enter' 來讓 Enter 鍵也能新增項目。"
         }
     },
     {
