@@ -1,3202 +1,3522 @@
 [
-  {
-    "id": 243,
-    "chapter": "第零章",
-    "question": "在前端開發中，哪一項技術主要負責定義表單欄位與按鈕等頁面結構？",
-    "options": {
-      "A": "CSS",
-      "B": "JavaScript",
-      "C": "HTML",
-      "D": "SQL"
-    },
-    "answer": "C",
-    "metadata": {
-      "source": "第零章 前言與環境介紹 - 網站應用介紹",
-      "note": "本題考前端三大技術的職責分工。正確答案是 C，因為 HTML 負責定義內容結構與表單元素，CSS 負責樣式，JavaScript 負責互動行為。"
+    {
+        "id": 243,
+        "chapter": "第零章",
+        "question": "在前端開發中，哪一項技術主要負責定義表單欄位與按鈕等頁面結構？",
+        "options": {
+            "A": "CSS",
+            "B": "JavaScript",
+            "C": "HTML",
+            "D": "SQL"
+        },
+        "answer": "C",
+        "metadata": {
+            "source": "第零章 前言與環境介紹 - 網站應用介紹",
+            "note": "本題考前端三大技術的職責分工。正確答案是 C，因為 HTML 負責定義內容結構與表單元素，CSS 負責樣式，JavaScript 負責互動行為。"
+        }
+    },
+    {
+        "id": 244,
+        "chapter": "第零章",
+        "question": "下列哪個配對最符合 HTML、CSS、JavaScript 在前端中的技術職責？",
+        "options": {
+            "A": "HTML 負責動畫運算，CSS 負責資料儲存，JavaScript 負責結構標記",
+            "B": "HTML 負責 API 呼叫，CSS 負責資料驗證，JavaScript 負責資料庫連線",
+            "C": "HTML 負責權限驗證，CSS 負責路由切換，JavaScript 負責伺服器部署",
+            "D": "HTML 負責內容結構，CSS 負責視覺樣式，JavaScript 負責互動邏輯"
+        },
+        "answer": "D",
+        "metadata": {
+            "source": "第零章 前言與環境介紹 - 網站的三大基礎",
+            "note": "本題考技術職責分工。正確答案是 D，因為 HTML 用於結構與語意、CSS 用於樣式與版面、JavaScript 用於事件處理與動態互動。"
+        }
+    },
+    {
+        "id": 245,
+        "chapter": "第零章",
+        "question": "為什麼不建議使用 Word 直接撰寫 HTML 網頁？",
+        "options": {
+            "A": "Word 是文字排版軟體，不是純文字程式編輯環境",
+            "B": "Word 只能開啟圖片，不能輸入文字",
+            "C": "Word 會自動把所有 HTML 變成 JavaScript",
+            "D": "Word 只能在瀏覽器中執行"
+        },
+        "answer": "A",
+        "metadata": {
+            "source": "第零章 前言與環境介紹 - 開發環境配置",
+            "note": "本題避開「推薦哪個編輯器」的原題，改考選擇工具背後的理由。正確答案是 B，因為撰寫 HTML 需要能清楚處理純文字程式碼的編輯環境。"
+        }
+    },
+    {
+        "id": 246,
+        "chapter": "第零章",
+        "question": "使用 Live Server 時，若按下 Go Live 沒反應，依照書中的常見錯誤說明，最可能的原因之一是？",
+        "options": {
+            "A": "沒有先建立資料庫",
+            "B": "沒有安裝外掛或沒有開啟資料夾",
+            "C": "沒有把 CSS 改成 Python",
+            "D": "瀏覽器不支援任何 HTML"
+        },
+        "answer": "B",
+        "metadata": {
+            "source": "第零章 前言與環境介紹 - 開發環境配置",
+            "note": "本題是 Live Server 功能題的實務變化題。正確答案是 A，因為書中常見新手錯誤提到按 Live Server 沒反應通常與外掛安裝或資料夾開啟狀態有關。"
+        }
+    },
+    {
+        "id": 247,
+        "chapter": "第零章",
+        "question": "建立第一個專案時，書中建議新增的主要 HTML 檔案名稱是？",
+        "options": {
+            "A": "style.css",
+            "B": "main.py",
+            "C": "index.html",
+            "D": "server.js"
+        },
+        "answer": "C",
+        "metadata": {
+            "source": "第零章 前言與環境介紹 - 開發環境配置",
+            "note": "本題考建立第一個專案的基本檔案命名。正確答案是 C，因為 index.html 是書中建立第一個網頁時使用的 HTML 檔案。"
+        }
+    },
+    {
+        "id": 248,
+        "chapter": "第零章",
+        "question": "瀏覽器讀取 HTML 後建立 DOM Tree，主要代表的是什麼？",
+        "options": {
+            "A": "圖片壓縮後的檔案大小",
+            "B": "使用者的登入密碼",
+            "C": "CSS 顏色的隨機清單",
+            "D": "網頁標籤之間的層級關係"
+        },
+        "answer": "D",
+        "metadata": {
+            "source": "第零章 前言與環境介紹 - 認識瀏覽器與原始碼結構",
+            "note": "本題避開「DOM 全名」原題，改考 DOM Tree 的概念理解。正確答案是 A，因為 DOM Tree 是瀏覽器在記憶體中建立的文件結構樹。"
+        }
+    },
+    {
+        "id": 249,
+        "chapter": "第零章",
+        "question": "若想看到網頁在瀏覽器中即時解析後的元素結構與樣式，應優先使用哪個功能？",
+        "options": {
+            "A": "開發者工具的 Inspect / Elements",
+            "B": "檢視原始碼（View Page Source）",
+            "C": "下載網頁圖片",
+            "D": "清除瀏覽紀錄"
+        },
+        "answer": "A",
+        "metadata": {
+            "source": "第零章 前言與環境介紹 - 認識瀏覽器與原始碼結構",
+            "note": "本題考「檢視原始碼」與「開發者工具」的使用差異。正確答案是 B，因為 Inspect / Elements 可以即時觀察瀏覽器解析後的結構與樣式。"
+        }
+    },
+    {
+        "id": 250,
+        "chapter": "第零章",
+        "question": "在瀏覽器核心組件中，負責將結構轉換成實際畫面的通常是哪一項？",
+        "options": {
+            "A": "Parser",
+            "B": "Rendering Engine",
+            "C": "JavaScript Engine",
+            "D": "File Explorer"
+        },
+        "answer": "B",
+        "metadata": {
+            "source": "第零章 前言與環境介紹 - 認識瀏覽器與原始碼結構",
+            "note": "本題考瀏覽器基本構造。正確答案是 B，因為 Rendering Engine 的任務是把解析後的結構轉換成使用者看到的畫面。"
+        }
+    },
+    {
+        "id": 251,
+        "chapter": "第零章",
+        "question": "React、Vue、Angular 這類框架與 HTML、CSS、JavaScript 的關係，何者較符合書中說法？",
+        "options": {
+            "A": "它們完全取代 HTML、CSS、JavaScript",
+            "B": "它們只能用來編輯圖片",
+            "C": "它們建立在 HTML、CSS、JavaScript 之上進一步封裝",
+            "D": "它們是瀏覽器的替代品"
+        },
+        "answer": "C",
+        "metadata": {
+            "source": "第零章 前言與環境介紹 - 網站應用介紹",
+            "note": "本題考從基礎語言到框架的概念。正確答案是 B，因為書中說明框架能加速開發，但核心仍建立在前端三大基礎之上。"
+        }
+    },
+    {
+        "id": 252,
+        "chapter": "第零章",
+        "question": "如果網頁只剩 HTML、沒有 CSS，最可能的結果是？",
+        "options": {
+            "A": "所有互動都會自動完成",
+            "B": "瀏覽器會變成資料庫",
+            "C": "HTML 會自動產生伺服器",
+            "D": "內容仍可顯示，但外觀可能單調難讀"
+        },
+        "answer": "D",
+        "metadata": {
+            "source": "第零章 前言與環境介紹 - 網站應用介紹",
+            "note": "本題延伸考三大技術缺少時的影響。正確答案是 A，因為 HTML 負責內容結構，即使沒有 CSS，內容仍可能顯示，但缺少外觀與排版設計。"
+        }
+    },
+    {
+        "id": 253,
+        "chapter": "第零章",
+        "question": "下列哪一項最能說明 HTML「不是只有程式碼，而是資訊結構語言」的意思？",
+        "options": {
+            "A": "HTML 能用標籤表達標題、段落等內容層次",
+            "B": "HTML 只能用來設定文字顏色",
+            "C": "HTML 會自動幫網站建立會員系統",
+            "D": "HTML 必須連接資料庫才會出現畫面"
+        },
+        "answer": "A",
+        "metadata": {
+            "source": "第零章 前言與環境介紹 - 網站應用介紹",
+            "note": "本題考 HTML 作為結構語言的核心觀念。正確答案是 B，因為 HTML 標籤能描述內容的角色與層級，讓瀏覽器與搜尋引擎理解頁面邏輯。"
+        }
+    },
+    {
+        "id": 254,
+        "chapter": "第零章",
+        "question": "當瀏覽器開啟 index.html 時，下列流程何者最接近書中的描述？",
+        "options": {
+            "A": "先刪除 HTML，再下載資料庫",
+            "B": "讀取檔案、解析成 DOM Tree，再結合 CSS 與 JavaScript 呈現畫面",
+            "C": "只執行 CSS，完全不讀 HTML",
+            "D": "直接把檔案轉成 Word 文件"
+        },
+        "answer": "B",
+        "metadata": {
+            "source": "第零章 前言與環境介紹 - 網站應用介紹",
+            "note": "本題考瀏覽器呈現網頁的基本流程。正確答案是 A，因為書中說明瀏覽器會讀取 HTML、建立結構，再依 CSS 與 JavaScript 呈現結果。"
+        }
+    },
+    {
+        "id": 267,
+        "chapter": "第零章",
+        "question": "下列何者最符合瀏覽器在前端中的核心角色？",
+        "options": {
+            "A": "把 SQL 查詢轉成資料表",
+            "B": "只負責下載圖片，不處理程式碼",
+            "C": "把 Python 程式直接編譯成可執行檔",
+            "D": "解析 HTML、CSS、JavaScript 並即時渲染為可互動畫面"
+        },
+        "answer": "D",
+        "metadata": {
+            "source": "第零章 前言與環境介紹 - 認識瀏覽器與原始碼結構",
+            "note": "本題考瀏覽器的技術定位。正確答案是 D，因為瀏覽器會解析前端三種核心資源並渲染畫面與互動。"
+        }
+    },
+    {
+        "id": 268,
+        "chapter": "第零章",
+        "question": "在網頁載入流程中，哪個結果最接近瀏覽器解析 HTML 後建立的結構？",
+        "options": {
+            "A": "DOM Tree（文件物件模型樹）",
+            "B": "Docker Image",
+            "C": "關聯式資料表索引",
+            "D": "二進位機器碼區段"
+        },
+        "answer": "A",
+        "metadata": {
+            "source": "第零章 前言與環境介紹 - 什麼是 DOM（Document Object Model）",
+            "note": "本題考 DOM 基本概念。正確答案是 A，因為瀏覽器會把 HTML 轉成記憶體中的樹狀結構供渲染與操作。"
+        }
+    },
+    {
+        "id": 269,
+        "chapter": "第零章",
+        "question": "若要檢查頁面中某個按鈕的實際 DOM 結構與即時樣式，最適合使用哪項工具？",
+        "options": {
+            "A": "檢視原始碼（View Page Source）",
+            "B": "系統工作管理員",
+            "C": "開發者工具（DevTools）的 Elements 面板",
+            "D": "瀏覽器書籤管理器"
+        },
+        "answer": "C",
+        "metadata": {
+            "source": "第零章 前言與環境介紹 - 如何查看網頁原始碼",
+            "note": "本題考除錯工具使用情境。正確答案是 C，因為 Elements 面板可檢視即時 DOM 與樣式，適合定位前端問題。"
+        }
+    },
+    {
+        "id": 270,
+        "chapter": "第零章",
+        "question": "下列何者正確描述「檢視原始碼（View Page Source）」與「DevTools Inspect」的差異？",
+        "options": {
+            "A": "兩者都只能看後端資料庫內容",
+            "B": "View Page Source 看初始 HTML；Inspect 可看到互動後更新的 DOM",
+            "C": "View Page Source 可修改畫面且永久儲存；Inspect 不行",
+            "D": "Inspect 只能看 CSS，不能看 HTML 結構"
+        },
+        "answer": "B",
+        "metadata": {
+            "source": "第零章 前言與環境介紹 - 如何查看網頁原始碼",
+            "note": "本題考兩種檢視方式的差異。正確答案是 B，因為原始碼偏向初始回應內容，而 Inspect 反映當下執行後的 DOM 狀態。"
+        }
+    },
+    {
+        "id": 255,
+        "chapter": "第一章",
+        "question": "「HyperText」在 HTML 中主要強調哪一種能力？",
+        "options": {
+            "A": "只能顯示超大文字",
+            "B": "文字一定要使用紅色",
+            "C": "文字可以連結到其他頁面或資源",
+            "D": "只能在手機瀏覽器中顯示"
+        },
+        "answer": "C",
+        "metadata": {
+            "source": "第一章 基礎概念與語法入門 - 1.1 認識 HTML 與網頁世界",
+            "note": "本題避開「HTML 全名」原題，改考名詞意義。正確答案是 B，因為 HyperText 指的是能連結到其他頁面或資源的文字。"
+        }
+    },
+    {
+        "id": 256,
+        "chapter": "第一章",
+        "question": "一個一般成對 HTML 元素通常由哪些部分組成？",
+        "options": {
+            "A": "檔案名稱、資料庫、伺服器",
+            "B": "顏色、動畫、音效",
+            "C": "圖片、影片、壓縮格式",
+            "D": "開始標籤、內容、結束標籤"
+        },
+        "answer": "D",
+        "metadata": {
+            "source": "第一章 基礎概念與語法入門 - 1.1 認識 HTML 與網頁世界",
+            "note": "本題考 HTML 基本語法結構。正確答案是 A，因為一般元素會以開始標籤包住內容，最後再用結束標籤收尾。"
+        }
+    },
+    {
+        "id": 257,
+        "chapter": "第一章",
+        "question": "若想表達朗讀時語氣上的強調，而不是內容的重要或緊急，較適合使用哪個標籤？",
+        "options": {
+            "A": "<em>",
+            "B": "<strong>",
+            "C": "<title>",
+            "D": "<meta>"
+        },
+        "answer": "A",
+        "metadata": {
+            "source": "第一章 基礎概念與語法入門 - 1.3 文字與段落的呈現",
+            "note": "本題和既有 <strong> 題目做區分，改考語氣強調。正確答案是 B，因為 <em> 用來表示語氣上的強調，通常呈現為斜體。"
+        }
+    },
+    {
+        "id": 258,
+        "chapter": "第一章",
+        "question": "若只是想讓某個關鍵字在視覺上變粗，但不想賦予「重要」語意，哪個標籤較符合書中說明？",
+        "options": {
+            "A": "<strong>",
+            "B": "<b>",
+            "C": "<blockquote>",
+            "D": "<html>"
+        },
+        "answer": "B",
+        "metadata": {
+            "source": "第一章 基礎概念與語法入門 - 1.3 文字與段落的呈現",
+            "note": "本題考語意標籤與純視覺標籤的差異。正確答案是 A，因為 <b> 主要表示視覺上的粗體，不像 <strong> 帶有重要性語意。"
+        }
+    },
+    {
+        "id": 259,
+        "chapter": "第一章",
+        "question": "下列哪個標題使用方式較符合書中的最佳實務？",
+        "options": {
+            "A": "為了字體變小，從 <h1> 直接跳到 <h5>",
+            "B": "全站只使用 <h6> 當所有標題",
+            "C": "依照內容層次由 <h1>、<h2>、<h3> 逐層安排",
+            "D": "用 <p> 取代所有標題標籤"
+        },
+        "answer": "C",
+        "metadata": {
+            "source": "第一章 基礎概念與語法入門 - 1.3 文字與段落的呈現",
+            "note": "本題避開單純詢問 <h1> 次數，改考標題層級的使用邏輯。正確答案是 B，因為標題應依內容大綱有順序地呈現層次。"
+        }
+    },
+    {
+        "id": 260,
+        "chapter": "第一章",
+        "question": "在同一段文字內只想強制換到下一行，而不是建立新的段落，應使用哪個標籤？",
+        "options": {
+            "A": "<p>",
+            "B": "<h1>",
+            "C": "<title>",
+            "D": "<br>"
+        },
+        "answer": "D",
+        "metadata": {
+            "source": "第一章 基礎概念與語法入門 - 1.3 文字與段落的呈現",
+            "note": "本題是段落與換行概念的變化題。正確答案是 B，因為 <br> 用於段落內部強制換行，而 <p> 是建立完整段落。"
+        }
+    },
+    {
+        "id": 261,
+        "chapter": "第一章",
+        "question": "若要在網頁文字中正確顯示 Tom & Jerry，其中 & 建議寫成哪個 HTML Entity？",
+        "options": {
+            "A": "&amp;",
+            "B": "&lt;",
+            "C": "&gt;",
+            "D": "&copy;"
+        },
+        "answer": "A",
+        "metadata": {
+            "source": "第一章 基礎概念與語法入門 - 1.4 特殊符號與 HTML Entities",
+            "note": "本題避開既有顯示 <br> 的題目，改考 & 的字元實體。正確答案是 C，因為 &amp; 用來表示 ampersand 符號。"
+        }
+    },
+    {
+        "id": 262,
+        "chapter": "第一章",
+        "question": "若要在頁面上顯示版權符號 ©，可使用哪個 HTML Entity？",
+        "options": {
+            "A": "&nbsp;",
+            "B": "&copy;",
+            "C": "&quot;",
+            "D": "&apos;"
+        },
+        "answer": "B",
+        "metadata": {
+            "source": "第一章 基礎概念與語法入門 - 1.4 特殊符號與 HTML Entities",
+            "note": "本題考常見特殊符號的實體寫法。正確答案是 A，因為 &copy; 會顯示版權符號 ©。"
+        }
+    },
+    {
+        "id": 263,
+        "chapter": "第一章",
+        "question": "<meta name=\"description\" content=\"...\"> 放在 <head> 中的主要用途是？",
+        "options": {
+            "A": "在頁面中新增主要標題",
+            "B": "強制所有文字換行",
+            "C": "提供搜尋引擎摘要或頁面描述資訊",
+            "D": "建立一個圖片按鈕"
+        },
+        "answer": "C",
+        "metadata": {
+            "source": "第一章 基礎概念與語法入門 - 1.2 HTML 文件的結構",
+            "note": "本題延伸 <head> 區塊內容，避開單純問 <meta charset>。正確答案是 A，因為 description 類型的 meta 資訊可提供頁面摘要給搜尋引擎參考。"
+        }
+    },
+    {
+        "id": 264,
+        "chapter": "第一章",
+        "question": "在 HTML 骨架中，<html lang=\"zh-Hant\"> 的 lang 屬性主要表達什麼？",
+        "options": {
+            "A": "檔案一定要放在台灣伺服器",
+            "B": "網頁只能顯示中文標點",
+            "C": "瀏覽器必須關閉 JavaScript",
+            "D": "文件主要語言是繁體中文"
+        },
+        "answer": "D",
+        "metadata": {
+            "source": "第一章 基礎概念與語法入門 - 1.2 HTML 文件的結構",
+            "note": "本題從章節範例延伸考 HTML 屬性的語意。正確答案是 A，因為 lang=\"zh-Hant\" 用來標示文件主要語言，有助於瀏覽器與輔助工具理解內容。"
+        }
+    },
+    {
+        "id": 265,
+        "chapter": "第一章",
+        "question": "在一篇短文中，若想插入一條水平分隔線來區分段落區塊，較適合使用哪個標籤？",
+        "options": {
+            "A": "<hr>",
+            "B": "<meta>",
+            "C": "<title>",
+            "D": "<html>"
+        },
+        "answer": "A",
+        "metadata": {
+            "source": "第一章 基礎概念與語法入門 - 1.3 文字與段落的呈現",
+            "note": "本題考短文排版練習中的水平分隔概念。正確答案是 A，因為 <hr> 可用來建立水平線，協助區隔內容段落或主題轉換。"
+        }
+    },
+    {
+        "id": 266,
+        "chapter": "第一章",
+        "question": "若希望文字中的空格不被瀏覽器一般換行處理，可使用哪個 HTML Entity？",
+        "options": {
+            "A": "&copy;",
+            "B": "&nbsp;",
+            "C": "&lt;",
+            "D": "&gt;"
+        },
+        "answer": "B",
+        "metadata": {
+            "source": "第一章 基礎概念與語法入門 - 1.4 特殊符號與 HTML Entities",
+            "note": "本題考特殊空白字元的使用。正確答案是 A，因為 &nbsp; 是不換行空格，可用於需要保留空白或避免斷行的情境。"
+        }
+    },
+    {
+        "id": 1,
+        "chapter": "第一章",
+        "question": "HTML 巢狀結構指的是什麼？",
+        "options": {
+            "A": "元素可以包在其他元素內形成層級",
+            "B": "所有標籤都只能平行排列",
+            "C": "只能用在表格中",
+            "D": "只能在 <head> 內使用"
+        },
+        "answer": "A",
+        "metadata": {
+            "source": "第一章 基礎概念與語法入門 - 1.1 認識 HTML 與網頁世界",
+            "note": "本題考「HTML 巢狀結構指的是什麼」的核心概念。正確答案是 B，因為 元素可以包在其他元素內形成層級 與題目所描述的用途與語意一致。"
+        }
+    },
+    {
+        "id": 2,
+        "chapter": "第一章",
+        "question": "下列哪個是「自閉合標籤」範例？",
+        "options": {
+            "A": "<p></p>",
+            "B": "<img src=\"cat.jpg\" alt=\"cat\" />",
+            "C": "<h1></h1>",
+            "D": "<div></div>"
+        },
+        "answer": "B",
+        "metadata": {
+            "source": "第一章 基礎概念與語法入門 - 1.1 認識 HTML 與網頁世界",
+            "note": "本題考圖片可及性與語意屬性。正確答案是 C，因為 <img src=\"cat.jpg\" alt=\"cat\" /> 能在圖片無法顯示時提供替代資訊，也有助螢幕閱讀器理解內容。"
+        }
+    },
+    {
+        "id": 3,
+        "chapter": "第一章",
+        "question": "HTML 是什麼的縮寫？",
+        "options": {
+            "A": "HyperText Markdown Language",
+            "B": "HighText Machine Language",
+            "C": "HyperText Markup Language",
+            "D": "Hyper Transfer Markup Link"
+        },
+        "answer": "C",
+        "metadata": {
+            "source": "第一章 基礎概念與語法入門 - 1.1 認識 HTML 與網頁世界",
+            "note": "本題考「HTML 是什麼的縮寫」的核心概念。正確答案是 B，因為 HyperText Markup Language 與題目所描述的用途與語意一致。"
+        }
+    },
+    {
+        "id": 4,
+        "chapter": "第一章",
+        "question": "HTML 代表什麼意思？",
+        "options": {
+            "A": "高階文字標記語言",
+            "B": "超連結與文字標記語言",
+            "C": "家用工具標記語言",
+            "D": "超文字標記語言"
+        },
+        "answer": "D",
+        "metadata": {
+            "source": "第一章 基礎概念與語法入門 - 1.1 認識 HTML 與網頁世界",
+            "note": "本題考「HTML 代表什麼意思」的核心概念。正確答案是 B，因為 超文字標記語言 與題目所描述的用途與語意一致。"
+        }
+    },
+    {
+        "id": 5,
+        "chapter": "第一章",
+        "question": "下列哪個敘述最符合書中對 HTML 的定位？",
+        "options": {
+            "A": "網頁內容結構與語意的標記語言",
+            "B": "後端資料庫語言",
+            "C": "專門做動畫的語言",
+            "D": "伺服器部署腳本語言"
+        },
+        "answer": "A",
+        "metadata": {
+            "source": "第一章 基礎概念與語法入門 - 1.1 認識 HTML 與網頁世界",
+            "note": "本題考語意化標籤的用途。正確答案是 B，因為 網頁內容結構與語意的標記語言 能正確表達該內容在文件中的語意角色。"
+        }
+    },
+    {
+        "id": 6,
+        "chapter": "第一章",
+        "question": "網頁最常見的萬國編碼為？",
+        "options": {
+            "A": "ASCII",
+            "B": "UTF-8",
+            "C": "Big5",
+            "D": "ISO"
+        },
+        "answer": "B",
+        "metadata": {
+            "source": "第一章 基礎概念與語法入門 - 1.2 HTML 文件的結構",
+            "note": "本題考「網頁最常見的萬國編碼為」的核心概念。正確答案是 B，因為 UTF-8 與題目所描述的用途與語意一致。"
+        }
+    },
+    {
+        "id": 7,
+        "chapter": "第一章",
+        "question": "下列何者是正確的 HTML5 文件宣告？",
+        "options": {
+            "A": "<!DOCTYPE HTML5>",
+            "B": "<doctype html>",
+            "C": "<!DOCTYPE html>",
+            "D": "<html>"
+        },
+        "answer": "C",
+        "metadata": {
+            "source": "第一章 基礎概念與語法入門 - 1.2 HTML 文件的結構",
+            "note": "本題考「下列何者是正確的 HTML5 文件宣告」的核心概念。正確答案是 A，因為 <!DOCTYPE html> 與題目所描述的用途與語意一致。"
+        }
+    },
+    {
+        "id": 8,
+        "chapter": "第一章",
+        "question": "<meta charset=\"UTF-8\"> 的用途是？",
+        "options": {
+            "A": "設定圖片壓縮格式",
+            "B": "啟用深色模式",
+            "C": "設定語音朗讀速度",
+            "D": "指定文字編碼避免亂碼"
+        },
+        "answer": "D",
+        "metadata": {
+            "source": "第一章 基礎概念與語法入門 - 1.2 HTML 文件的結構",
+            "note": "本題考 「<meta charset=\"UTF-8\"> 的用途是」的核心概念。正確答案是 B，因為 指定文字編碼避免亂碼 與題目所描述的用途與語意一致。"
+        }
+    },
+    {
+        "id": 9,
+        "chapter": "第一章",
+        "question": "<link rel=\"icon\"> 通常用來設定什麼？",
+        "options": {
+            "A": "網頁圖示 (Favicon)",
+            "B": "CSS 樣式表",
+            "C": "字體檔案",
+            "D": "JavaScript 檔案"
+        },
+        "answer": "A",
+        "metadata": {
+            "source": "第一章 基礎概念與語法入門 - 1.2 HTML 文件的結構",
+            "note": "本題考 「<link rel=\"icon\"> 通常用來設定什麼」的核心概念。正確答案是 B，因為 網頁圖示 (Favicon) 與題目所描述的用途與語意一致。"
+        }
+    },
+    {
+        "id": 10,
+        "chapter": "第一章",
+        "question": "<!DOCTYPE html> 的主要作用是？",
+        "options": {
+            "A": "宣告 JavaScript 版本",
+            "B": "告訴瀏覽器這是 HTML5 文件",
+            "C": "設定網頁字型",
+            "D": "指定網站網址"
+        },
+        "answer": "B",
+        "metadata": {
+            "source": "第一章 基礎概念與語法入門 - 1.2 HTML 文件的結構",
+            "note": "本題考 「<!DOCTYPE html> 的主要作用是」的核心概念。正確答案是 B，因為 告訴瀏覽器這是 HTML5 文件 與題目所描述的用途與語意一致。"
+        }
+    },
+    {
+        "id": 11,
+        "chapter": "第一章",
+        "question": "<body> 區塊主要放置什麼？",
+        "options": {
+            "A": "只放 SEO 關鍵字",
+            "B": "只放 JavaScript 檔案",
+            "C": "實際顯示在頁面上的內容",
+            "D": "只放資料庫連線設定"
+        },
+        "answer": "C",
+        "metadata": {
+            "source": "第一章 基礎概念與語法入門 - 1.2 HTML 文件的結構",
+            "note": "本題考 「<body> 區塊主要放置什麼」的核心概念。正確答案是 B，因為 實際顯示在頁面上的內容 與題目所描述的用途與語意一致。"
+        }
+    },
+    {
+        "id": 12,
+        "chapter": "第一章",
+        "question": "哪個區塊通常放置 <meta> 與 <title>？",
+        "options": {
+            "A": "<body>",
+            "B": "<footer>",
+            "C": "<main>",
+            "D": "<head>"
+        },
+        "answer": "D",
+        "metadata": {
+            "source": "第一章 基礎概念與語法入門 - 1.2 HTML 文件的結構",
+            "note": "本題考 「哪個區塊通常放置 <meta> 與 <title>」的核心概念。正確答案是 C，因為 <head> 與題目所描述的用途與語意一致。"
+        }
+    },
+    {
+        "id": 13,
+        "chapter": "第一章",
+        "question": "最大標題的標籤是？",
+        "options": {
+            "A": "<h1>",
+            "B": "<h6>",
+            "C": "<p>",
+            "D": "<title>"
+        },
+        "answer": "A",
+        "metadata": {
+            "source": "第一章 基礎概念與語法入門 - 1.3 文字與段落的呈現",
+            "note": "本題考「最大標題的標籤是」的核心概念。正確答案是 D，因為 <h1> 與題目所描述的用途與語意一致。"
+        }
+    },
+    {
+        "id": 14,
+        "chapter": "第一章",
+        "question": "書中建議一份文件的 <h1> 通常使用幾次？",
+        "options": {
+            "A": "無限制",
+            "B": "1 次",
+            "C": "0 次",
+            "D": "6 次"
+        },
+        "answer": "B",
+        "metadata": {
+            "source": "第一章 基礎概念與語法入門 - 1.3 文字與段落的呈現",
+            "note": "本題考 「書中建議一份文件的 <h1> 通常使用幾次」的核心概念。正確答案是 C，因為 1 次 與題目所描述的用途與語意一致。"
+        }
+    },
+    {
+        "id": 15,
+        "chapter": "第一章",
+        "question": "下列哪個標籤用來強調「內容的重要性或緊急性」？",
+        "options": {
+            "A": "<b>",
+            "B": "<i>",
+            "C": "<strong>",
+            "D": "<u>"
+        },
+        "answer": "C",
+        "metadata": {
+            "source": "第一章 基礎概念與語法入門 - 1.3 文字與段落的呈現",
+            "note": "本題考「下列哪個標籤用來強調「內容的重要性或緊急性」」的核心概念。正確答案是 B，因為 <strong> 與題目所描述的用途與語意一致。"
+        }
+    },
+    {
+        "id": 16,
+        "chapter": "第一章",
+        "question": "若要在畫面上顯示 <br> 文字本身，而不是被瀏覽器當成標籤解析，應使用哪個字元實體？",
+        "options": {
+            "A": "&gt;br&lt;",
+            "B": "&amp;br&amp;",
+            "C": "&quot;br&quot;",
+            "D": "&lt;br&gt;"
+        },
+        "answer": "D",
+        "metadata": {
+            "source": "第一章 基礎概念與語法入門 - 1.4 特殊符號與 HTML Entities",
+            "note": "本題考 「若要在畫面上顯示 <br> 文字本身，而不是被瀏覽器當成標籤解析，應使用哪個字元實體」的核心概念。正確答案是 B，因為 &lt;br&gt; 與題目所描述的用途與語意一致。"
+        }
+    },
+    {
+        "id": 121,
+        "chapter": "第一章",
+        "question": "HTML 文件中共分為幾個標題等級(Heading Levels)？",
+        "options": {
+            "A": "6 個",
+            "B": "3 個",
+            "C": "5 個",
+            "D": "7 個"
+        },
+        "answer": "A",
+        "metadata": {
+            "source": "第一章 基礎概念與語法入門 - 1.3 文字與段落的呈現",
+            "note": "本題考「HTML 文件中共分為幾個標題等級(Heading Levels)」的核心概念。正確答案是 C，因為 6 個 與題目所描述的用途與語意一致。"
+        }
+    },
+    {
+        "id": 18,
+        "chapter": "第二章",
+        "question": "若要讓連結在新分頁開啟，應使用哪個屬性值？",
+        "options": {
+            "A": "target=\"_self\"",
+            "B": "target=\"_blank\"",
+            "C": "rel=\"open\"",
+            "D": "window=\"new\""
+        },
+        "answer": "B",
+        "metadata": {
+            "source": "第二章 HTML的內容結構 - 2.1 超連結與清單結構",
+            "note": "本題考超連結/清單的正確標記。正確答案是 B，因為 target=\"_blank\" 與題目描述的連結或清單語意相符。"
+        }
+    },
+    {
+        "id": 19,
+        "chapter": "第二章",
+        "question": "若要建立一個有順序的清單，應該使用哪一個標籤？",
+        "options": {
+            "A": "<ul>",
+            "B": "<dl>",
+            "C": "<ol>",
+            "D": "<li>"
+        },
+        "answer": "C",
+        "metadata": {
+            "source": "第二章 HTML的內容結構 - 2.1 超連結與清單結構",
+            "note": "本題考超連結/清單的正確標記。正確答案是 C，因為 <ol> 與題目描述的連結或清單語意相符。"
+        }
+    },
+    {
+        "id": 20,
+        "chapter": "第二章",
+        "question": "<a> 標籤中必填且最重要的屬性是？",
+        "options": {
+            "A": "class",
+            "B": "id",
+            "C": "name",
+            "D": "href"
+        },
+        "answer": "D",
+        "metadata": {
+            "source": "第二章 HTML的內容結構 - 2.1 超連結與清單結構",
+            "note": "本題考超連結/清單的正確標記。正確答案是 C，因為 href 與題目描述的連結或清單語意相符。"
+        }
+    },
+    {
+        "id": 21,
+        "chapter": "第二章",
+        "question": "下列何者屬於描述清單（Definition List）組合？",
+        "options": {
+            "A": "<dl> + <dt> + <dd>",
+            "B": "<ul> + <li>",
+            "C": "<ol> + <li>",
+            "D": "<table> + <tr> + <td>"
+        },
+        "answer": "A",
+        "metadata": {
+            "source": "第二章 HTML的內容結構 - 2.1 超連結與清單結構",
+            "note": "本題考超連結/清單的正確標記。正確答案是 C，因為 <dl> + <dt> + <dd> 與題目描述的連結或清單語意相符。"
+        }
+    },
+    {
+        "id": 22,
+        "chapter": "第二章",
+        "question": "前往指定網頁的超連結標籤是？",
+        "options": {
+            "A": "<link>",
+            "B": "<a>",
+            "C": "<url>",
+            "D": "<href>"
+        },
+        "answer": "B",
+        "metadata": {
+            "source": "第二章 HTML的內容結構 - 2.1 超連結與清單結構",
+            "note": "本題考超連結/清單的正確標記。正確答案是 B，因為 <a> 與題目描述的連結或清單語意相符。"
+        }
+    },
+    {
+        "id": 23,
+        "chapter": "第二章",
+        "question": "錨點連結（同頁跳轉）通常使用哪種寫法？",
+        "options": {
+            "A": "href=\"/section-intro\"",
+            "B": "href=\"section-intro\"",
+            "C": "href=\"#section-intro\"",
+            "D": "href=\"@section-intro\""
+        },
+        "answer": "C",
+        "metadata": {
+            "source": "第二章 HTML的內容結構 - 2.1 超連結與清單結構",
+            "note": "本題考超連結/清單的正確標記。正確答案是 C，因為 href=\"#section-intro\" 與題目描述的連結或清單語意相符。"
+        }
+    },
+    {
+        "id": 24,
+        "chapter": "第二章",
+        "question": "清單內的每一項目使用什麼標籤包裹？",
+        "options": {
+            "A": "<ul>",
+            "B": "<a>",
+            "C": "<p>",
+            "D": "<li>"
+        },
+        "answer": "D",
+        "metadata": {
+            "source": "第二章 HTML的內容結構 - 2.1 超連結與清單結構",
+            "note": "本題考超連結/清單的正確標記。正確答案是 B，因為 <li> 與題目描述的連結或清單語意相符。"
+        }
+    },
+    {
+        "id": 25,
+        "chapter": "第二章",
+        "question": "你要做「購物清單」，項目順序不影響語意，且每個項目都可獨立增減。下列哪段結構最符合語意？",
+        "options": {
+            "A": "<ul><li>牛奶</li><li>麵包</li></ul>",
+            "B": "<ol><li>牛奶</li><li>麵包</li></ol>",
+            "C": "<dl><dt>牛奶</dt><dd>麵包</dd></dl>",
+            "D": "<table><tr><td>牛奶</td></tr><tr><td>麵包</td></tr></table>"
+        },
+        "answer": "A",
+        "metadata": {
+            "source": "第二章 HTML的內容結構 - 2.1 超連結與清單結構",
+            "note": "本題考超連結/清單的正確標記。正確答案是 B，因為 <ul><li>牛奶</li><li>麵包</li></ul> 與題目描述的連結或清單語意相符。"
+        }
+    },
+    {
+        "id": 26,
+        "chapter": "第二章",
+        "question": "在 HTML 連結中，mailto: 是用來做什麼的？",
+        "options": {
+            "A": "寄送表單資料",
+            "B": "建立電子郵件連結",
+            "C": "連結到郵件伺服器",
+            "D": "下載郵件"
+        },
+        "answer": "B",
+        "metadata": {
+            "source": "第二章 HTML的內容結構 - 2.1 超連結與清單結構",
+            "note": "本題考超連結/清單的正確標記。正確答案是 B，因為 建立電子郵件連結 與題目描述的連結或清單語意相符。"
+        }
+    },
+    {
+        "id": 27,
+        "chapter": "第二章",
+        "question": "<img> 標籤中，哪一個屬性用來設定圖片無法顯示時的替代文字？",
+        "options": {
+            "A": "src",
+            "B": "title",
+            "C": "alt",
+            "D": "href"
+        },
+        "answer": "C",
+        "metadata": {
+            "source": "第二章 HTML的內容結構 - 2.2 圖片與多媒體元素",
+            "note": "本題考圖片可及性與語意屬性。正確答案是 B，因為 alt 能在圖片無法顯示時提供替代資訊，也有助螢幕閱讀器理解內容。"
+        }
+    },
+    {
+        "id": 28,
+        "chapter": "第二章",
+        "question": "iframe 的 sandbox 屬性主要用於？",
+        "options": {
+            "A": "提升載入速度",
+            "B": "啟用所有功能",
+            "C": "讓背景變成沙色",
+            "D": "限制嵌入內容的權限 (如禁止執行腳本、表單提交)，提升安全性"
+        },
+        "answer": "D",
+        "metadata": {
+            "source": "第二章 HTML的內容結構 - 2.2 圖片與多媒體元素",
+            "note": "本題考 JavaScript 基礎語法與 DOM 操作。正確答案是 C，因為 限制嵌入內容的權限 (如禁止執行腳本、表單提交)，提升安全性 是題目情境下正確的語法或 API。"
+        }
+    },
+    {
+        "id": 29,
+        "chapter": "第二章",
+        "question": "下列哪種圖片格式支援透明背景？",
+        "options": {
+            "A": "PNG",
+            "B": "JPG",
+            "C": "BMP",
+            "D": "TXT"
+        },
+        "answer": "A",
+        "metadata": {
+            "source": "第二章 HTML的內容結構 - 2.2 圖片與多媒體元素",
+            "note": "本題考「下列哪種圖片格式支援透明背景」的核心概念。正確答案是 B，因為 PNG 與題目所描述的用途與語意一致。"
+        }
+    },
+    {
+        "id": 30,
+        "chapter": "第二章",
+        "question": "網頁嵌入聲音的標籤是？",
+        "options": {
+            "A": "<video>",
+            "B": "<audio>",
+            "C": "<sound>",
+            "D": "<music>"
+        },
+        "answer": "B",
+        "metadata": {
+            "source": "第二章 HTML的內容結構 - 2.2 圖片與多媒體元素",
+            "note": "本題考「網頁嵌入聲音的標籤是」的核心概念。正確答案是 B，因為 <audio> 與題目所描述的用途與語意一致。"
+        }
+    },
+    {
+        "id": 31,
+        "chapter": "第二章",
+        "question": "在 <video> 標籤中放置多個 <source> 的原因是？",
+        "options": {
+            "A": "同時播放多個影片",
+            "B": "備份影片",
+            "C": "提供不同格式 (如 mp4, webm) 讓瀏覽器選擇支援的格式播放",
+            "D": "增加畫質"
+        },
+        "answer": "C",
+        "metadata": {
+            "source": "第二章 HTML的內容結構 - 2.2 圖片與多媒體元素",
+            "note": "本題考 「在 <video> 標籤中放置多個 <source> 的原因是」的核心概念。正確答案是 B，因為 提供不同格式 (如 mp4, webm) 讓瀏覽器選擇支援的格式播放 與題目所描述的用途與語意一致。"
+        }
+    },
+    {
+        "id": 32,
+        "chapter": "第二章",
+        "question": "SVG 圖片的最大優勢是？",
+        "options": {
+            "A": "檔案最小",
+            "B": "點陣圖，色彩豐富",
+            "C": "瀏覽器預設不支援，需外掛",
+            "D": "向量圖，無論放大多少倍都不會失真 (模糊)"
+        },
+        "answer": "D",
+        "metadata": {
+            "source": "第二章 HTML的內容結構 - 2.2 圖片與多媒體元素",
+            "note": "本題考「SVG 圖片的最大優勢是」的核心概念。正確答案是 C，因為 向量圖，無論放大多少倍都不會失真 (模糊) 與題目所描述的用途與語意一致。"
+        }
+    },
+    {
+        "id": 33,
+        "chapter": "第二章",
+        "question": "顯示圖片的 HTML 標籤是？",
+        "options": {
+            "A": "<img>",
+            "B": "<picture>",
+            "C": "<image>",
+            "D": "<figure>"
+        },
+        "answer": "A",
+        "metadata": {
+            "source": "第二章 HTML的內容結構 - 2.2 圖片與多媒體元素",
+            "note": "本題考圖片可及性與語意屬性。正確答案是 A，因為 <img> 能在圖片無法顯示時提供替代資訊，也有助螢幕閱讀器理解內容。"
+        }
+    },
+    {
+        "id": 34,
+        "chapter": "第二章",
+        "question": "<picture> 標籤的主要功能為何？",
+        "options": {
+            "A": "加上相框特效",
+            "B": "用於響應式圖片，可根據不同螢幕尺寸或支援度動態載入不同的 <source>",
+            "C": "直接編輯圖片色彩",
+            "D": "把圖片轉為影片"
+        },
+        "answer": "B",
+        "metadata": {
+            "source": "第二章 HTML的內容結構 - 2.2 圖片與多媒體元素",
+            "note": "本題考 「<picture> 標籤的主要功能為何」的核心概念。正確答案是 B，因為 用於響應式圖片，可根據不同螢幕尺寸或支援度動態載入不同的 <source> 與題目所描述的用途與語意一致。"
+        }
+    },
+    {
+        "id": 35,
+        "chapter": "第二章",
+        "question": "下列哪個寫法同時兼顧「圖片來源指定」與「載入失敗時替代描述」？",
+        "options": {
+            "A": "<img href=\"avatar.jpg\" title=\"使用者頭像\">",
+            "B": "<img source=\"avatar.jpg\" desc=\"使用者頭像\">",
+            "C": "<img src=\"avatar.jpg\" alt=\"使用者頭像\">",
+            "D": "<img file=\"avatar.jpg\" fallback=\"使用者頭像\">"
+        },
+        "answer": "C",
+        "metadata": {
+            "source": "第二章 HTML的內容結構 - 2.2 圖片與多媒體元素",
+            "note": "本題考圖片可及性與語意屬性。正確答案是 B，因為 <img src=\"avatar.jpg\" alt=\"使用者頭像\"> 能在圖片無法顯示時提供替代資訊，也有助螢幕閱讀器理解內容。"
+        }
+    },
+    {
+        "id": 36,
+        "chapter": "第二章",
+        "question": "以下哪一個屬性用來設定圖片資源的來源路徑？",
+        "options": {
+            "A": "link",
+            "B": "file",
+            "C": "path",
+            "D": "src"
+        },
+        "answer": "D",
+        "metadata": {
+            "source": "第二章 HTML的內容結構 - 2.2 圖片與多媒體元素",
+            "note": "本題考「以下哪一個屬性用來設定圖片資源的來源路徑」的核心概念。正確答案是 A，因為 src 與題目所描述的用途與語意一致。"
+        }
+    },
+    {
+        "id": 37,
+        "chapter": "第二章",
+        "question": "嵌入 YouTube 網頁內容的常見標籤？",
+        "options": {
+            "A": "<iframe>",
+            "B": "<embed>",
+            "C": "<video>",
+            "D": "<plugin>"
+        },
+        "answer": "A",
+        "metadata": {
+            "source": "第二章 HTML的內容結構 - 2.2 圖片與多媒體元素",
+            "note": "本題考 JavaScript 基礎語法與 DOM 操作。正確答案是 B，因為 <iframe> 是題目情境下正確的語法或 API。"
+        }
+    },
+    {
+        "id": 38,
+        "chapter": "第二章",
+        "question": "產品卡片中的圖片若載入失敗，且你希望螢幕閱讀器仍能理解內容，最關鍵的作法是？",
+        "options": {
+            "A": "只加 width 與 height",
+            "B": "正確撰寫 alt 替代文字",
+            "C": "用 title 取代所有描述",
+            "D": "把圖片包在 <b> 裡"
+        },
+        "answer": "B",
+        "metadata": {
+            "source": "第二章 HTML的內容結構 - 2.2 圖片與多媒體元素",
+            "note": "本題考圖片可及性與語意屬性。正確答案是 C，因為 正確撰寫 alt 替代文字 能在圖片無法顯示時提供替代資訊，也有助螢幕閱讀器理解內容。"
+        }
+    },
+    {
+        "id": 39,
+        "chapter": "第二章",
+        "question": "<audio> 標籤若要顯示播放控制面板，應加上什麼屬性？",
+        "options": {
+            "A": "display",
+            "B": "show",
+            "C": "controls",
+            "D": "play"
+        },
+        "answer": "C",
+        "metadata": {
+            "source": "第二章 HTML的內容結構 - 2.2 圖片與多媒體元素",
+            "note": "本題考 「<audio> 標籤若要顯示播放控制面板，應加上什麼屬性」的核心概念。正確答案是 C，因為 controls 與題目所描述的用途與語意一致。"
+        }
+    },
+    {
+        "id": 41,
+        "chapter": "第二章",
+        "question": "表格中的資料格標籤是？",
+        "options": {
+            "A": "<td>",
+            "B": "<data>",
+            "C": "<tr>",
+            "D": "<th>"
+        },
+        "answer": "A",
+        "metadata": {
+            "source": "第二章 HTML的內容結構 - 2.3 表格與資料展示",
+            "note": "本題考表格語意結構。正確答案是 B，因為 <td> 符合表頭、資料格或表格結構在 HTML 中的標準用法。"
+        }
+    },
+    {
+        "id": 42,
+        "chapter": "第二章",
+        "question": "表頭標籤 <th> 常用在哪？",
+        "options": {
+            "A": "最後一列",
+            "B": "表格標題",
+            "C": "表格外框",
+            "D": "合併欄位"
+        },
+        "answer": "B",
+        "metadata": {
+            "source": "第二章 HTML的內容結構 - 2.3 表格與資料展示",
+            "note": "本題考表格語意結構。正確答案是 C，因為 表格標題 符合表頭、資料格或表格結構在 HTML 中的標準用法。"
+        }
+    },
+    {
+        "id": 43,
+        "chapter": "第二章",
+        "question": "表頭有加粗顯示特性的標籤是？",
+        "options": {
+            "A": "<td>",
+            "B": "<tr>",
+            "C": "<th>",
+            "D": "<thead>"
+        },
+        "answer": "C",
+        "metadata": {
+            "source": "第二章 HTML的內容結構 - 2.3 表格與資料展示",
+            "note": "本題考表格語意結構。正確答案是 C，因為 <th> 用於標題儲存格，瀏覽器通常會以粗體呈現其預設樣式。"
+        }
+    },
+    {
+        "id": 44,
+        "chapter": "第二章",
+        "question": "課表表格第一列要放「星期一、星期二...」這類欄位標題，應使用哪個標籤最恰當？",
+        "options": {
+            "A": "<td>",
+            "B": "<tr>",
+            "C": "<caption>",
+            "D": "<th>"
+        },
+        "answer": "D",
+        "metadata": {
+            "source": "第二章 HTML的內容結構 - 2.3 表格與資料展示",
+            "note": "本題考表格語意結構。正確答案是 C，因為 <th> 符合表頭、資料格或表格結構在 HTML 中的標準用法。"
+        }
+    },
+    {
+        "id": 45,
+        "chapter": "第二章",
+        "question": "在同一個 <tr> 內，若要放「實際資料值」（例如分數 95），應使用哪個標籤？",
+        "options": {
+            "A": "<td>",
+            "B": "<th>",
+            "C": "<caption>",
+            "D": "<thead>"
+        },
+        "answer": "A",
+        "metadata": {
+            "source": "第二章 HTML的內容結構 - 2.3 表格與資料展示",
+            "note": "本題考表格語意結構。正確答案是 B，因為 <td> 符合表頭、資料格或表格結構在 HTML 中的標準用法。"
+        }
+    },
+    {
+        "id": 46,
+        "chapter": "第二章",
+        "question": "想要合併表格中的「兩行 (Rows)」，要設定哪一個屬性？",
+        "options": {
+            "A": "colspan=\"2\"",
+            "B": "rowspan=\"2\"",
+            "C": "merge=\"2\"",
+            "D": "cross=\"2\""
+        },
+        "answer": "B",
+        "metadata": {
+            "source": "第二章 HTML的內容結構 - 2.3 表格與資料展示",
+            "note": "本題考表格語意結構。正確答案是 B，因為 rowspan=\"2\" 符合表頭、資料格或表格結構在 HTML 中的標準用法。"
+        }
+    },
+    {
+        "id": 47,
+        "chapter": "第二章",
+        "question": "宣告表格中的一列（row）的標籤是？",
+        "options": {
+            "A": "<td>",
+            "B": "<th>",
+            "C": "<tr>",
+            "D": "<table>"
+        },
+        "answer": "C",
+        "metadata": {
+            "source": "第二章 HTML的內容結構 - 2.3 表格與資料展示",
+            "note": "本題考「宣告表格中的一列（row）的標籤是」的核心概念。正確答案是 C，因為 <tr> 與題目所描述的用途與語意一致。"
+        }
+    },
+    {
+        "id": 48,
+        "chapter": "第二章",
+        "question": "若要為表格 (<table>) 加上整體標題，應使用哪個標籤？",
+        "options": {
+            "A": "<title>",
+            "B": "<th>",
+            "C": "<header>",
+            "D": "<caption>"
+        },
+        "answer": "D",
+        "metadata": {
+            "source": "第二章 HTML的內容結構 - 2.3 表格與資料展示",
+            "note": "本題考表格語意結構。正確答案是 B，因為 <caption> 符合表頭、資料格或表格結構在 HTML 中的標準用法。"
+        }
+    },
+    {
+        "id": 49,
+        "chapter": "第二章",
+        "question": "在 <th> 中使用 scope=\"col\" 的目的是？",
+        "options": {
+            "A": "清楚告知螢幕閱讀器該標題是對應哪一「列」或哪一「行」，提升無障礙體驗",
+            "B": "用於合併欄位",
+            "C": "設定欄位寬度",
+            "D": "設定背景顏色"
+        },
+        "answer": "A",
+        "metadata": {
+            "source": "第二章 HTML的內容結構 - 2.3 表格與資料展示",
+            "note": "本題考表格可及性。正確答案是 B，因為 scope=\\\"col\\\" 可標示此表頭對應欄，讓輔助技術更正確解讀資料關係。"
+        }
+    },
+    {
+        "id": 50,
+        "chapter": "第二章",
+        "question": "表格標籤屬性 border=\"1\" 的作用主要是？",
+        "options": {
+            "A": "改變表格寬度",
+            "B": "為表格顯示基礎的邊框",
+            "C": "設定背景色",
+            "D": "取代 CSS 樣式"
+        },
+        "answer": "B",
+        "metadata": {
+            "source": "第二章 HTML的內容結構 - 2.3 表格與資料展示",
+            "note": "本題考 「表格標籤屬性 border=\"1\" 的作用主要是」的核心概念。正確答案是 B，因為 為表格顯示基礎的邊框 與題目所描述的用途與語意一致。"
+        }
+    },
+    {
+        "id": 51,
+        "chapter": "第二章",
+        "question": "下拉選單 <select> 中使用的選項標籤為？",
+        "options": {
+            "A": "<item>",
+            "B": "<choice>",
+            "C": "<option>",
+            "D": "<li>"
+        },
+        "answer": "C",
+        "metadata": {
+            "source": "第二章 HTML的內容結構 - 2.4 表單與使用者輸入",
+            "note": "本題考 「下拉選單 <select> 中使用的選項標籤為」的核心概念。正確答案是 A，因為 <option> 與題目所描述的用途與語意一致。"
+        }
+    },
+    {
+        "id": 52,
+        "chapter": "第二章",
+        "question": "把表單提交後的資料傳送到指定的 URL，該屬性為何？",
+        "options": {
+            "A": "method",
+            "B": "transfer",
+            "C": "href",
+            "D": "action"
+        },
+        "answer": "D",
+        "metadata": {
+            "source": "第二章 HTML的內容結構 - 2.4 表單與使用者輸入",
+            "note": "本題考表單欄位與屬性用途。正確答案是 B，因為 action 正是此情境下對應的表單設定方式。"
+        }
+    },
+    {
+        "id": 53,
+        "chapter": "第二章",
+        "question": "HTML 中的 <form> 標籤主要用途是？",
+        "options": {
+            "A": "收集使用者輸入的資料並傳送至伺服器",
+            "B": "繪製表格",
+            "C": "設定網頁結構",
+            "D": "顯示影片"
+        },
+        "answer": "A",
+        "metadata": {
+            "source": "第二章 HTML的內容結構 - 2.4 表單與使用者輸入",
+            "note": "本題考表單欄位與屬性用途。正確答案是 B，因為 收集使用者輸入的資料並傳送至伺服器 正是此情境下對應的表單設定方式。"
+        }
+    },
+    {
+        "id": 54,
+        "chapter": "第二章",
+        "question": "<datalist> 標籤的主要用途是？",
+        "options": {
+            "A": "建立下拉選單，但不允許使用者自行輸入",
+            "B": "為 <input> 欄位提供預設建議清單，使用者仍可自行輸入",
+            "C": "顯示資料庫內容",
+            "D": "建立表格資料"
+        },
+        "answer": "B",
+        "metadata": {
+            "source": "第二章 HTML的內容結構 - 2.4 表單與使用者輸入",
+            "note": "本題考表單欄位與屬性用途。正確答案是 B，因為 為 <input> 欄位提供預設建議清單，使用者仍可自行輸入 正是此情境下對應的表單設定方式。"
+        }
+    },
+    {
+        "id": 55,
+        "chapter": "第二章",
+        "question": "提升可及性時，表單欄位應優先搭配哪個標籤？",
+        "options": {
+            "A": "<legend>",
+            "B": "<caption>",
+            "C": "<label>",
+            "D": "<code>"
+        },
+        "answer": "C",
+        "metadata": {
+            "source": "第二章 HTML的內容結構 - 2.4 表單與使用者輸入",
+            "note": "本題考表單欄位與屬性用途。正確答案是 B，因為 <label> 正是此情境下對應的表單設定方式。"
+        }
+    },
+    {
+        "id": 56,
+        "chapter": "第二章",
+        "question": "若你需要在表單中夾帶「不顯示給使用者、但送出時要一併傳送」的欄位，應使用哪種輸入類型？",
+        "options": {
+            "A": "<input type=\"text\">",
+            "B": "<input type=\"readonly\">",
+            "C": "<input type=\"placeholder\">",
+            "D": "<input type=\"hidden\">"
+        },
+        "answer": "D",
+        "metadata": {
+            "source": "第二章 HTML的內容結構 - 2.4 表單與使用者輸入",
+            "note": "本題考表單欄位與屬性用途。正確答案是 B，因為 <input type=\"hidden\"> 正是此情境下對應的表單設定方式。"
+        }
+    },
+    {
+        "id": 57,
+        "chapter": "第二章",
+        "question": "<label> 標籤的 for 屬性，通常對應到輸入控制項的哪一個屬性？",
+        "options": {
+            "A": "id",
+            "B": "class",
+            "C": "name",
+            "D": "value"
+        },
+        "answer": "A",
+        "metadata": {
+            "source": "第二章 HTML的內容結構 - 2.4 表單與使用者輸入",
+            "note": "本題考表單欄位與屬性用途。正確答案是 C，因為 id 正是此情境下對應的表單設定方式。"
+        }
+    },
+    {
+        "id": 58,
+        "chapter": "第二章",
+        "question": "如果希望密碼輸入時不顯示明文，應該將 <input> 的 type 設為何值？",
+        "options": {
+            "A": "hidden",
+            "B": "password",
+            "C": "text",
+            "D": "secret"
+        },
+        "answer": "B",
+        "metadata": {
+            "source": "第二章 HTML的內容結構 - 2.4 表單與使用者輸入",
+            "note": "本題考表單欄位與屬性用途。正確答案是 D，因為 password 正是此情境下對應的表單設定方式。"
+        }
+    },
+    {
+        "id": 59,
+        "chapter": "第二章",
+        "question": "表單送出按鈕的推薦寫法？",
+        "options": {
+            "A": "<button type=\"text\">",
+            "B": "<button type=\"send\">",
+            "C": "<button type=\"submit\">",
+            "D": "<input button=\"true\">"
+        },
+        "answer": "C",
+        "metadata": {
+            "source": "第二章 HTML的內容結構 - 2.4 表單與使用者輸入",
+            "note": "本題考表單欄位與屬性用途。正確答案是 A，因為 <button type=\"submit\"> 正是此情境下對應的表單設定方式。"
+        }
+    },
+    {
+        "id": 60,
+        "chapter": "第二章",
+        "question": "不顯示在畫面上但是能夾帶表單資料的 <input> 是？",
+        "options": {
+            "A": "false",
+            "B": "none",
+            "C": "secret",
+            "D": "hidden"
+        },
+        "answer": "D",
+        "metadata": {
+            "source": "第二章 HTML的內容結構 - 2.4 表單與使用者輸入",
+            "note": "本題考表單欄位與屬性用途。正確答案是 C，因為 hidden 正是此情境下對應的表單設定方式。"
+        }
+    },
+    {
+        "id": 61,
+        "chapter": "第二章",
+        "question": "<textarea> 標籤的主要用途是？",
+        "options": {
+            "A": "輸入多行文字",
+            "B": "顯示單行文字",
+            "C": "顯示程式碼片段",
+            "D": "建立文字編輯器軟體"
+        },
+        "answer": "A",
+        "metadata": {
+            "source": "第二章 HTML的內容結構 - 2.4 表單與使用者輸入",
+            "note": "本題考 「<textarea> 標籤的主要用途是」的核心概念。正確答案是 B，因為 輸入多行文字 與題目所描述的用途與語意一致。"
+        }
+    },
+    {
+        "id": 62,
+        "chapter": "第二章",
+        "question": "在 HTML5 中，REQUIRED 屬性用在 INPUT 標籤上的作用是？",
+        "options": {
+            "A": "設為唯讀",
+            "B": "設為必填欄位",
+            "C": "自動完成",
+            "D": "隱藏欄位"
+        },
+        "answer": "B",
+        "metadata": {
+            "source": "第二章 HTML的內容結構 - 2.4 表單與使用者輸入",
+            "note": "本題考表單欄位與屬性用途。正確答案是 B，因為 設為必填欄位 正是此情境下對應的表單設定方式。"
+        }
+    },
+    {
+        "id": 63,
+        "chapter": "第二章",
+        "question": "表單輸入框內預設顯示的提示文字（使用者輸入時會消失），應使用哪個屬性設定？",
+        "options": {
+            "A": "value",
+            "B": "title",
+            "C": "placeholder",
+            "D": "label"
+        },
+        "answer": "C",
+        "metadata": {
+            "source": "第二章 HTML的內容結構 - 2.4 表單與使用者輸入",
+            "note": "本題考表單欄位與屬性用途。正確答案是 C，因為 placeholder 正是此情境下對應的表單設定方式。"
+        }
+    },
+    {
+        "id": 64,
+        "chapter": "第二章",
+        "question": "若要讓欄位成為必填，應加上哪個屬性？",
+        "options": {
+            "A": "must",
+            "B": "necessary",
+            "C": "validate",
+            "D": "required"
+        },
+        "answer": "D",
+        "metadata": {
+            "source": "第二章 HTML的內容結構 - 2.4 表單與使用者輸入",
+            "note": "本題考表單欄位與屬性用途。正確答案是 B，因為 required 正是此情境下對應的表單設定方式。"
+        }
+    },
+    {
+        "id": 65,
+        "chapter": "第二章",
+        "question": "你希望輸入框在尚未輸入時顯示「請輸入 Email」，一旦使用者輸入內容就消失。該用哪個屬性？",
+        "options": {
+            "A": "placeholder",
+            "B": "value",
+            "C": "label",
+            "D": "default"
+        },
+        "answer": "A",
+        "metadata": {
+            "source": "第二章 HTML的內容結構 - 2.4 表單與使用者輸入",
+            "note": "本題考表單欄位與屬性用途。正確答案是 C，因為 placeholder 正是此情境下對應的表單設定方式。"
+        }
+    },
+    {
+        "id": 66,
+        "chapter": "第二章",
+        "question": "若表單要送往伺服器指定路徑，且不綁定特定示範網址，應設定哪個屬性？",
+        "options": {
+            "A": "method",
+            "B": "action",
+            "C": "target",
+            "D": "autocomplete"
+        },
+        "answer": "B",
+        "metadata": {
+            "source": "第二章 HTML的內容結構 - 2.4 表單與使用者輸入",
+            "note": "本題考表單屬性分工。正確答案是 A，因為 action 用來指定送出目的地，而 method 則決定送出方式。"
+        }
+    },
+    {
+        "id": 67,
+        "chapter": "第二章",
+        "question": "若要建立一個多選框供使用者勾選，應使用哪種 type？",
+        "options": {
+            "A": "radio",
+            "B": "select",
+            "C": "checkbox",
+            "D": "switch"
+        },
+        "answer": "C",
+        "metadata": {
+            "source": "第二章 HTML的內容結構 - 2.4 表單與使用者輸入",
+            "note": "本題考表單欄位與屬性用途。正確答案是 C，因為 checkbox 正是此情境下對應的表單設定方式。"
+        }
+    },
+    {
+        "id": 68,
+        "chapter": "第二章",
+        "question": "下列何者常被用來將多個單選按鈕 (Radio Button) 歸為同一個群組，讓使用者只能選其一？",
+        "options": {
+            "A": "給予相同的 id",
+            "B": "給予相同的 class",
+            "C": "放在同一個 div 裡",
+            "D": "給予相同的 name"
+        },
+        "answer": "D",
+        "metadata": {
+            "source": "第二章 HTML的內容結構 - 2.4 表單與使用者輸入",
+            "note": "本題考表單欄位與屬性用途。正確答案是 C，因為 給予相同的 name 正是此情境下對應的表單設定方式。"
+        }
+    },
+    {
+        "id": 70,
+        "chapter": "第二章",
+        "question": "讓使用者在群組中僅能單選的 input type？",
+        "options": {
+            "A": "checkbox",
+            "B": "radio",
+            "C": "select",
+            "D": "text"
+        },
+        "answer": "B",
+        "metadata": {
+            "source": "第二章 HTML的內容結構 - 2.4 表單與使用者輸入",
+            "note": "本題考表單欄位與屬性用途。正確答案是 C，因為 radio 正是此情境下對應的表單設定方式。"
+        }
+    },
+    {
+        "id": 71,
+        "chapter": "第二章",
+        "question": "產生一個單行文字輸入框的寫法？",
+        "options": {
+            "A": "<textarea>",
+            "B": "<input type=\"password\">",
+            "C": "<input type=\"text\">",
+            "D": "<button>"
+        },
+        "answer": "C",
+        "metadata": {
+            "source": "第二章 HTML的內容結構 - 2.4 表單與使用者輸入",
+            "note": "本題考表單欄位與屬性用途。正確答案是 D，因為 <input type=\"text\"> 正是此情境下對應的表單設定方式。"
+        }
+    },
+    {
+        "id": 72,
+        "chapter": "第二章",
+        "question": "<fieldset> 標籤通常會搭配哪個標籤來設定該區塊的標題？",
+        "options": {
+            "A": "<caption>",
+            "B": "<header>",
+            "C": "<title>",
+            "D": "<legend>"
+        },
+        "answer": "D",
+        "metadata": {
+            "source": "第二章 HTML的內容結構 - 2.4 表單與使用者輸入",
+            "note": "本題考 「<fieldset> 標籤通常會搭配哪個標籤來設定該區塊的標題」的核心概念。正確答案是 C，因為 <legend> 與題目所描述的用途與語意一致。"
+        }
+    },
+    {
+        "id": 73,
+        "chapter": "第二章",
+        "question": "為了讓點擊「Email」文字時能自動聚焦到輸入框，下列哪組設定正確？",
+        "options": {
+            "A": "<label for=\"email\"> 搭配 <input id=\"email\">",
+            "B": "<label id=\"email\"> 搭配 <input for=\"email\">",
+            "C": "<label name=\"email\"> 搭配 <input class=\"email\">",
+            "D": "<label target=\"email\"> 搭配 <input src=\"email\">"
+        },
+        "answer": "A",
+        "metadata": {
+            "source": "第二章 HTML的內容結構 - 2.4 表單與使用者輸入",
+            "note": "本題考表單欄位與屬性用途。正確答案是 A，因為 <label for=\"email\"> 搭配 <input id=\"email\"> 正是此情境下對應的表單設定方式。"
+        }
+    },
+    {
+        "id": 75,
+        "chapter": "第二章",
+        "question": "哪個標籤最常作為區塊級通用容器？",
+        "options": {
+            "A": "<span>",
+            "B": "<em>",
+            "C": "<div>",
+            "D": "<small>"
+        },
+        "answer": "C",
+        "metadata": {
+            "source": "第二章 HTML的內容結構 - 2.5 通用容器與與版面概念",
+            "note": "本題考「哪個標籤最常作為區塊級通用容器」的核心概念。正確答案是 B，因為 <div> 與題目所描述的用途與語意一致。"
+        }
+    },
+    {
+        "id": 76,
+        "chapter": "第二章",
+        "question": "下列哪一種標籤預設是行內元素 (Inline Element)？",
+        "options": {
+            "A": "<div>",
+            "B": "<p>",
+            "C": "<section>",
+            "D": "<span>"
+        },
+        "answer": "D",
+        "metadata": {
+            "source": "第二章 HTML的內容結構 - 2.5 通用容器與與版面概念",
+            "note": "本題考「下列哪一種標籤預設是行內元素 (Inline Element)」的核心概念。正確答案是 C，因為 <span> 與題目所描述的用途與語意一致。"
+        }
+    },
+    {
+        "id": 77,
+        "chapter": "第二章",
+        "question": "下列哪一組標籤最符合「行內元素」的典型組合？",
+        "options": {
+            "A": "<span>、<a>",
+            "B": "<div>、<p>",
+            "C": "<section>、<article>",
+            "D": "<table>、<tr>"
+        },
+        "answer": "A",
+        "metadata": {
+            "source": "第二章 HTML的內容結構 - 2.5 通用容器與與版面概念",
+            "note": "本題考元素顯示型態。正確答案是 C，<span> 與 <a> 都是典型行內元素，預設不會獨佔整行。"
+        }
+    },
+    {
+        "id": 78,
+        "chapter": "第二章",
+        "question": "設定 tabindex=\"-1\" 的效果是？",
+        "options": {
+            "A": "該元素成為 Tab 鍵順序的第一個",
+            "B": "該元素可以透過 JS focus() 聚焦，但不會被 Tab 鍵選中",
+            "C": "該元素永遠無法被聚焦",
+            "D": "該元素自動隱藏"
+        },
+        "answer": "B",
+        "metadata": {
+            "source": "第二章 HTML的內容結構 - 2.4 表單與使用者輸入",
+            "note": "本題考 「設定 tabindex=\"-1\" 的效果是」的核心概念。正確答案是 C，因為 該元素可以透過 JS focus() 聚焦，但不會被 Tab 鍵選中 與題目所描述的用途與語意一致。"
+        }
+    },
+    {
+        "id": 79,
+        "chapter": "第三章",
+        "question": "在 HTML 中，若要引用一段較長的文字（如名言或書摘），應使用哪個標籤？",
+        "options": {
+            "A": "<q>",
+            "B": "<cite>",
+            "C": "<blockquote>",
+            "D": "<abbr>"
+        },
+        "answer": "C",
+        "metadata": {
+            "source": "第三章 語意化與進階應用 - 3.1 HTML5 語意標籤與結構化思維",
+            "note": "本題考語意化標籤的用途。正確答案是 B，因為 <blockquote> 能正確表達該內容在文件中的語意角色。"
+        }
+    },
+    {
+        "id": 80,
+        "chapter": "第三章",
+        "question": "下列哪個標籤適合標示縮寫，並可透過 title 屬性提供完整名稱？",
+        "options": {
+            "A": "<cite>",
+            "B": "<q>",
+            "C": "<mark>",
+            "D": "<abbr>"
+        },
+        "answer": "D",
+        "metadata": {
+            "source": "第三章 語意化與進階應用 - 3.1 HTML5 語意標籤與結構化思維",
+            "note": "本題考語意化標籤的用途。正確答案是 C，因為 <abbr> 能正確表達該內容在文件中的語意角色。"
+        }
+    },
+    {
+        "id": 81,
+        "chapter": "第三章",
+        "question": "<abbr title=\"...\"></abbr> 中 title 屬性的作用是？",
+        "options": {
+            "A": "提供縮寫的完整說明",
+            "B": "設定字體顏色",
+            "C": "建立下載連結",
+            "D": "控制段落行高"
+        },
+        "answer": "A",
+        "metadata": {
+            "source": "第三章 語意化與進階應用 - 3.1 HTML5 語意標籤與結構化思維",
+            "note": "本題考 「<abbr title=\"...\"></abbr> 中 title 屬性的作用是」的核心概念。正確答案是 B，因為 提供縮寫的完整說明 與題目所描述的用途與語意一致。"
+        }
+    },
+    {
+        "id": 82,
+        "chapter": "第三章",
+        "question": "若要在圖片下方加入圖說，較合適的語意結構是？",
+        "options": {
+            "A": "<img> + <p>",
+            "B": "<figure> + <figcaption>",
+            "C": "<div> + <span>",
+            "D": "<section> + <h6>"
+        },
+        "answer": "B",
+        "metadata": {
+            "source": "第三章 語意化與進階應用 - 3.1 HTML5 語意標籤與結構化思維",
+            "note": "本題考表格語意結構。正確答案是 B，因為 <figure> + <figcaption> 符合表頭、資料格或表格結構在 HTML 中的標準用法。"
+        }
+    },
+    {
+        "id": 83,
+        "chapter": "第三章",
+        "question": "<article> 標籤適合用來包裹何種內容？",
+        "options": {
+            "A": "版權聲明",
+            "B": "側邊欄",
+            "C": "具有獨立意義的文章或內容區塊",
+            "D": "網頁的背景"
+        },
+        "answer": "C",
+        "metadata": {
+            "source": "第三章 語意化與進階應用 - 3.1 HTML5 語意標籤與結構化思維",
+            "note": "本題考語意化標籤的用途。正確答案是 B，因為 具有獨立意義的文章或內容區塊 能正確表達該內容在文件中的語意角色。"
+        }
+    },
+    {
+        "id": 84,
+        "chapter": "第三章",
+        "question": "標示網頁頂端頁首區塊的標籤是？",
+        "options": {
+            "A": "<footer>",
+            "B": "<aside>",
+            "C": "<section>",
+            "D": "<header>"
+        },
+        "answer": "D",
+        "metadata": {
+            "source": "第三章 語意化與進階應用 - 3.1 HTML5 語意標籤與結構化思維",
+            "note": "本題考語意化標籤的用途。正確答案是 C，因為 <header> 能正確表達該內容在文件中的語意角色。"
+        }
+    },
+    {
+        "id": 85,
+        "chapter": "第三章",
+        "question": "若要標示一段「被螢光筆畫記」的重點文字，應使用哪個語意標籤？",
+        "options": {
+            "A": "<mark>",
+            "B": "<b>",
+            "C": "<em>",
+            "D": "<span>"
+        },
+        "answer": "A",
+        "metadata": {
+            "source": "第三章 語意化與進階應用 - 3.1 HTML5 語意標籤與結構化思維",
+            "note": "本題考語意化標籤的用途。正確答案是 C，因為 <mark> 能正確表達該內容在文件中的語意角色。"
+        }
+    },
+    {
+        "id": 86,
+        "chapter": "第三章",
+        "question": "為了表示文件中的修訂紀錄，刪除的文字用 <del>，新增的文字應用？",
+        "options": {
+            "A": "<add>",
+            "B": "<ins>",
+            "C": "<new>",
+            "D": "<plus>"
+        },
+        "answer": "B",
+        "metadata": {
+            "source": "第三章 語意化與進階應用 - 3.1 HTML5 語意標籤與結構化思維",
+            "note": "本題考 「為了表示文件中的修訂紀錄，刪除的文字用 <del>，新增的文字應用」的核心概念。正確答案是 C，因為 <ins> 與題目所描述的用途與語意一致。"
+        }
+    },
+    {
+        "id": 87,
+        "chapter": "第三章",
+        "question": "若引用了一段長篇文字 (區塊引用)，應使用？",
+        "options": {
+            "A": "<q>",
+            "B": "<cite>",
+            "C": "<blockquote>",
+            "D": "<quote>"
+        },
+        "answer": "C",
+        "metadata": {
+            "source": "第三章 語意化與進階應用 - 3.1 HTML5 語意標籤與結構化思維",
+            "note": "本題考語意化標籤的用途。正確答案是 B，因為 <blockquote> 能正確表達該內容在文件中的語意角色。"
+        }
+    },
+    {
+        "id": 88,
+        "chapter": "第三章",
+        "question": "<address> 標籤的主要用途是？",
+        "options": {
+            "A": "顯示任何地址",
+            "B": "顯示地圖",
+            "C": "顯示 IP 位址",
+            "D": "專指該份文件或文章「作者/聯絡人」的聯絡資訊"
+        },
+        "answer": "D",
+        "metadata": {
+            "source": "第三章 語意化與進階應用 - 3.1 HTML5 語意標籤與結構化思維",
+            "note": "本題考 「<address> 標籤的主要用途是」的核心概念。正確答案是 B，因為 專指該份文件或文章「作者/聯絡人」的聯絡資訊 與題目所描述的用途與語意一致。"
+        }
+    },
+    {
+        "id": 89,
+        "chapter": "第三章",
+        "question": "在 HTML5 語意化標籤中，哪一個通常用於表示頁面或區塊的頁尾區域？",
+        "options": {
+            "A": "<footer>",
+            "B": "<header>",
+            "C": "<nav>",
+            "D": "<aside>"
+        },
+        "answer": "A",
+        "metadata": {
+            "source": "第三章 語意化與進階應用 - 3.1 HTML5 語意標籤與結構化思維",
+            "note": "本題考語意化標籤的用途。正確答案是 A，因為 <footer> 能正確表達該內容在文件中的語意角色。"
+        }
+    },
+    {
+        "id": 90,
+        "chapter": "第三章",
+        "question": "若內容可以獨立轉載、單獨分享，較適合用哪個標籤？",
+        "options": {
+            "A": "<section>",
+            "B": "<article>",
+            "C": "<span>",
+            "D": "<small>"
+        },
+        "answer": "B",
+        "metadata": {
+            "source": "第三章 語意化與進階應用 - 3.1 HTML5 語意標籤與結構化思維",
+            "note": "本題考語意化標籤的用途。正確答案是 B，因為 <article> 能正確表達該內容在文件中的語意角色。"
+        }
+    },
+    {
+        "id": 91,
+        "chapter": "第三章",
+        "question": "<mark> 標籤主要用途是？",
+        "options": {
+            "A": "表示最重要語意（取代 <strong>）",
+            "B": "表示已刪除文字",
+            "C": "突出顯示需要注意或相關內容",
+            "D": "宣告程式碼區塊"
+        },
+        "answer": "C",
+        "metadata": {
+            "source": "第三章 語意化與進階應用 - 3.1 HTML5 語意標籤與結構化思維",
+            "note": "本題考語意化標籤的用途。正確答案是 C，因為 突出顯示需要注意或相關內容 能正確表達該內容在文件中的語意角色。"
+        }
+    },
+    {
+        "id": 92,
+        "chapter": "第三章",
+        "question": "<footer> 標籤最適合放置什麼資訊？",
+        "options": {
+            "A": "主導覽列",
+            "B": "主要內容段落",
+            "C": "表單",
+            "D": "版權與聯絡資訊"
+        },
+        "answer": "D",
+        "metadata": {
+            "source": "第三章 語意化與進階應用 - 3.1 HTML5 語意標籤與結構化思維",
+            "note": "本題考語意化標籤的用途。正確答案是 C，因為 版權與聯絡資訊 能正確表達該內容在文件中的語意角色。"
+        }
+    },
+    {
+        "id": 93,
+        "chapter": "第三章",
+        "question": "使用語意化標籤的好處，不包含下列哪一項？",
+        "options": {
+            "A": "自動幫網頁加上漂亮的配色表",
+            "B": "提升螢幕閱讀器的無障礙體驗",
+            "C": "幫助開發者理解代碼結構",
+            "D": "提升 SEO 排名"
+        },
+        "answer": "A",
+        "metadata": {
+            "source": "第三章 語意化與進階應用 - 3.1 HTML5 語意標籤與結構化思維",
+            "note": "本題考語意化標籤的用途。正確答案是 B，因為 自動幫網頁加上漂亮的配色表 能正確表達該內容在文件中的語意角色。"
+        }
+    },
+    {
+        "id": 94,
+        "chapter": "第三章",
+        "question": "為了良好語意與 SEO，網頁的頁首導覽列通常使用什麼標籤？",
+        "options": {
+            "A": "<top> 和 <menu>",
+            "B": "<header> 和 <nav>",
+            "C": "<div> 和 <ul>",
+            "D": "<section> 和 <a>"
+        },
+        "answer": "B",
+        "metadata": {
+            "source": "第三章 語意化與進階應用 - 3.1 HTML5 語意標籤與結構化思維",
+            "note": "本題考語意化標籤的用途。正確答案是 A，因為 <header> 和 <nav> 能正確表達該內容在文件中的語意角色。"
+        }
+    },
+    {
+        "id": 95,
+        "chapter": "第三章",
+        "question": "<aside> 標籤常用於什麼情境？",
+        "options": {
+            "A": "強調文字",
+            "B": "替換換行符號",
+            "C": "定義主要文章的側邊欄或補充資訊",
+            "D": "內嵌其他網頁"
+        },
+        "answer": "C",
+        "metadata": {
+            "source": "第三章 語意化與進階應用 - 3.1 HTML5 語意標籤與結構化思維",
+            "note": "本題考語意化標籤的用途。正確答案是 B，因為 定義主要文章的側邊欄或補充資訊 能正確表達該內容在文件中的語意角色。"
+        }
+    },
+    {
+        "id": 96,
+        "chapter": "第三章",
+        "question": "標示腳註與版權區域常用的語意標籤是？",
+        "options": {
+            "A": "<bottom>",
+            "B": "<end>",
+            "C": "<nav>",
+            "D": "<footer>"
+        },
+        "answer": "D",
+        "metadata": {
+            "source": "第三章 語意化與進階應用 - 3.1 HTML5 語意標籤與結構化思維",
+            "note": "本題考語意化標籤的用途。正確答案是 A，因為 <footer> 能正確表達該內容在文件中的語意角色。"
+        }
+    },
+    {
+        "id": 97,
+        "chapter": "第三章",
+        "question": "語意化 HTML 的核心概念是？",
+        "options": {
+            "A": "用能表達內容意義的標籤",
+            "B": "只用 <div> 加上 class 命名",
+            "C": "移除所有標籤只留文字",
+            "D": "只在 CSS 中寫語意"
+        },
+        "answer": "A",
+        "metadata": {
+            "source": "第三章 語意化與進階應用 - 3.1 HTML5 語意標籤與結構化思維",
+            "note": "本題考語意化標籤的用途。正確答案是 B，因為 用能表達內容意義的標籤 能正確表達該內容在文件中的語意角色。"
+        }
+    },
+    {
+        "id": 98,
+        "chapter": "第三章",
+        "question": "<time> 標籤的 datetime 屬性主要提供什麼價值？",
+        "options": {
+            "A": "讓字體自動放大",
+            "B": "提供機器可讀的日期時間格式",
+            "C": "自動換算時區顏色",
+            "D": "取代 CSS 動畫"
+        },
+        "answer": "B",
+        "metadata": {
+            "source": "第三章 語意化與進階應用 - 3.1 HTML5 語意標籤與結構化思維",
+            "note": "本題考語意化標籤的用途。正確答案是 B，因為 提供機器可讀的日期時間格式 能正確表達該內容在文件中的語意角色。"
+        }
+    },
+    {
+        "id": 99,
+        "chapter": "第三章",
+        "question": "標示網頁主要導覽列的標籤是？",
+        "options": {
+            "A": "<header>",
+            "B": "<main>",
+            "C": "<nav>",
+            "D": "<links>"
+        },
+        "answer": "C",
+        "metadata": {
+            "source": "第三章 語意化與進階應用 - 3.1 HTML5 語意標籤與結構化思維",
+            "note": "本題考「標示網頁主要導覽列的標籤是」的核心概念。正確答案是 A，因為 <nav> 與題目所描述的用途與語意一致。"
+        }
+    },
+    {
+        "id": 100,
+        "chapter": "第三章",
+        "question": "在語意化頁面中，通常哪個標籤代表主要內容區，且全頁建議唯一？",
+        "options": {
+            "A": "<section>",
+            "B": "<article>",
+            "C": "<aside>",
+            "D": "<main>"
+        },
+        "answer": "D",
+        "metadata": {
+            "source": "第三章 語意化與進階應用 - 3.1 HTML5 語意標籤與結構化思維",
+            "note": "本題考語意化標籤的用途。正確答案是 C，因為 <main> 能正確表達該內容在文件中的語意角色。"
+        }
+    },
+    {
+        "id": 101,
+        "chapter": "第三章",
+        "question": "<img> 標籤中對無障礙與 SEO 最重要的屬性是？",
+        "options": {
+            "A": "alt",
+            "B": "style",
+            "C": "name",
+            "D": "download"
+        },
+        "answer": "A",
+        "metadata": {
+            "source": "第三章 語意化與進階應用 - 3.2 無障礙與 HTML 可及性設計",
+            "note": "本題考圖片可及性與語意屬性。正確答案是 B，因為 alt 能在圖片無法顯示時提供替代資訊，也有助螢幕閱讀器理解內容。"
+        }
+    },
+    {
+        "id": 102,
+        "chapter": "第三章",
+        "question": "<img> 的哪個屬性可讓螢幕閱讀器理解圖片內容？",
+        "options": {
+            "A": "src",
+            "B": "alt",
+            "C": "class",
+            "D": "width"
+        },
+        "answer": "B",
+        "metadata": {
+            "source": "第三章 語意化與進階應用 - 3.2 無障礙與 HTML 可及性設計",
+            "note": "本題考圖片可及性與語意屬性。正確答案是 C，因為 alt 能在圖片無法顯示時提供替代資訊，也有助螢幕閱讀器理解內容。"
+        }
+    },
+    {
+        "id": 103,
+        "chapter": "第三章",
+        "question": "下列何者是無障礙網頁設計 (Web Accessibility) 的重要實踐？",
+        "options": {
+            "A": "所有圖示都必須是紅色的",
+            "B": "隱藏所有的 <input> 標籤",
+            "C": "替 <img> 提供準確的 alt 屬性",
+            "D": "禁止使用 CSS"
+        },
+        "answer": "C",
+        "metadata": {
+            "source": "第三章 語意化與進階應用 - 3.2 無障礙與 HTML 可及性設計",
+            "note": "本題考圖片可及性與語意屬性。正確答案是 B，因為 替 <img> 提供準確的 alt 屬性 能在圖片無法顯示時提供替代資訊，也有助螢幕閱讀器理解內容。"
+        }
+    },
+    {
+        "id": 104,
+        "chapter": "第三章",
+        "question": "在 SEO 友善的結構中，標題層級建議如何使用？",
+        "options": {
+            "A": "只用 <h6>",
+            "B": "隨機跳級，視覺好看即可",
+            "C": "用 <div> 取代所有標題",
+            "D": "依內容層次有序使用 h1 到 h6"
+        },
+        "answer": "D",
+        "metadata": {
+            "source": "第三章 語意化與進階應用 - 3.3 文件品質與 SEO 實務(HTML 層級)",
+            "note": "本題考「在 SEO 友善的結構中，標題層級建議如何使用」的核心概念。正確答案是 C，因為 依內容層次有序使用 h1 到 h6 與題目所描述的用途與語意一致。"
+        }
+    },
+    {
+        "id": 105,
+        "chapter": "第三章",
+        "question": "SEO 代表什麼？",
+        "options": {
+            "A": "Search Engine Optimization",
+            "B": "Site Expansion Output",
+            "C": "Server Environment Organization",
+            "D": "Standard Elements of Objects"
+        },
+        "answer": "A",
+        "metadata": {
+            "source": "第三章 語意化與進階應用 - 3.3 文件品質與 SEO 實務(HTML 層級)",
+            "note": "本題考「SEO 代表什麼」的核心概念。正確答案是 A，因為 Search Engine Optimization (搜尋引擎最佳化) 與題目所描述的用途與語意一致。"
+        }
+    },
+    {
+        "id": 106,
+        "chapter": "第三章",
+        "question": "開發網頁時，常常使用 <meta name=\"viewport\">，其主要目的是？",
+        "options": {
+            "A": "限制網頁載入速度",
+            "B": "讓網站在手機上正常顯示,Google 優先索引行動版網站",
+            "C": "加速資料庫連線",
+            "D": "防止別人複製網址"
+        },
+        "answer": "B",
+        "metadata": {
+            "source": "第三章 語意化與進階應用 - 3.3 文件品質與 SEO 實務(HTML 層級)",
+            "note": "本題考「開發網頁時，常常使用 <meta name=\"viewport\">，其主要目的是」的核心概念。正確答案是 B，因為 讓網頁可以在行動裝置上獲得正確的縮放及排版 與題目所描述的用途與語意一致。"
+        }
+    },
+    {
+        "id": 107,
+        "chapter": "第三章",
+        "question": "<title> 與 <meta name=\"description\"> 對哪個面向最直接？",
+        "options": {
+            "A": "只影響本機儲存空間",
+            "B": "只影響音訊播放速度",
+            "C": "影響 SEO 與搜尋結果呈現",
+            "D": "只影響 Flex 排版"
+        },
+        "answer": "C",
+        "metadata": {
+            "source": "第三章 語意化與進階應用 - 3.3 文件品質與 SEO 實務(HTML 層級)",
+            "note": "本題考 「<title> 與 <meta name=\"description\"> 對哪個面向最直接」的核心概念。正確答案是 B，因為 影響 SEO 與搜尋結果呈現 與題目所描述的用途與語意一致。"
+        }
+    },
+    {
+        "id": 108,
+        "chapter": "第三章",
+        "question": "<s> 與 <del> 的差異，何者正確？",
+        "options": {
+            "A": "兩者完全相同，只是寫法不同",
+            "B": "<s> 表示已刪除內容；<del> 表示不再準確內容",
+            "C": "<del> 只用在 CSS，<s> 只用在 JavaScript",
+            "D": "<s> 表示不再準確但保留的內容；<del> 表示文件修訂中被刪除的內容"
+        },
+        "answer": "D",
+        "metadata": {
+            "source": "第三章 語意化與進階應用 - 3.1 HTML5 語意標籤與結構化思維",
+            "note": "本題考 <s> 與 <del> 的語意差異。正確答案是 C，因為 <s> 偏向內容已不再準確，而 <del> 是修訂語意中的刪除。"
+        }
+    },
+    {
+        "id": 109,
+        "chapter": "第三章",
+        "question": "<small> 標籤最適合用在哪種內容？",
+        "options": {
+            "A": "法律聲明、版權資訊、附註等次要內容",
+            "B": "主要標題",
+            "C": "影片播放控制列",
+            "D": "導覽列主選單"
+        },
+        "answer": "A",
+        "metadata": {
+            "source": "第三章 語意化與進階應用 - 3.1 HTML5 語意標籤與結構化思維",
+            "note": "本題考 <small> 的語意用途。正確答案是 B，因為 <small> 常用於附屬細則與次要資訊。"
+        }
+    },
+    {
+        "id": 110,
+        "chapter": "第三章",
+        "question": "<wbr> 的主要作用是？",
+        "options": {
+            "A": "強制每個位置都換行",
+            "B": "提供建議換行點，空間不足時瀏覽器可在該處斷行",
+            "C": "插入可見的破折號",
+            "D": "移除所有空白字元"
+        },
+        "answer": "B",
+        "metadata": {
+            "source": "第三章 語意化與進階應用 - 3.1 HTML5 語意標籤與結構化思維",
+            "note": "本題考 <wbr> 的實際行為。正確答案是 C，因為它不會顯示內容，只提供可換行的機會點。"
+        }
+    },
+    {
+        "id": 111,
+        "chapter": "第三章",
+        "question": "關於 <details> 與 <summary>，何者正確？",
+        "options": {
+            "A": "<summary> 必須放在 <details> 之外",
+            "B": "<details> 只能放圖片不能放文字",
+            "C": "<details> 可建立可展開內容，<summary> 作為可點擊標題",
+            "D": "兩者只在表格中可用"
+        },
+        "answer": "C",
+        "metadata": {
+            "source": "第三章 語意化與進階應用 - 3.1 HTML5 語意標籤與結構化思維",
+            "note": "本題考可展開內容的語意標記。正確答案是 B，符合 <details> 和 <summary> 的標準用法。"
+        }
+    },
+    {
+        "id": 112,
+        "chapter": "第三章",
+        "question": "<data value=\"100\">NT$ 100</data> 中 value 的語意是？",
+        "options": {
+            "A": "設定文字顏色",
+            "B": "控制字型大小",
+            "C": "設定連結目標",
+            "D": "提供機器可讀的原始值"
+        },
+        "answer": "D",
+        "metadata": {
+            "source": "第三章 語意化與進階應用 - 3.1 HTML5 語意標籤與結構化思維",
+            "note": "本題考 <data> 的用途。正確答案是 A，因為 <data> 用來包裝人類可讀文字與機器可讀值。"
+        }
+    },
+    {
+        "id": 113,
+        "chapter": "第三章",
+        "question": "<data> 與 data-* 自訂屬性的差異是？",
+        "options": {
+            "A": "<data> 是語意標籤；data-* 是自訂資料屬性",
+            "B": "兩者都只能用在 <img>",
+            "C": "兩者都只能存數字",
+            "D": "data-* 不能被 JavaScript 讀取"
+        },
+        "answer": "A",
+        "metadata": {
+            "source": "第三章 語意化與進階應用 - 3.1 HTML5 語意標籤與結構化思維",
+            "note": "本題考 <data> 與 data-* 的定位差異。正確答案是 A，分別對應語意標記與自訂資料儲存。"
+        }
+    },
+    {
+        "id": 114,
+        "chapter": "第三章",
+        "question": "下列何者屬於 WCAG 的四大原則之一？",
+        "options": {
+            "A": "Beautiful",
+            "B": "Perceivable（可感知）",
+            "C": "Compressible",
+            "D": "Monetizable"
+        },
+        "answer": "B",
+        "metadata": {
+            "source": "第三章 語意化與進階應用 - 3.2 無障礙與 HTML 可及性設計",
+            "note": "本題考 WCAG 核心概念。正確答案是 B，WCAG 四原則為可感知、可操作、可理解與穩健性。"
+        }
+    },
+    {
+        "id": 115,
+        "chapter": "第三章",
+        "question": "為了鍵盤可及性，對焦樣式（focus outline）最佳實務是？",
+        "options": {
+            "A": "一律 outline: none",
+            "B": "只有滑鼠操作才需要焦點樣式",
+            "C": "可移除，但需提供清晰替代焦點提示",
+            "D": "只在手機版保留焦點"
+        },
+        "answer": "C",
+        "metadata": {
+            "source": "第三章 語意化與進階應用 - 3.2 無障礙與 HTML 可及性設計",
+            "note": "本題考鍵盤導航可及性。正確答案是 B，焦點可視性是操作可及性的關鍵。"
+        }
+    },
+    {
+        "id": 116,
+        "chapter": "第三章",
+        "question": "aria-describedby 最常用來做什麼？",
+        "options": {
+            "A": "設定元素背景圖",
+            "B": "讓元素自動提交表單",
+            "C": "讓元素變成唯讀",
+            "D": "指定元素的額外說明文字"
+        },
+        "answer": "D",
+        "metadata": {
+            "source": "第三章 語意化與進階應用 - 3.2 無障礙與 HTML 可及性設計",
+            "note": "本題考 ARIA 屬性用途。正確答案是 B，aria-describedby 會關聯補充說明給輔助技術。"
+        }
+    },
+    {
+        "id": 117,
+        "chapter": "第三章",
+        "question": "Open Graph 標籤主要用於哪個情境？",
+        "options": {
+            "A": "優化社群平台分享預覽內容",
+            "B": "設定資料庫索引",
+            "C": "壓縮圖片檔案大小",
+            "D": "產生 CSS 動畫"
+        },
+        "answer": "A",
+        "metadata": {
+            "source": "第三章 語意化與進階應用 - 3.3 文件品質與 SEO 實務(HTML 層級)",
+            "note": "本題考 Open Graph 的目的。正確答案是 A，OG 主要控制分享時的標題、描述與縮圖。"
+        }
+    },
+    {
+        "id": 118,
+        "chapter": "第三章",
+        "question": "下列何者最可能出現在 robots.txt？",
+        "options": {
+            "A": "<meta name=\"description\" content=\"...\">",
+            "B": "User-agent: *",
+            "C": "@media (max-width: 768px)",
+            "D": "SELECT * FROM pages"
+        },
+        "answer": "B",
+        "metadata": {
+            "source": "第三章 語意化與進階應用 - 3.3 文件品質與 SEO 實務(HTML 層級)",
+            "note": "本題考 SEO 基礎檔案。正確答案是 B，robots.txt 透過 User-agent 等規則控制爬蟲行為。"
+        }
+    },
+    {
+        "id": 119,
+        "chapter": "第三章",
+        "question": "sitemap.xml 的主要用途是？",
+        "options": {
+            "A": "儲存使用者密碼",
+            "B": "記錄 CSS 變數",
+            "C": "列出網站重要頁面，幫助搜尋引擎索引",
+            "D": "提供 JavaScript 套件清單"
+        },
+        "answer": "C",
+        "metadata": {
+            "source": "第三章 語意化與進階應用 - 3.3 文件品質與 SEO 實務(HTML 層級)",
+            "note": "本題考 SEO 索引機制。正確答案是 B，網站地圖能協助搜尋引擎更完整掌握站內頁面。"
+        }
+    },
+    {
+        "id": 120,
+        "chapter": "第四章",
+        "question": "<script src=\"app.js\"></script> 這行程式碼通常建議放在哪裡？",
+        "options": {
+            "A": "<head> 裡面",
+            "B": "任何地方都可以",
+            "C": "<html> 標籤之後",
+            "D": "<body> 結尾標籤之前"
+        },
+        "answer": "D",
+        "metadata": {
+            "source": "第四章 CSS與JavaScript整合入門 - 4.1 HTML 與前端整合入門",
+            "note": "教材說明 JavaScript 放在 <body> 結尾，可確保 DOM 已載入完成，程式碼才能正確操作元素。"
+        }
+    },
+    {
+        "id": 122,
+        "chapter": "第四章",
+        "question": "在 HTML 中引入外部 CSS 檔案，應使用哪個標籤？",
+        "options": {
+            "A": "<style src=\"style.css\">",
+            "B": "<link rel=\"stylesheet\" href=\"style.css\">",
+            "C": "<css link=\"style.css\">",
+            "D": "<script src=\"style.css\">"
+        },
+        "answer": "B",
+        "metadata": {
+            "source": "第四章 CSS與JavaScript整合入門 - 4.1 HTML 與前端整合入門",
+            "note": "教材在外部樣式表範例中使用 <link rel=\"stylesheet\" href=\"style.css\"> 引入 CSS 檔案。"
+        }
+    },
+    {
+        "id": 123,
+        "chapter": "第四章",
+        "question": "下列哪個標籤是用來定義 CSS 的「內部樣式表」？",
+        "options": {
+            "A": "<script>",
+            "B": "<link>",
+            "C": "<style>",
+            "D": "<css>"
+        },
+        "answer": "C",
+        "metadata": {
+            "source": "第四章 CSS與JavaScript整合入門 - 4.1 HTML 與前端整合入門",
+            "note": "教材說明內部樣式表是在 <head> 區塊內使用 <style> 標籤。"
+        }
+    },
+    {
+        "id": 124,
+        "chapter": "第四章",
+        "question": "以下哪一個 CSS 選擇器可以選取 HTML 中的 id=\"header\" 元素？",
+        "options": {
+            "A": ".header",
+            "B": "*header",
+            "C": "@header",
+            "D": "#header"
+        },
+        "answer": "D",
+        "metadata": {
+            "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
+            "note": "教材在 ID 選擇器範例中使用 #header 選取特定 ID 的元素。"
+        }
+    },
+    {
+        "id": 126,
+        "chapter": "第四章",
+        "question": "width: 50% 通常是指？",
+        "options": {
+            "A": "100px",
+            "B": "父元素的一半寬",
+            "C": "填滿整個螢幕寬度",
+            "D": "圖片原始寬度"
+        },
+        "answer": "B",
+        "metadata": {
+            "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
+            "note": "教材說明 % 主要相對於父元素大小，並以 width: 50% 表示父元素的一半寬。"
+        }
+    },
+    {
+        "id": 128,
+        "chapter": "第四章",
+        "question": "將標籤內文字置中對齊的 CSS 屬性是？",
+        "options": {
+            "A": "align-items: center",
+            "B": "vertical-align: middle",
+            "C": "center: true",
+            "D": "text-align: center"
+        },
+        "answer": "D",
+        "metadata": {
+            "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
+            "note": "教材在文字排版屬性中說明 text-align 可設定文字對齊方式，center 代表置中。"
+        }
+    },
+    {
+        "id": 129,
+        "chapter": "第四章",
+        "question": "下列哪個單位是相對單位，適合用於響應式字體大小？",
+        "options": {
+            "A": "rem",
+            "B": "px",
+            "C": "pt",
+            "D": "cm"
+        },
+        "answer": "A",
+        "metadata": {
+            "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
+            "note": "教材建議字體大小使用 rem，讓文字能隨瀏覽器預設字體設定縮放。"
+        }
+    },
+    {
+        "id": 130,
+        "chapter": "第四章",
+        "question": "若要讓 <a> 超連結變成按鈕的樣子，通常需要設定？",
+        "options": {
+            "A": "display: table",
+            "B": "display: inline-block 或 block，搭配 padding 與背景色",
+            "C": "text-decoration: underline",
+            "D": "list-style: none"
+        },
+        "answer": "B",
+        "metadata": {
+            "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
+            "note": "教材提醒若要讓 <a> 連結變成有寬高的大按鈕，可設定 display: inline-block 或 display: block。"
+        }
+    },
+    {
+        "id": 131,
+        "chapter": "第四章",
+        "question": "當我們寫 font-family: Arial, sans-serif; 時，sans-serif 的作用是？",
+        "options": {
+            "A": "指定特定字體名稱",
+            "B": "強制設定為襯線體",
+            "C": "當 Arial 無法顯示時的通用後備字體 (無襯線體)",
+            "D": "設定字體顏色"
+        },
+        "answer": "C",
+        "metadata": {
+            "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
+            "note": "教材說明 font-family 會依序尋找可用字體，Arial 找不到時會使用系統無襯線字體。"
+        }
+    },
+    {
+        "id": 132,
+        "chapter": "第四章",
+        "question": "內容與外框間的內部距離 CSS 屬性是？",
+        "options": {
+            "A": "margin",
+            "B": "border",
+            "C": "height",
+            "D": "padding"
+        },
+        "answer": "D",
+        "metadata": {
+            "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
+            "note": "教材說明 Padding 是內容與邊框之間的距離。"
+        }
+    },
+    {
+        "id": 133,
+        "chapter": "第四章",
+        "question": "Flexbox 的 display: flex; 預設方向為何？",
+        "options": {
+            "A": "水平",
+            "B": "垂直",
+            "C": "重疊",
+            "D": "對角"
+        },
+        "answer": "A",
+        "metadata": {
+            "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
+            "note": "教材說明 flex-direction: row 是預設值，主軸為橫向，項目從左到右排列。"
+        }
+    },
+    {
+        "id": 136,
+        "chapter": "第四章",
+        "question": "改變字體顏色的 CSS 屬性為？",
+        "options": {
+            "A": "text-color",
+            "B": "font-color",
+            "C": "text",
+            "D": "color"
+        },
+        "answer": "D",
+        "metadata": {
+            "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
+            "note": "教材在文字排版範例中使用 color 設定文字顏色。"
+        }
+    },
+    {
+        "id": 138,
+        "chapter": "第四章",
+        "question": "建立 HTML 文件時，CSS 樣式表最好放在？",
+        "options": {
+            "A": "<body> 尾端",
+            "B": "<head> 區塊內",
+            "C": "<footer> 內",
+            "D": "隨意"
+        },
+        "answer": "B",
+        "metadata": {
+            "source": "第四章 CSS與JavaScript整合入門 - 4.1 HTML 與前端整合入門",
+            "note": "教材說明 CSS 放在 <head>，可確保網頁解析時已經有樣式。"
+        }
+    },
+    {
+        "id": 139,
+        "chapter": "第四章",
+        "question": "CSS 設定背景顏色的屬性是？",
+        "options": {
+            "A": "color",
+            "B": "font",
+            "C": "background-color",
+            "D": "border"
+        },
+        "answer": "C",
+        "metadata": {
+            "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
+            "note": "教材在背景處理範例中使用 background-color 設定背景顏色。"
+        }
+    },
+    {
+        "id": 140,
+        "chapter": "第四章",
+        "question": "讓 Flexbox 內容自動換行的屬性設定為？",
+        "options": {
+            "A": "overflow: auto",
+            "B": "block: true",
+            "C": "wrap: auto",
+            "D": "flex-wrap: wrap"
+        },
+        "answer": "D",
+        "metadata": {
+            "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
+            "note": "教材說明 flex-wrap: wrap 會讓項目在空間不足時自動換到下一行。"
+        }
+    },
+    {
+        "id": 141,
+        "chapter": "第四章",
+        "question": "CSS 中 box-sizing: border-box 的主要作用是？",
+        "options": {
+            "A": "讓 Padding 和 Border 包含在設定的 Width 內",
+            "B": "增加邊框厚度",
+            "C": "讓 Margin 包含在 Width 內",
+            "D": "取消邊框樣式"
+        },
+        "answer": "A",
+        "metadata": {
+            "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
+            "note": "教材說明 border-box 會讓 padding 和 border 被包在 width 裡，不會撐大盒子。"
+        }
+    },
+    {
+        "id": 142,
+        "chapter": "第四章",
+        "question": "在 Flexbox 中，若要將排列方向改為「由上而下」，應設定？",
+        "options": {
+            "A": "flex-direction: row",
+            "B": "flex-direction: column",
+            "C": "align-items: center",
+            "D": "display: grid"
+        },
+        "answer": "B",
+        "metadata": {
+            "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
+            "note": "教材說明 flex-direction: column 會讓主軸改為直向，項目從上到下排列。"
+        }
+    },
+    {
+        "id": 143,
+        "chapter": "第四章",
+        "question": "若只想改變背景圖在容器中的對齊位置（例如置中），應優先使用哪個屬性？",
+        "options": {
+            "A": "background-size",
+            "B": "background-repeat",
+            "C": "background-position",
+            "D": "background-clip"
+        },
+        "answer": "C",
+        "metadata": {
+            "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
+            "note": "教材說明 background-position 可設定背景圖片的位置，center 代表圖片置中。"
+        }
+    },
+    {
+        "id": 145,
+        "chapter": "第四章",
+        "question": "下列哪個 CSS 屬性是用來設定「外距」？",
+        "options": {
+            "A": "margin",
+            "B": "padding",
+            "C": "border",
+            "D": "spacing"
+        },
+        "answer": "A",
+        "metadata": {
+            "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
+            "note": "教材在盒模型中說明 Margin 是盒子與外部的距離。"
+        }
+    },
+    {
+        "id": 146,
+        "chapter": "第四章",
+        "question": "想要讓行內元素可以設定寬高，應將 display 設定為？",
+        "options": {
+            "A": "block",
+            "B": "inline-block",
+            "C": "flex",
+            "D": "grid"
+        },
+        "answer": "B",
+        "metadata": {
+            "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
+            "note": "教材說明 inline-block 能和其他元素排在同一行，同時也能設定寬高。"
+        }
+    },
+    {
+        "id": 149,
+        "chapter": "第四章",
+        "question": "若要讓文字變粗，應設定哪個屬性？",
+        "options": {
+            "A": "font-weight",
+            "B": "line-height",
+            "C": "letter-spacing",
+            "D": "text-indent"
+        },
+        "answer": "A",
+        "metadata": {
+            "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
+            "note": "教材說明 font-weight 用來設定文字粗細，常見值包含 bold 與 normal。"
+        }
+    },
+    {
+        "id": 150,
+        "chapter": "第四章",
+        "question": "關於 CSS 盒模型（Box Model），由內而外的正確順序是？",
+        "options": {
+            "A": "Content → Border → Padding → Margin",
+            "B": "Content → Padding → Border → Margin",
+            "C": "Margin → Border → Padding → Content",
+            "D": "Padding → Content → Border → Margin"
+        },
+        "answer": "B",
+        "metadata": {
+            "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
+            "note": "教材說明盒模型由內而外依序為 Content、Padding、Border、Margin。"
+        }
+    },
+    {
+        "id": 153,
+        "chapter": "第四章",
+        "question": "在 CSS 中，哪一個屬性用來設定文字的字體？",
+        "options": {
+            "A": "font-family",
+            "B": "font-size",
+            "C": "font-weight",
+            "D": "text-align"
+        },
+        "answer": "A",
+        "metadata": {
+            "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
+            "note": "教材在文字排版範例中使用 font-family 設定字體。"
+        }
+    },
+    {
+        "id": 155,
+        "chapter": "第四章",
+        "question": "在 Flex 排版中，要讓項目在主軸置中對齊，應設定？",
+        "options": {
+            "A": "align-items: center",
+            "B": "text-align: center",
+            "C": "justify-content: center",
+            "D": "margin: 0 auto"
+        },
+        "answer": "C",
+        "metadata": {
+            "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
+            "note": "教材說明 justify-content: center 會讓項目在主軸上置中對齊。"
+        }
+    },
+    {
+        "id": 156,
+        "chapter": "第四章",
+        "question": "在 Flexbox 排版中，若想讓導覽列的 Logo 靠左、選單靠右，最適合設定主軸對齊為？",
+        "options": {
+            "A": "justify-content: center",
+            "B": "justify-content: flex-start",
+            "C": "justify-content: space-around",
+            "D": "justify-content: space-between"
+        },
+        "answer": "D",
+        "metadata": {
+            "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
+            "note": "教材說明 justify-content: space-between 會讓第一個與最後一個項目貼齊容器邊緣，中間空白平均分配。"
+        }
+    },
+    {
+        "id": 161,
+        "chapter": "第四章",
+        "question": "CSS 的 border-radius: 50% 通常用於製作什麼形狀？",
+        "options": {
+            "A": "正圓形 (若寬高相等)",
+            "B": "圓角矩形",
+            "C": "三角形",
+            "D": "梯形"
+        },
+        "answer": "A",
+        "metadata": {
+            "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
+            "note": "教材說明 border-radius: 50% 可以讓正方形元素變成圓形，常用於頭像。"
+        }
+    },
+    {
+        "id": 169,
+        "chapter": "第四章",
+        "question": "關於 display: none，下列敘述何者正確？",
+        "options": {
+            "A": "元素會被隱藏，且不佔據任何空間",
+            "B": "元素會變成透明，但仍佔據空間",
+            "C": "元素會變成灰色",
+            "D": "元素會縮小到 0px"
+        },
+        "answer": "A",
+        "metadata": {
+            "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
+            "note": "教材說明 display: none 代表元素完全消失，不佔據空間。"
+        }
+    },
+    {
+        "id": 174,
+        "chapter": "第四章",
+        "question": "在 CSS 中，若要設定文字大小，應使用哪個屬性？",
+        "options": {
+            "A": "font-family",
+            "B": "font-size",
+            "C": "font-style",
+            "D": "line-height"
+        },
+        "answer": "B",
+        "metadata": {
+            "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
+            "note": "教材在 CSS 範例與 rem 說明中使用 font-size 設定文字大小。"
+        }
+    },
+    {
+        "id": 178,
+        "chapter": "第四章",
+        "question": "想要選取所有擁有 \"btn\" 類別的元素，在 CSS 中的選擇器是？",
+        "options": {
+            "A": "#btn",
+            "B": ".btn",
+            "C": "btn",
+            "D": "*btn"
+        },
+        "answer": "B",
+        "metadata": {
+            "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
+            "note": "教材說明類別選擇器使用點號，例如 .highlight 會選取有特定 class 的元素。"
+        }
+    },
+    {
+        "id": 180,
+        "chapter": "第四章",
+        "question": "CSS 中設定元素的寬度屬性為？",
+        "options": {
+            "A": "height",
+            "B": "size",
+            "C": "area",
+            "D": "width"
+        },
+        "answer": "D",
+        "metadata": {
+            "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
+            "note": "教材在盒模型與範例中使用 width 設定元素寬度。"
+        }
+    },
+    {
+        "id": 182,
+        "chapter": "第四章",
+        "question": "CSS 裡面控制滑鼠移到元素上方時游標形狀的屬性是？",
+        "options": {
+            "A": "mouse",
+            "B": "cursor",
+            "C": "pointer",
+            "D": "icon"
+        },
+        "answer": "B",
+        "metadata": {
+            "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
+            "note": "教材說明 cursor 可設定滑鼠移到元素上方時的游標樣式。"
+        }
+    },
+    {
+        "id": 184,
+        "chapter": "第四章",
+        "question": "下列哪個 CSS 設定可以讓按鈕在滑鼠滑過時顯示「手指」游標？",
+        "options": {
+            "A": "cursor: hand",
+            "B": "cursor: click",
+            "C": "mouse: finger",
+            "D": "cursor: pointer"
+        },
+        "answer": "D",
+        "metadata": {
+            "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
+            "note": "教材說明 cursor: pointer 會顯示手指形狀，表示元素可以點擊。"
+        }
+    },
+    {
+        "id": 189,
+        "chapter": "第四章",
+        "question": "條件判斷執行的基礎語句是？",
+        "options": {
+            "A": "if ... else",
+            "B": "Function",
+            "C": "Listener",
+            "D": "Push"
+        },
+        "answer": "A",
+        "metadata": {
+            "source": "第四章 CSS與JavaScript整合入門 - 4.3 基礎 JavaScript 入門學習",
+            "note": "教材說明 If...Else 可讓程式根據情況做不同的事。"
+        }
+    },
+    {
+        "id": 190,
+        "chapter": "第四章",
+        "question": "JavaScript 中印出訊息到控制台的方法是？",
+        "options": {
+            "A": "alert()",
+            "B": "console.log()",
+            "C": "document.write()",
+            "D": "print()"
+        },
+        "answer": "B",
+        "metadata": {
+            "source": "第四章 CSS與JavaScript整合入門 - 4.3 基礎 JavaScript 入門學習",
+            "note": "教材在條件判斷與事件監聽範例中使用 console.log() 輸出訊息。"
+        }
+    },
+    {
+        "id": 191,
+        "chapter": "第四章",
+        "question": "JavaScript 的 addEventListener() 方法主要用來？",
+        "options": {
+            "A": "增加數學運算",
+            "B": "將元素隱藏",
+            "C": "註冊事件監聽器以處理互動",
+            "D": "檢查變數型別"
+        },
+        "answer": "C",
+        "metadata": {
+            "source": "第四章 CSS與JavaScript整合入門 - 4.3 基礎 JavaScript 入門學習",
+            "note": "教材在事件監聽段落使用 addEventListener('click', ...) 偵測按鈕點擊。"
+        }
+    },
+    {
+        "id": 196,
+        "chapter": "第四章",
+        "question": "JavaScript 宣告可重新設定數值的變數關鍵字？",
+        "options": {
+            "A": "const",
+            "B": "final",
+            "C": "static",
+            "D": "let"
+        },
+        "answer": "D",
+        "metadata": {
+            "source": "第四章 CSS與JavaScript整合入門 - 4.3 基礎 JavaScript 入門學習",
+            "note": "教材說明推薦使用 const 與 let，其中 let 用於會變動的資料。"
+        }
+    },
+    {
+        "id": 199,
+        "chapter": "第四章",
+        "question": "JavaScript 中宣告不變常數的關鍵字？",
+        "options": {
+            "A": "var",
+            "B": "let",
+            "C": "const",
+            "D": "function"
+        },
+        "answer": "C",
+        "metadata": {
+            "source": "第四章 CSS與JavaScript整合入門 - 4.3 基礎 JavaScript 入門學習",
+            "note": "教材說明 const 用於不會變的資料。"
+        }
+    },
+    {
+        "id": 200,
+        "chapter": "第四章",
+        "question": "彈出警告對話框顯示的方法？",
+        "options": {
+            "A": "console.log()",
+            "B": "warning()",
+            "C": "show()",
+            "D": "alert()"
+        },
+        "answer": "D",
+        "metadata": {
+            "source": "第四章 CSS與JavaScript整合入門 - 4.3 基礎 JavaScript 入門學習",
+            "note": "教材在函式範例與按鈕互動範例中使用 alert() 顯示警告對話框。"
+        }
+    },
+    {
+        "id": 204,
+        "chapter": "第四章",
+        "question": "input.value.trim() 的 trim() 函式用途是？",
+        "options": {
+            "A": "將文字轉為大寫",
+            "B": "移除文字中的所有空白",
+            "C": "驗證文字格式",
+            "D": "移除文字前後的空白"
+        },
+        "answer": "D",
+        "metadata": {
+            "source": "第四章 CSS與JavaScript整合入門 - 4.4 前端進階整合應用",
+            "note": "教材在 Todo List 範例中使用 input.value.trim() 取得輸入內容並去除空白。"
+        }
+    },
+    {
+        "id": 208,
+        "chapter": "第四章",
+        "question": "若要在 JavaScript 中取得 <input> 欄位目前輸入的文字，應讀取哪個屬性？",
+        "options": {
+            "A": "input.text",
+            "B": "input.content",
+            "C": "input.data",
+            "D": "input.value"
+        },
+        "answer": "D",
+        "metadata": {
+            "source": "第四章 CSS與JavaScript整合入門 - 4.3 基礎 JavaScript 入門學習",
+            "note": "教材在表單輸入值範例中使用 input.value 取得使用者輸入的內容。"
+        }
+    },
+    {
+        "id": 209,
+        "chapter": "第四章",
+        "question": "下列哪一段程式碼可以正確地「建立」一個新的 div 元素？",
+        "options": {
+            "A": "document.createElement('div')",
+            "B": "document.add('div')",
+            "C": "document.newElement('div')",
+            "D": "document.make('div')"
+        },
+        "answer": "A",
+        "metadata": {
+            "source": "第四章 CSS與JavaScript整合入門 - 4.3 基礎 JavaScript 入門學習",
+            "note": "教材在動態新增與移除元素段落中使用 document.createElement('div') 建立新元素。"
+        }
+    },
+    {
+        "id": 210,
+        "chapter": "第四章",
+        "question": "建立元素後，若要將它「加入」到 body 的最後面，應使用？",
+        "options": {
+            "A": "document.body.push(newDiv)",
+            "B": "document.body.appendChild(newDiv)",
+            "C": "document.body.appendElement(newDiv)",
+            "D": "document.body.insert(newDiv)"
+        },
+        "answer": "B",
+        "metadata": {
+            "source": "第四章 CSS與JavaScript整合入門 - 4.3 基礎 JavaScript 入門學習",
+            "note": "教材在動態 DOM 範例中使用 document.body.appendChild(newDiv) 將新元素加入 body 最後面。"
+        }
+    },
+    {
+        "id": 217,
+        "chapter": "第四章",
+        "question": "在 DOM 操作中，element.textContent = \"Hi\" 會發生什麼事？",
+        "options": {
+            "A": "改變元素的內部文字內容",
+            "B": "改變元素的背景顏色",
+            "C": "改變元素的 ID",
+            "D": "產生語法錯誤"
+        },
+        "answer": "A",
+        "metadata": {
+            "source": "第四章 CSS與JavaScript整合入門 - 4.3 基礎 JavaScript 入門學習",
+            "note": "教材在修改內容與樣式段落中使用 textContent 修改文字內容。"
+        }
+    },
+    {
+        "id": 219,
+        "chapter": "第四章",
+        "question": "若要偵測使用者「點擊」某個元素，應監聽哪個事件？",
+        "options": {
+            "A": "hover",
+            "B": "press",
+            "C": "click",
+            "D": "touch"
+        },
+        "answer": "C",
+        "metadata": {
+            "source": "第四章 CSS與JavaScript整合入門 - 4.3 基礎 JavaScript 入門學習",
+            "note": "教材在事件監聽範例中使用 addEventListener('click', ...) 偵測點擊事件。"
+        }
+    },
+    {
+        "id": 231,
+        "chapter": "第四章",
+        "question": "在 To-Do List 範例中，我們使用什麼事件來偵測使用者按下「Enter」鍵？",
+        "options": {
+            "A": "click",
+            "B": "submit",
+            "C": "keypress (並檢查 e.key === 'Enter')",
+            "D": "change"
+        },
+        "answer": "C",
+        "metadata": {
+            "source": "第四章 CSS與JavaScript整合入門 - 4.4 前端進階整合應用",
+            "note": "教材在 To-Do List 範例中使用 keypress 事件，並檢查 e.key === 'Enter' 來讓 Enter 鍵也能新增項目。"
+        }
+    },
+    {
+        "id": 232,
+        "chapter": "第五章",
+        "question": "學習網頁開發，根據書中建議哪種心態最重要？",
+        "options": {
+            "A": "背誦所有語法",
+            "B": "複製貼上就好",
+            "C": "依賴工具自動生成",
+            "D": "理解原理並動手實作"
+        },
+        "answer": "D",
+        "metadata": {
+            "source": "第五章 AI 輔助開發與學習 - 5.1 AI 是你的助教：用 AI 學 HTML",
+            "note": "本題考「學習網頁開發，根據書中建議哪種心態最重要」的核心概念。正確答案是 C，因為 理解原理並動手實作 與題目所描述的用途與語意一致。"
+        }
+    },
+    {
+        "id": 233,
+        "chapter": "第五章",
+        "question": "AI 自動完成時產生了「幻覺」 (Hallucination) 是指？",
+        "options": {
+            "A": "AI 生成了看似正確但實際上不存在的函式庫或錯誤的語法",
+            "B": "AI 寫出了 3D 動畫代碼",
+            "C": "程式因為電腦過熱而出現亂碼",
+            "D": "網頁加上了特效濾鏡"
+        },
+        "answer": "A",
+        "metadata": {
+            "source": "第五章 AI 輔助開發與學習 - 5.1 AI 是你的助教：用 AI 學 HTML",
+            "note": "本題考 AI 輔助開發的使用原則。正確答案是 C，因為 AI 生成了看似正確但實際上不存在的函式庫或錯誤的語法 符合書中強調的提問、驗證與協作方式。"
+        }
+    },
+    {
+        "id": 234,
+        "chapter": "第五章",
+        "question": "透過 AI 輔助建立響應式版面最有用的條件？",
+        "options": {
+            "A": "幫我做一個網頁",
+            "B": "說明 HTML 結構與希望的排版 Flexbox 要求",
+            "C": "直接寫程式",
+            "D": "給我最好看的"
+        },
+        "answer": "B",
+        "metadata": {
+            "source": "第五章 AI 輔助開發與學習 - 5.1 AI 是你的助教：用 AI 學 HTML",
+            "note": "本題考 CSS 屬性與排版行為。正確答案是 B，因為 說明 HTML 結構與希望的排版 Flexbox 要求 正是題目所描述效果的正確設定。"
+        }
+    },
+    {
+        "id": 235,
+        "chapter": "第五章",
+        "question": "向 AI 工具尋求除錯時的重點？",
+        "options": {
+            "A": "把所有程式丟給它",
+            "B": "跟他說不會動",
+            "C": "說明目的、局部程式碼及遇到的錯誤",
+            "D": "要求重新寫"
+        },
+        "answer": "C",
+        "metadata": {
+            "source": "第五章 AI 輔助開發與學習 - 5.1 AI 是你的助教：用 AI 學 HTML",
+            "note": "本題考 AI 輔助開發的使用原則。正確答案是 B，因為 說明目的、局部程式碼及遇到的錯誤 符合書中強調的提問、驗證與協作方式。"
+        }
+    },
+    {
+        "id": 236,
+        "chapter": "第五章",
+        "question": "GitHub Copilot 在編輯器中的主要功能是？",
+        "options": {
+            "A": "取代瀏覽器",
+            "B": "替換整個作業系統",
+            "C": "自動回覆電子郵件",
+            "D": "提供程式碼自動補全或建議"
+        },
+        "answer": "D",
+        "metadata": {
+            "source": "第五章 AI 輔助開發與學習 - 5.1 AI 是你的助教：用 AI 學 HTML",
+            "note": "本題考 AI 輔助開發的使用原則。正確答案是 B，因為 提供程式碼自動補全或建議 符合書中強調的提問、驗證與協作方式。"
+        }
+    },
+    {
+        "id": 237,
+        "chapter": "第五章",
+        "question": "面對 AI 寫出的程式碼，開發者應有的正確態度是？",
+        "options": {
+            "A": "先行檢閱邏輯並測試後再整合，理解其運作原理",
+            "B": "毫無懷疑直接貼到正式環境",
+            "C": "忽略所有 AI 工具",
+            "D": "把所有錯誤歸咎於 AI"
+        },
+        "answer": "A",
+        "metadata": {
+            "source": "第五章 AI 輔助開發與學習 - 5.1 AI 是你的助教：用 AI 學 HTML",
+            "note": "本題考 AI 輔助開發的使用原則。正確答案是 C，因為 先行檢閱邏輯並測試後再整合，理解其運作原理 符合書中強調的提問、驗證與協作方式。"
+        }
+    },
+    {
+        "id": 238,
+        "chapter": "第五章",
+        "question": "書中建議驗證 AI 答案時，下列何者正確？",
+        "options": {
+            "A": "直接複製貼上，不需確認",
+            "B": "實際測試程式碼並查閱官方文件",
+            "C": "只看語法顏色是否漂亮",
+            "D": "只要 AI 說可以就算正確"
+        },
+        "answer": "B",
+        "metadata": {
+            "source": "第五章 AI 輔助開發與學習 - 5.1 AI 是你的助教：用 AI 學 HTML",
+            "note": "本題考 AI 輔助開發的使用原則。正確答案是 C，因為 實際測試程式碼並查閱官方文件 符合書中強調的提問、驗證與協作方式。"
+        }
+    },
+    {
+        "id": 239,
+        "chapter": "第五章",
+        "question": "書中建議在使用 AI 產生程式碼後，下一步最關鍵的是？",
+        "options": {
+            "A": "直接部署到正式環境",
+            "B": "全部刪掉重寫",
+            "C": "先檢閱邏輯並實際測試",
+            "D": "只看程式碼長度"
+        },
+        "answer": "C",
+        "metadata": {
+            "source": "第五章 AI 輔助開發與學習 - 5.1 AI 是你的助教：用 AI 學 HTML",
+            "note": "本題考 AI 協作流程。正確答案是 B，書中強調 AI 輸出必須經過人工理解與測試驗證。"
+        }
+    },
+    {
+        "id": 240,
+        "chapter": "第五章",
+        "question": "若希望 AI 幫你寫出特定風格的 CSS，最佳的提問方法是？",
+        "options": {
+            "A": "「幫我寫個網頁」",
+            "B": "「我要一個紅色的網站」",
+            "C": "「請取代開發者」",
+            "D": "「產生一個包含紅色導覽列與三個並排區塊的登入頁面 CSS，使用 Flexbox」"
+        },
+        "answer": "D",
+        "metadata": {
+            "source": "第五章 AI 輔助開發與學習 - 5.2 提示詞設計入門（Prompt Design for HTML）",
+            "note": "本題考 CSS 屬性與排版行為。正確答案是 C，因為 「產生一個包含紅色導覽列與三個並排區塊的登入頁面 CSS，使用 Flexbox」 正是題目所描述效果的正確設定。"
+        }
+    },
+    {
+        "id": 241,
+        "chapter": "第五章",
+        "question": "在使用 ChatGPT 或 GitHub Copilot 輔助開發時，何謂「提示詞 (Prompt)」？",
+        "options": {
+            "A": "給予 AI 以便它理解並產出對應內容的文字指令",
+            "B": "一種新的程式語言",
+            "C": "資料庫的查詢系統",
+            "D": "一種前端框架"
+        },
+        "answer": "A",
+        "metadata": {
+            "source": "第五章 AI 輔助開發與學習 - 5.2 提示詞設計入門（Prompt Design for HTML）",
+            "note": "本題考 AI 輔助開發的使用原則。正確答案是 C，因為 給予 AI 以便它理解並產出對應內容的文字指令 符合書中強調的提問、驗證與協作方式。"
+        }
+    },
+    {
+        "id": 242,
+        "chapter": "第五章",
+        "question": "提示詞（Prompt）基本結構中，哪一項是書中列出的核心元素之一？",
+        "options": {
+            "A": "GPU 型號",
+            "B": "角色設定",
+            "C": "作業系統版本",
+            "D": "螢幕更新率"
+        },
+        "answer": "B",
+        "metadata": {
+            "source": "第五章 AI 輔助開發與學習 - 5.2 提示詞設計入門（Prompt Design for HTML）",
+            "note": "本題考 AI 輔助開發的使用原則。正確答案是 B，因為 角色設定 符合書中強調的提問、驗證與協作方式。"
+        }
+    },
+    {
+        "id": 271,
+        "chapter": "綜合應用",
+        "question": "觀察以下程式碼：\n\n```html\n<form action=\"/signup\" method=\"POST\">\n  <input type=\"text\" id=\"name\" placeholder=\"請輸入姓名\">\n  <button type=\"submit\">送出</button>\n</form>\n```\n\n若要讓這個表單更符合可及性，且姓名資料能正確送到後端，最應該修改哪一項？",
+        "options": {
+            "A": "替 input 加上 name，並補上與 id 對應的 label",
+            "B": "把 button 改成 div，避免表單送出",
+            "C": "把 method 改成 CSS，讓樣式更容易管理",
+            "D": "移除 id，因為 id 會讓表單無法提交"
+        },
+        "answer": "A",
+        "metadata": {
+            "source": "全題庫綜合應用 - 第二章、第三章",
+            "note": "本題整合表單 name、label 可及性與 placeholder 不能取代 label 的觀念。"
+        }
+    },
+    {
+        "id": 272,
+        "chapter": "綜合應用",
+        "question": "某頁面希望結構、樣式與互動分離，目前寫法如下：\n\n```html\n<button style=\"color: white; background: blue;\" onclick=\"alert('Hi')\">點我</button>\n```\n\n依照教材的最佳實務，較適合改成哪一種方向？",
+        "options": {
+            "A": "保留 inline style 與 onclick，因為所有程式都放在同一行最好維護",
+            "B": "將樣式移到 CSS，將互動邏輯移到 JavaScript，並用 addEventListener 綁定事件",
+            "C": "把 button 改成 img，讓瀏覽器自動加入互動",
+            "D": "將 JavaScript 放到 CSS 檔案中，減少檔案數量"
+        },
+        "answer": "B",
+        "metadata": {
+            "source": "全題庫綜合應用 - 第四章 CSS與JavaScript整合入門",
+            "note": "教材強調結構、樣式、邏輯分離，並建議用外部 CSS/JS 與事件監聽。"
+        }
+    },
+    {
+        "id": 273,
+        "chapter": "綜合應用",
+        "question": "觀察以下頁面結構：\n\n```html\n<div class=\"top\">網站標題</div>\n<div class=\"menu\">導覽連結</div>\n<div class=\"content\">文章內容</div>\n<div class=\"bottom\">版權資訊</div>\n```\n\n若要提升語意化、可及性與 SEO，下列哪組替換最合理？",
+        "options": {
+            "A": "依序改成 <header>、<nav>、<main> 或 <article>、<footer>",
+            "B": "全部改成 <span>，因為 span 比 div 更有語意",
+            "C": "全部改成 <table>，讓搜尋引擎更容易理解",
+            "D": "全部放進 <script>，讓 JavaScript 自動判斷語意"
+        },
+        "answer": "A",
+        "metadata": {
+            "source": "全題庫綜合應用 - 第三章 語意化與進階應用",
+            "note": "本題整合 HTML5 語意標籤與文件結構化思維。"
+        }
+    },
+    {
+        "id": 274,
+        "chapter": "綜合應用",
+        "question": "電商商品卡片目前圖片寫法如下：\n\n```html\n<figure>\n  <img src=\"shoe.jpg\">\n  <figcaption>限量紅色慢跑鞋</figcaption>\n</figure>\n```\n\n若要讓圖片對螢幕閱讀器與搜尋引擎更友善，最適合怎麼改？",
+        "options": {
+            "A": "替 img 加上具體描述圖片內容的 alt，例如 alt=\"紅色慢跑鞋側面照片\"",
+            "B": "移除 figcaption，因為圖片不能有說明文字",
+            "C": "把 src 改成 href，讓圖片變成連結",
+            "D": "加上 hidden，讓圖片不被任何使用者看到"
+        },
+        "answer": "A",
+        "metadata": {
+            "source": "全題庫綜合應用 - 第二章、第三章",
+            "note": "教材說明 img 需要有意義的 alt，figure/figcaption 可用來呈現圖片與說明。"
+        }
+    },
+    {
+        "id": 275,
+        "chapter": "綜合應用",
+        "question": "以下登入表單程式碼有一個重要問題：\n\n```html\n<label for=\"email\">Email</label>\n<input type=\"email\" id=\"userEmail\" name=\"email\" required>\n```\n\n問題是什麼？",
+        "options": {
+            "A": "label 的 for 沒有對應到 input 的 id，點擊標籤不會正確聚焦到欄位",
+            "B": "type=\"email\" 不能搭配 required 使用",
+            "C": "name=\"email\" 會讓資料無法送到後端",
+            "D": "Email 欄位一定要使用 textarea"
+        },
+        "answer": "A",
+        "metadata": {
+            "source": "全題庫綜合應用 - 第二章 HTML的內容結構",
+            "note": "教材說明 label 的 for 屬性值必須與對應 input 的 id 相同。"
+        }
+    },
+    {
+        "id": 276,
+        "chapter": "綜合應用",
+        "question": "卡片樣式如下：\n\n```css\n.card {\n  width: 300px;\n  padding: 20px;\n  border: 1px solid #ddd;\n}\n```\n\n若不希望 padding 和 border 讓卡片總寬度超出 300px，應加入哪個設定？",
+        "options": {
+            "A": "box-sizing: border-box;",
+            "B": "display: none;",
+            "C": "cursor: pointer;",
+            "D": "background-position: center;"
+        },
+        "answer": "A",
+        "metadata": {
+            "source": "全題庫綜合應用 - 第四章 CSS與JavaScript整合入門",
+            "note": "教材說明 border-box 會讓 padding 與 border 被包在 width 裡，不會撐大盒子。"
+        }
+    },
+    {
+        "id": 277,
+        "chapter": "綜合應用",
+        "question": "以下導覽列希望 Logo 靠左、選單靠右，且垂直置中：\n\n```html\n<nav class=\"navbar\">\n  <div class=\"logo\">Logo</div>\n  <ul class=\"menu\">...</ul>\n</nav>\n```\n\n哪段 CSS 最符合需求？",
+        "options": {
+            "A": ".navbar { display: flex; justify-content: space-between; align-items: center; }",
+            "B": ".navbar { display: none; text-align: center; }",
+            "C": ".navbar { flex-direction: column; cursor: not-allowed; }",
+            "D": ".navbar { background-size: cover; background-position: center; }"
+        },
+        "answer": "A",
+        "metadata": {
+            "source": "全題庫綜合應用 - 第四章 CSS與JavaScript整合入門",
+            "note": "教材說明 space-between 會讓項目左右分散，align-items: center 可在交錯軸置中。"
+        }
+    },
+    {
+        "id": 278,
+        "chapter": "綜合應用",
+        "question": "以下連結想做成按鈕外觀：\n\n```html\n<a href=\"/signup\" class=\"button\">立即報名</a>\n```\n\n若希望它能設定內距、看起來像可點擊按鈕，哪段 CSS 最合理？",
+        "options": {
+            "A": ".button { display: inline-block; padding: 10px 20px; cursor: pointer; }",
+            "B": ".button { display: inline; width: 200px; cursor: not-allowed; }",
+            "C": ".button { alt: button; required: true; }",
+            "D": ".button { font-family: href; method: POST; }"
+        },
+        "answer": "A",
+        "metadata": {
+            "source": "全題庫綜合應用 - 第二章、第四章",
+            "note": "教材說明 a 連結可用 inline-block 或 block 才方便設定寬高與 padding，cursor: pointer 表示可點擊。"
+        }
+    },
+    {
+        "id": 279,
+        "chapter": "綜合應用",
+        "question": "觀察互動式問答卡片：\n\n```html\n<button id=\"toggleBtn\">顯示答案</button>\n<div id=\"answer\" class=\"hidden\">答案內容</div>\n```\n\n```css\n.hidden { display: none; }\n```\n\n若要點擊按鈕時切換答案顯示/隱藏，哪段 JS 最合理？",
+        "options": {
+            "A": "btn.addEventListener('click', function() { answer.classList.toggle('hidden'); });",
+            "B": "btn.addEventListener('hover', function() { answer.alt = 'hidden'; });",
+            "C": "answer.display('none');",
+            "D": "document.write('<style>answer</style>');"
+        },
+        "answer": "A",
+        "metadata": {
+            "source": "全題庫綜合應用 - 第四章 CSS與JavaScript整合入門",
+            "note": "教材的問答卡片範例使用 addEventListener 偵測 click，並用 classList.toggle 切換 hidden class。"
+        }
+    },
+    {
+        "id": 280,
+        "chapter": "綜合應用",
+        "question": "Todo List 新增項目的函式片段如下：\n\n```javascript\nfunction addItem() {\n  const text = input.value.trim();\n\n  if (text === \"\") {\n    alert(\"請輸入內容！\");\n    return;\n  }\n}\n```\n\n這段程式主要解決什麼問題？",
+        "options": {
+            "A": "避免使用者輸入空字串或只有空白的待辦事項",
+            "B": "讓所有待辦事項自動變成圖片",
+            "C": "把 input 轉成 CSS 選擇器",
+            "D": "讓按鈕永久隱藏"
+        },
+        "answer": "A",
+        "metadata": {
+            "source": "全題庫綜合應用 - 第四章 CSS與JavaScript整合入門",
+            "note": "教材在 Todo List 範例中使用 trim 去除前後空白，再判斷是否為空字串。"
+        }
+    },
+    {
+        "id": 281,
+        "chapter": "綜合應用",
+        "question": "以下是 Todo List 中已取得的文字與清單元素：\n\n```javascript\nconst text = input.value.trim();\nconst list = document.getElementById('list');\n```\n\n若要把一筆待辦事項文字新增到清單中，哪段程式最符合教材中的 DOM 操作流程？",
+        "options": {
+            "A": "const li = document.createElement('li'); li.textContent = text; list.appendChild(li);",
+            "B": "const li = document.getElementById('li'); li.href = text;",
+            "C": "list.backgroundColor = text;",
+            "D": "document.body.remove(text);"
+        },
+        "answer": "A",
+        "metadata": {
+            "source": "全題庫綜合應用 - 第四章 CSS與JavaScript整合入門",
+            "note": "教材在動態 DOM 與 Todo List 範例中使用 createElement、textContent、appendChild 建立並加入元素。"
+        }
+    },
+    {
+        "id": 282,
+        "chapter": "綜合應用",
+        "question": "要呈現一份課程成績資料，以下哪個 HTML 結構最符合資料表格語意？\n\n```html\n<!-- 選出最合理的方向 -->\n```",
+        "options": {
+            "A": "使用 <table>，並搭配 <thead>、<tbody>、<th>、<td>",
+            "B": "使用多個 <div> 排版，但不標示表頭",
+            "C": "把資料做成一張圖片，避免使用文字",
+            "D": "使用 <iframe> 取代表格所有欄位"
+        },
+        "answer": "A",
+        "metadata": {
+            "source": "全題庫綜合應用 - 第二章、第三章",
+            "note": "教材說明資料展示應使用表格語意結構，並透過表頭與語意化提升可讀性與可及性。"
+        }
+    },
+    {
+        "id": 283,
+        "chapter": "綜合應用",
+        "question": "教學影片目前程式碼如下：\n\n```html\n<video width=\"640\" src=\"lesson.mp4\"></video>\n```\n\n若要讓使用者能操作播放，並在播放前看到封面圖，最適合改成哪個版本？",
+        "options": {
+            "A": "<video width=\"640\" controls poster=\"preview.jpg\" src=\"lesson.mp4\"></video>",
+            "B": "<video width=\"640\" hidden src=\"lesson.mp4\"></video>",
+            "C": "<video alt=\"preview.jpg\" src=\"lesson.mp4\"></video>",
+            "D": "<video required name=\"lesson\"></video>"
+        },
+        "answer": "A",
+        "metadata": {
+            "source": "全題庫綜合應用 - 第二章 HTML的內容結構",
+            "note": "教材說明 video 的 controls 可顯示控制列，poster 可顯示影片播放前預覽圖。"
+        }
+    },
+    {
+        "id": 284,
+        "chapter": "綜合應用",
+        "question": "某網頁目前 head 內容如下：\n\n```html\n<head>\n  <title>課程介紹</title>\n</head>\n```\n\n若希望搜尋結果與社群分享顯示更清楚，哪個方向最合理？",
+        "options": {
+            "A": "<title>課程介紹</title>、<meta name=\"description\" ...>，並加入 Open Graph 標籤",
+            "B": "只在 body 放很多 <br>，不需要 head 資訊",
+            "C": "把所有標題都改成 <span>，避免搜尋引擎讀到",
+            "D": "用 cursor: pointer 取代 meta description"
+        },
+        "answer": "A",
+        "metadata": {
+            "source": "全題庫綜合應用 - 第一章、第三章",
+            "note": "教材說明 head 包含文件資訊，第三章介紹 title、meta description、Open Graph 對 SEO 與分享顯示的作用。"
+        }
+    },
+    {
+        "id": 285,
+        "chapter": "綜合應用",
+        "question": "以下文章標題結構：\n\n```html\n<h1>HTML 入門教學</h1>\n<h3>什麼是 HTML？</h3>\n<h2>常用標籤</h2>\n```\n\n若依照標題層級的最佳實務，主要問題是什麼？",
+        "options": {
+            "A": "從 h1 直接跳到 h3，標題層級不夠連續，可能影響結構理解",
+            "B": "h1 不能出現在文章中",
+            "C": "h2 一定要放在 h1 前面",
+            "D": "heading 標籤只能用來設定顏色"
+        },
+        "answer": "A",
+        "metadata": {
+            "source": "全題庫綜合應用 - 第一章、第三章",
+            "note": "教材說明 heading 代表文件層級，第三章也強調標題層級對 SEO 與閱讀結構的重要性。"
+        }
+    },
+    {
+        "id": 286,
+        "chapter": "綜合應用",
+        "question": "觀察以下搜尋表單：\n\n```html\n<input type=\"text\" placeholder=\"搜尋文章\">\n<button>搜尋</button>\n```\n\n若要提升可及性，最應優先補上什麼？",
+        "options": {
+            "A": "加入能描述欄位用途的 <label>，並用 for/id 關聯輸入框",
+            "B": "把 input 改成 hidden，避免使用者誤輸入",
+            "C": "把 button 改成 img，讓畫面更好看",
+            "D": "刪除 placeholder，因為搜尋框不需要任何提示"
+        },
+        "answer": "A",
+        "metadata": {
+            "source": "全題庫綜合應用 - 第二章、第三章",
+            "note": "教材說明 placeholder 只是提示，不能取代 label；label 對可及性與表單理解很重要。"
+        }
+    },
+    {
+        "id": 287,
+        "chapter": "綜合應用",
+        "question": "AI 產生了以下程式：\n\n```javascript\ndocument.getById('title').text = 'Hello';\n```\n\n依照教材的 AI 協作建議與 DOM 操作概念，最合理的處理方式是？",
+        "options": {
+            "A": "直接貼上，因為 AI 產生的程式一定正確",
+            "B": "檢查 API 是否存在，並修正為教材中出現過的 document.getElementById 與 textContent 等寫法",
+            "C": "把 JavaScript 改放到 CSS 檔案中執行",
+            "D": "將 title 改成 <table>，錯誤就會消失"
+        },
+        "answer": "B",
+        "metadata": {
+            "source": "全題庫綜合應用 - 第四章、第五章",
+            "note": "教材強調 AI 內容需要驗證；第四章示範使用 getElementById 選取元素，並用 textContent 修改文字。"
+        }
+    },
+    {
+        "id": 288,
+        "chapter": "綜合應用",
+        "question": "你想請 AI 產生一個表單，目前只輸入：\n\n```text\n做一個表單\n```\n\n若要讓 AI 更可能產生語意化、可及性良好的報名表單，哪個提示詞最完整？",
+        "options": {
+            "A": "做一個表單",
+            "B": "請產生一個語意化 HTML 報名表單，包含姓名、Email、課程選擇與送出按鈕；每個欄位要有 label、必要欄位用 required，並簡短說明結構",
+            "C": "給我很漂亮的東西，不用管 HTML",
+            "D": "隨便寫，不能有說明"
+        },
+        "answer": "B",
+        "metadata": {
+            "source": "全題庫綜合應用 - 第二章、第三章、第五章",
+            "note": "教材說明提示詞要明確描述任務、限制與輸出；表單也應包含 label、required 與語意化結構。"
+        }
+    },
+    {
+        "id": 289,
+        "chapter": "綜合應用",
+        "question": "以下 CSS 與 JS 搭配：\n\n```css\n.hidden { display: none; }\n```\n\n```javascript\nanswer.classList.toggle('hidden');\n```\n\n這組程式最主要的效果是什麼？",
+        "options": {
+            "A": "切換 answer 是否從畫面與排版中隱藏",
+            "B": "將 answer 的文字轉成圖片",
+            "C": "讓 answer 永久刪除且無法回復",
+            "D": "自動提交表單資料"
+        },
+        "answer": "A",
+        "metadata": {
+            "source": "全題庫綜合應用 - 第四章 CSS與JavaScript整合入門",
+            "note": "教材在問答卡片範例中使用 .hidden 搭配 classList.toggle 切換答案區塊顯示狀態。"
+        }
+    },
+    {
+        "id": 290,
+        "chapter": "綜合應用",
+        "question": "你要從零開始做一個互動式問答頁，以下哪個開發流程最符合教材整體脈絡？\n\n```text\n需求：畫面有問題、顯示答案按鈕、答案區可展開/收合。\n```",
+        "options": {
+            "A": "先用 HTML 建立語意清楚的結構，再用 CSS 設計樣式與 hidden 狀態，最後用 JavaScript 綁定 click 事件切換 class",
+            "B": "先用 JavaScript 產生所有內容，不需要 HTML 結構或 CSS",
+            "C": "只放一張頁面截圖，避免寫任何標籤",
+            "D": "先做 Open Graph，再刪除所有按鈕"
+        },
+        "answer": "A",
+        "metadata": {
+            "source": "全題庫綜合應用 - 第零章至第五章",
+            "note": "本題整合 HTML 結構、CSS 樣式與 JavaScript 互動，也呼應教材中從結構到樣式再到互動的學習脈絡。"
+        }
     }
-  },
-  {
-    "id": 244,
-    "chapter": "第零章",
-    "question": "下列哪個配對最符合 HTML、CSS、JavaScript 在前端中的技術職責？",
-    "options": {
-      "A": "HTML 負責動畫運算，CSS 負責資料儲存，JavaScript 負責結構標記",
-      "B": "HTML 負責 API 呼叫，CSS 負責資料驗證，JavaScript 負責資料庫連線",
-      "C": "HTML 負責權限驗證，CSS 負責路由切換，JavaScript 負責伺服器部署",
-      "D": "HTML 負責內容結構，CSS 負責視覺樣式，JavaScript 負責互動邏輯"
-    },
-    "answer": "D",
-    "metadata": {
-      "source": "第零章 前言與環境介紹 - 網站的三大基礎",
-      "note": "本題考技術職責分工。正確答案是 D，因為 HTML 用於結構與語意、CSS 用於樣式與版面、JavaScript 用於事件處理與動態互動。"
-    }
-  },
-  {
-    "id": 245,
-    "chapter": "第零章",
-    "question": "為什麼不建議使用 Word 直接撰寫 HTML 網頁？",
-    "options": {
-      "A": "Word 是文字排版軟體，不是純文字程式編輯環境",
-      "B": "Word 只能開啟圖片，不能輸入文字",
-      "C": "Word 會自動把所有 HTML 變成 JavaScript",
-      "D": "Word 只能在瀏覽器中執行"
-    },
-    "answer": "A",
-    "metadata": {
-      "source": "第零章 前言與環境介紹 - 開發環境配置",
-      "note": "本題避開「推薦哪個編輯器」的原題，改考選擇工具背後的理由。正確答案是 B，因為撰寫 HTML 需要能清楚處理純文字程式碼的編輯環境。"
-    }
-  },
-  {
-    "id": 246,
-    "chapter": "第零章",
-    "question": "使用 Live Server 時，若按下 Go Live 沒反應，依照書中的常見錯誤說明，最可能的原因之一是？",
-    "options": {
-      "A": "沒有先建立資料庫",
-      "B": "沒有安裝外掛或沒有開啟資料夾",
-      "C": "沒有把 CSS 改成 Python",
-      "D": "瀏覽器不支援任何 HTML"
-    },
-    "answer": "B",
-    "metadata": {
-      "source": "第零章 前言與環境介紹 - 開發環境配置",
-      "note": "本題是 Live Server 功能題的實務變化題。正確答案是 A，因為書中常見新手錯誤提到按 Live Server 沒反應通常與外掛安裝或資料夾開啟狀態有關。"
-    }
-  },
-  {
-    "id": 247,
-    "chapter": "第零章",
-    "question": "建立第一個專案時，書中建議新增的主要 HTML 檔案名稱是？",
-    "options": {
-      "A": "style.css",
-      "B": "main.py",
-      "C": "index.html",
-      "D": "server.js"
-    },
-    "answer": "C",
-    "metadata": {
-      "source": "第零章 前言與環境介紹 - 開發環境配置",
-      "note": "本題考建立第一個專案的基本檔案命名。正確答案是 C，因為 index.html 是書中建立第一個網頁時使用的 HTML 檔案。"
-    }
-  },
-  {
-    "id": 248,
-    "chapter": "第零章",
-    "question": "瀏覽器讀取 HTML 後建立 DOM Tree，主要代表的是什麼？",
-    "options": {
-      "A": "圖片壓縮後的檔案大小",
-      "B": "使用者的登入密碼",
-      "C": "CSS 顏色的隨機清單",
-      "D": "網頁標籤之間的層級關係"
-    },
-    "answer": "D",
-    "metadata": {
-      "source": "第零章 前言與環境介紹 - 認識瀏覽器與原始碼結構",
-      "note": "本題避開「DOM 全名」原題，改考 DOM Tree 的概念理解。正確答案是 A，因為 DOM Tree 是瀏覽器在記憶體中建立的文件結構樹。"
-    }
-  },
-  {
-    "id": 249,
-    "chapter": "第零章",
-    "question": "若想看到網頁在瀏覽器中即時解析後的元素結構與樣式，應優先使用哪個功能？",
-    "options": {
-      "A": "開發者工具的 Inspect / Elements",
-      "B": "檢視原始碼（View Page Source）",
-      "C": "下載網頁圖片",
-      "D": "清除瀏覽紀錄"
-    },
-    "answer": "A",
-    "metadata": {
-      "source": "第零章 前言與環境介紹 - 認識瀏覽器與原始碼結構",
-      "note": "本題考「檢視原始碼」與「開發者工具」的使用差異。正確答案是 B，因為 Inspect / Elements 可以即時觀察瀏覽器解析後的結構與樣式。"
-    }
-  },
-  {
-    "id": 250,
-    "chapter": "第零章",
-    "question": "在瀏覽器核心組件中，負責將結構轉換成實際畫面的通常是哪一項？",
-    "options": {
-      "A": "Parser",
-      "B": "Rendering Engine",
-      "C": "JavaScript Engine",
-      "D": "File Explorer"
-    },
-    "answer": "B",
-    "metadata": {
-      "source": "第零章 前言與環境介紹 - 認識瀏覽器與原始碼結構",
-      "note": "本題考瀏覽器基本構造。正確答案是 B，因為 Rendering Engine 的任務是把解析後的結構轉換成使用者看到的畫面。"
-    }
-  },
-  {
-    "id": 251,
-    "chapter": "第零章",
-    "question": "React、Vue、Angular 這類框架與 HTML、CSS、JavaScript 的關係，何者較符合書中說法？",
-    "options": {
-      "A": "它們完全取代 HTML、CSS、JavaScript",
-      "B": "它們只能用來編輯圖片",
-      "C": "它們建立在 HTML、CSS、JavaScript 之上進一步封裝",
-      "D": "它們是瀏覽器的替代品"
-    },
-    "answer": "C",
-    "metadata": {
-      "source": "第零章 前言與環境介紹 - 網站應用介紹",
-      "note": "本題考從基礎語言到框架的概念。正確答案是 B，因為書中說明框架能加速開發，但核心仍建立在前端三大基礎之上。"
-    }
-  },
-  {
-    "id": 252,
-    "chapter": "第零章",
-    "question": "如果網頁只剩 HTML、沒有 CSS，最可能的結果是？",
-    "options": {
-      "A": "所有互動都會自動完成",
-      "B": "瀏覽器會變成資料庫",
-      "C": "HTML 會自動產生伺服器",
-      "D": "內容仍可顯示，但外觀可能單調難讀"
-    },
-    "answer": "D",
-    "metadata": {
-      "source": "第零章 前言與環境介紹 - 網站應用介紹",
-      "note": "本題延伸考三大技術缺少時的影響。正確答案是 A，因為 HTML 負責內容結構，即使沒有 CSS，內容仍可能顯示，但缺少外觀與排版設計。"
-    }
-  },
-  {
-    "id": 253,
-    "chapter": "第零章",
-    "question": "下列哪一項最能說明 HTML「不是只有程式碼，而是資訊結構語言」的意思？",
-    "options": {
-      "A": "HTML 能用標籤表達標題、段落等內容層次",
-      "B": "HTML 只能用來設定文字顏色",
-      "C": "HTML 會自動幫網站建立會員系統",
-      "D": "HTML 必須連接資料庫才會出現畫面"
-    },
-    "answer": "A",
-    "metadata": {
-      "source": "第零章 前言與環境介紹 - 網站應用介紹",
-      "note": "本題考 HTML 作為結構語言的核心觀念。正確答案是 B，因為 HTML 標籤能描述內容的角色與層級，讓瀏覽器與搜尋引擎理解頁面邏輯。"
-    }
-  },
-  {
-    "id": 254,
-    "chapter": "第零章",
-    "question": "當瀏覽器開啟 index.html 時，下列流程何者最接近書中的描述？",
-    "options": {
-      "A": "先刪除 HTML，再下載資料庫",
-      "B": "讀取檔案、解析成 DOM Tree，再結合 CSS 與 JavaScript 呈現畫面",
-      "C": "只執行 CSS，完全不讀 HTML",
-      "D": "直接把檔案轉成 Word 文件"
-    },
-    "answer": "B",
-    "metadata": {
-      "source": "第零章 前言與環境介紹 - 網站應用介紹",
-      "note": "本題考瀏覽器呈現網頁的基本流程。正確答案是 A，因為書中說明瀏覽器會讀取 HTML、建立結構，再依 CSS 與 JavaScript 呈現結果。"
-    }
-  },
-  {
-    "id": 267,
-    "chapter": "第零章",
-    "question": "下列何者最符合瀏覽器在前端中的核心角色？",
-    "options": {
-      "A": "把 SQL 查詢轉成資料表",
-      "B": "只負責下載圖片，不處理程式碼",
-      "C": "把 Python 程式直接編譯成可執行檔",
-      "D": "解析 HTML、CSS、JavaScript 並即時渲染為可互動畫面"
-    },
-    "answer": "D",
-    "metadata": {
-      "source": "第零章 前言與環境介紹 - 認識瀏覽器與原始碼結構",
-      "note": "本題考瀏覽器的技術定位。正確答案是 D，因為瀏覽器會解析前端三種核心資源並渲染畫面與互動。"
-    }
-  },
-  {
-    "id": 268,
-    "chapter": "第零章",
-    "question": "在網頁載入流程中，哪個結果最接近瀏覽器解析 HTML 後建立的結構？",
-    "options": {
-      "A": "DOM Tree（文件物件模型樹）",
-      "B": "Docker Image",
-      "C": "關聯式資料表索引",
-      "D": "二進位機器碼區段"
-    },
-    "answer": "A",
-    "metadata": {
-      "source": "第零章 前言與環境介紹 - 什麼是 DOM（Document Object Model）",
-      "note": "本題考 DOM 基本概念。正確答案是 A，因為瀏覽器會把 HTML 轉成記憶體中的樹狀結構供渲染與操作。"
-    }
-  },
-  {
-    "id": 269,
-    "chapter": "第零章",
-    "question": "若要檢查頁面中某個按鈕的實際 DOM 結構與即時樣式，最適合使用哪項工具？",
-    "options": {
-      "A": "檢視原始碼（View Page Source）",
-      "B": "系統工作管理員",
-      "C": "開發者工具（DevTools）的 Elements 面板",
-      "D": "瀏覽器書籤管理器"
-    },
-    "answer": "C",
-    "metadata": {
-      "source": "第零章 前言與環境介紹 - 如何查看網頁原始碼",
-      "note": "本題考除錯工具使用情境。正確答案是 C，因為 Elements 面板可檢視即時 DOM 與樣式，適合定位前端問題。"
-    }
-  },
-  {
-    "id": 270,
-    "chapter": "第零章",
-    "question": "下列何者正確描述「檢視原始碼（View Page Source）」與「DevTools Inspect」的差異？",
-    "options": {
-      "A": "兩者都只能看後端資料庫內容",
-      "B": "View Page Source 看初始 HTML；Inspect 可看到互動後更新的 DOM",
-      "C": "View Page Source 可修改畫面且永久儲存；Inspect 不行",
-      "D": "Inspect 只能看 CSS，不能看 HTML 結構"
-    },
-    "answer": "B",
-    "metadata": {
-      "source": "第零章 前言與環境介紹 - 如何查看網頁原始碼",
-      "note": "本題考兩種檢視方式的差異。正確答案是 B，因為原始碼偏向初始回應內容，而 Inspect 反映當下執行後的 DOM 狀態。"
-    }
-  },
-  {
-    "id": 255,
-    "chapter": "第一章",
-    "question": "「HyperText」在 HTML 中主要強調哪一種能力？",
-    "options": {
-      "A": "只能顯示超大文字",
-      "B": "文字一定要使用紅色",
-      "C": "文字可以連結到其他頁面或資源",
-      "D": "只能在手機瀏覽器中顯示"
-    },
-    "answer": "C",
-    "metadata": {
-      "source": "第一章 基礎概念與語法入門 - 1.1 認識 HTML 與網頁世界",
-      "note": "本題避開「HTML 全名」原題，改考名詞意義。正確答案是 B，因為 HyperText 指的是能連結到其他頁面或資源的文字。"
-    }
-  },
-  {
-    "id": 256,
-    "chapter": "第一章",
-    "question": "一個一般成對 HTML 元素通常由哪些部分組成？",
-    "options": {
-      "A": "檔案名稱、資料庫、伺服器",
-      "B": "顏色、動畫、音效",
-      "C": "圖片、影片、壓縮格式",
-      "D": "開始標籤、內容、結束標籤"
-    },
-    "answer": "D",
-    "metadata": {
-      "source": "第一章 基礎概念與語法入門 - 1.1 認識 HTML 與網頁世界",
-      "note": "本題考 HTML 基本語法結構。正確答案是 A，因為一般元素會以開始標籤包住內容，最後再用結束標籤收尾。"
-    }
-  },
-  {
-    "id": 257,
-    "chapter": "第一章",
-    "question": "若想表達朗讀時語氣上的強調，而不是內容的重要或緊急，較適合使用哪個標籤？",
-    "options": {
-      "A": "<em>",
-      "B": "<strong>",
-      "C": "<title>",
-      "D": "<meta>"
-    },
-    "answer": "A",
-    "metadata": {
-      "source": "第一章 基礎概念與語法入門 - 1.3 文字與段落的呈現",
-      "note": "本題和既有 <strong> 題目做區分，改考語氣強調。正確答案是 B，因為 <em> 用來表示語氣上的強調，通常呈現為斜體。"
-    }
-  },
-  {
-    "id": 258,
-    "chapter": "第一章",
-    "question": "若只是想讓某個關鍵字在視覺上變粗，但不想賦予「重要」語意，哪個標籤較符合書中說明？",
-    "options": {
-      "A": "<strong>",
-      "B": "<b>",
-      "C": "<blockquote>",
-      "D": "<html>"
-    },
-    "answer": "B",
-    "metadata": {
-      "source": "第一章 基礎概念與語法入門 - 1.3 文字與段落的呈現",
-      "note": "本題考語意標籤與純視覺標籤的差異。正確答案是 A，因為 <b> 主要表示視覺上的粗體，不像 <strong> 帶有重要性語意。"
-    }
-  },
-  {
-    "id": 259,
-    "chapter": "第一章",
-    "question": "下列哪個標題使用方式較符合書中的最佳實務？",
-    "options": {
-      "A": "為了字體變小，從 <h1> 直接跳到 <h5>",
-      "B": "全站只使用 <h6> 當所有標題",
-      "C": "依照內容層次由 <h1>、<h2>、<h3> 逐層安排",
-      "D": "用 <p> 取代所有標題標籤"
-    },
-    "answer": "C",
-    "metadata": {
-      "source": "第一章 基礎概念與語法入門 - 1.3 文字與段落的呈現",
-      "note": "本題避開單純詢問 <h1> 次數，改考標題層級的使用邏輯。正確答案是 B，因為標題應依內容大綱有順序地呈現層次。"
-    }
-  },
-  {
-    "id": 260,
-    "chapter": "第一章",
-    "question": "在同一段文字內只想強制換到下一行，而不是建立新的段落，應使用哪個標籤？",
-    "options": {
-      "A": "<p>",
-      "B": "<h1>",
-      "C": "<title>",
-      "D": "<br>"
-    },
-    "answer": "D",
-    "metadata": {
-      "source": "第一章 基礎概念與語法入門 - 1.3 文字與段落的呈現",
-      "note": "本題是段落與換行概念的變化題。正確答案是 B，因為 <br> 用於段落內部強制換行，而 <p> 是建立完整段落。"
-    }
-  },
-  {
-    "id": 261,
-    "chapter": "第一章",
-    "question": "若要在網頁文字中正確顯示 Tom & Jerry，其中 & 建議寫成哪個 HTML Entity？",
-    "options": {
-      "A": "&amp;",
-      "B": "&lt;",
-      "C": "&gt;",
-      "D": "&copy;"
-    },
-    "answer": "A",
-    "metadata": {
-      "source": "第一章 基礎概念與語法入門 - 1.4 特殊符號與 HTML Entities",
-      "note": "本題避開既有顯示 <br> 的題目，改考 & 的字元實體。正確答案是 C，因為 &amp; 用來表示 ampersand 符號。"
-    }
-  },
-  {
-    "id": 262,
-    "chapter": "第一章",
-    "question": "若要在頁面上顯示版權符號 ©，可使用哪個 HTML Entity？",
-    "options": {
-      "A": "&nbsp;",
-      "B": "&copy;",
-      "C": "&quot;",
-      "D": "&apos;"
-    },
-    "answer": "B",
-    "metadata": {
-      "source": "第一章 基礎概念與語法入門 - 1.4 特殊符號與 HTML Entities",
-      "note": "本題考常見特殊符號的實體寫法。正確答案是 A，因為 &copy; 會顯示版權符號 ©。"
-    }
-  },
-  {
-    "id": 263,
-    "chapter": "第一章",
-    "question": "<meta name=\"description\" content=\"...\"> 放在 <head> 中的主要用途是？",
-    "options": {
-      "A": "在頁面中新增主要標題",
-      "B": "強制所有文字換行",
-      "C": "提供搜尋引擎摘要或頁面描述資訊",
-      "D": "建立一個圖片按鈕"
-    },
-    "answer": "C",
-    "metadata": {
-      "source": "第一章 基礎概念與語法入門 - 1.2 HTML 文件的結構",
-      "note": "本題延伸 <head> 區塊內容，避開單純問 <meta charset>。正確答案是 A，因為 description 類型的 meta 資訊可提供頁面摘要給搜尋引擎參考。"
-    }
-  },
-  {
-    "id": 264,
-    "chapter": "第一章",
-    "question": "在 HTML 骨架中，<html lang=\"zh-Hant\"> 的 lang 屬性主要表達什麼？",
-    "options": {
-      "A": "檔案一定要放在台灣伺服器",
-      "B": "網頁只能顯示中文標點",
-      "C": "瀏覽器必須關閉 JavaScript",
-      "D": "文件主要語言是繁體中文"
-    },
-    "answer": "D",
-    "metadata": {
-      "source": "第一章 基礎概念與語法入門 - 1.2 HTML 文件的結構",
-      "note": "本題從章節範例延伸考 HTML 屬性的語意。正確答案是 A，因為 lang=\"zh-Hant\" 用來標示文件主要語言，有助於瀏覽器與輔助工具理解內容。"
-    }
-  },
-  {
-    "id": 265,
-    "chapter": "第一章",
-    "question": "在一篇短文中，若想插入一條水平分隔線來區分段落區塊，較適合使用哪個標籤？",
-    "options": {
-      "A": "<hr>",
-      "B": "<meta>",
-      "C": "<title>",
-      "D": "<html>"
-    },
-    "answer": "A",
-    "metadata": {
-      "source": "第一章 基礎概念與語法入門 - 1.3 文字與段落的呈現",
-      "note": "本題考短文排版練習中的水平分隔概念。正確答案是 A，因為 <hr> 可用來建立水平線，協助區隔內容段落或主題轉換。"
-    }
-  },
-  {
-    "id": 266,
-    "chapter": "第一章",
-    "question": "若希望文字中的空格不被瀏覽器一般換行處理，可使用哪個 HTML Entity？",
-    "options": {
-      "A": "&copy;",
-      "B": "&nbsp;",
-      "C": "&lt;",
-      "D": "&gt;"
-    },
-    "answer": "B",
-    "metadata": {
-      "source": "第一章 基礎概念與語法入門 - 1.4 特殊符號與 HTML Entities",
-      "note": "本題考特殊空白字元的使用。正確答案是 A，因為 &nbsp; 是不換行空格，可用於需要保留空白或避免斷行的情境。"
-    }
-  },
-  {
-    "id": 1,
-    "chapter": "第一章",
-    "question": "HTML 巢狀結構指的是什麼？",
-    "options": {
-      "A": "元素可以包在其他元素內形成層級",
-      "B": "所有標籤都只能平行排列",
-      "C": "只能用在表格中",
-      "D": "只能在 <head> 內使用"
-    },
-    "answer": "A",
-    "metadata": {
-      "source": "第一章 基礎概念與語法入門 - 1.1 認識 HTML 與網頁世界",
-      "note": "本題考「HTML 巢狀結構指的是什麼」的核心概念。正確答案是 B，因為 元素可以包在其他元素內形成層級 與題目所描述的用途與語意一致。"
-    }
-  },
-  {
-    "id": 2,
-    "chapter": "第一章",
-    "question": "下列哪個是「自閉合標籤」範例？",
-    "options": {
-      "A": "<p></p>",
-      "B": "<img src=\"cat.jpg\" alt=\"cat\" />",
-      "C": "<h1></h1>",
-      "D": "<div></div>"
-    },
-    "answer": "B",
-    "metadata": {
-      "source": "第一章 基礎概念與語法入門 - 1.1 認識 HTML 與網頁世界",
-      "note": "本題考圖片可及性與語意屬性。正確答案是 C，因為 <img src=\"cat.jpg\" alt=\"cat\" /> 能在圖片無法顯示時提供替代資訊，也有助螢幕閱讀器理解內容。"
-    }
-  },
-  {
-    "id": 3,
-    "chapter": "第一章",
-    "question": "HTML 是什麼的縮寫？",
-    "options": {
-      "A": "HyperText Markdown Language",
-      "B": "HighText Machine Language",
-      "C": "HyperText Markup Language",
-      "D": "Hyper Transfer Markup Link"
-    },
-    "answer": "C",
-    "metadata": {
-      "source": "第一章 基礎概念與語法入門 - 1.1 認識 HTML 與網頁世界",
-      "note": "本題考「HTML 是什麼的縮寫」的核心概念。正確答案是 B，因為 HyperText Markup Language 與題目所描述的用途與語意一致。"
-    }
-  },
-  {
-    "id": 4,
-    "chapter": "第一章",
-    "question": "HTML 代表什麼意思？",
-    "options": {
-      "A": "高階文字標記語言",
-      "B": "超連結與文字標記語言",
-      "C": "家用工具標記語言",
-      "D": "超文字標記語言"
-    },
-    "answer": "D",
-    "metadata": {
-      "source": "第一章 基礎概念與語法入門 - 1.1 認識 HTML 與網頁世界",
-      "note": "本題考「HTML 代表什麼意思」的核心概念。正確答案是 B，因為 超文字標記語言 與題目所描述的用途與語意一致。"
-    }
-  },
-  {
-    "id": 5,
-    "chapter": "第一章",
-    "question": "下列哪個敘述最符合書中對 HTML 的定位？",
-    "options": {
-      "A": "網頁內容結構與語意的標記語言",
-      "B": "後端資料庫語言",
-      "C": "專門做動畫的語言",
-      "D": "伺服器部署腳本語言"
-    },
-    "answer": "A",
-    "metadata": {
-      "source": "第一章 基礎概念與語法入門 - 1.1 認識 HTML 與網頁世界",
-      "note": "本題考語意化標籤的用途。正確答案是 B，因為 網頁內容結構與語意的標記語言 能正確表達該內容在文件中的語意角色。"
-    }
-  },
-  {
-    "id": 6,
-    "chapter": "第一章",
-    "question": "網頁最常見的萬國編碼為？",
-    "options": {
-      "A": "ASCII",
-      "B": "UTF-8",
-      "C": "Big5",
-      "D": "ISO"
-    },
-    "answer": "B",
-    "metadata": {
-      "source": "第一章 基礎概念與語法入門 - 1.2 HTML 文件的結構",
-      "note": "本題考「網頁最常見的萬國編碼為」的核心概念。正確答案是 B，因為 UTF-8 與題目所描述的用途與語意一致。"
-    }
-  },
-  {
-    "id": 7,
-    "chapter": "第一章",
-    "question": "下列何者是正確的 HTML5 文件宣告？",
-    "options": {
-      "A": "<!DOCTYPE HTML5>",
-      "B": "<doctype html>",
-      "C": "<!DOCTYPE html>",
-      "D": "<html>"
-    },
-    "answer": "C",
-    "metadata": {
-      "source": "第一章 基礎概念與語法入門 - 1.2 HTML 文件的結構",
-      "note": "本題考「下列何者是正確的 HTML5 文件宣告」的核心概念。正確答案是 A，因為 <!DOCTYPE html> 與題目所描述的用途與語意一致。"
-    }
-  },
-  {
-    "id": 8,
-    "chapter": "第一章",
-    "question": "<meta charset=\"UTF-8\"> 的用途是？",
-    "options": {
-      "A": "設定圖片壓縮格式",
-      "B": "啟用深色模式",
-      "C": "設定語音朗讀速度",
-      "D": "指定文字編碼避免亂碼"
-    },
-    "answer": "D",
-    "metadata": {
-      "source": "第一章 基礎概念與語法入門 - 1.2 HTML 文件的結構",
-      "note": "本題考 「<meta charset=\"UTF-8\"> 的用途是」的核心概念。正確答案是 B，因為 指定文字編碼避免亂碼 與題目所描述的用途與語意一致。"
-    }
-  },
-  {
-    "id": 9,
-    "chapter": "第一章",
-    "question": "<link rel=\"icon\"> 通常用來設定什麼？",
-    "options": {
-      "A": "網頁圖示 (Favicon)",
-      "B": "CSS 樣式表",
-      "C": "字體檔案",
-      "D": "JavaScript 檔案"
-    },
-    "answer": "A",
-    "metadata": {
-      "source": "第一章 基礎概念與語法入門 - 1.2 HTML 文件的結構",
-      "note": "本題考 「<link rel=\"icon\"> 通常用來設定什麼」的核心概念。正確答案是 B，因為 網頁圖示 (Favicon) 與題目所描述的用途與語意一致。"
-    }
-  },
-  {
-    "id": 10,
-    "chapter": "第一章",
-    "question": "<!DOCTYPE html> 的主要作用是？",
-    "options": {
-      "A": "宣告 JavaScript 版本",
-      "B": "告訴瀏覽器這是 HTML5 文件",
-      "C": "設定網頁字型",
-      "D": "指定網站網址"
-    },
-    "answer": "B",
-    "metadata": {
-      "source": "第一章 基礎概念與語法入門 - 1.2 HTML 文件的結構",
-      "note": "本題考 「<!DOCTYPE html> 的主要作用是」的核心概念。正確答案是 B，因為 告訴瀏覽器這是 HTML5 文件 與題目所描述的用途與語意一致。"
-    }
-  },
-  {
-    "id": 11,
-    "chapter": "第一章",
-    "question": "<body> 區塊主要放置什麼？",
-    "options": {
-      "A": "只放 SEO 關鍵字",
-      "B": "只放 JavaScript 檔案",
-      "C": "實際顯示在頁面上的內容",
-      "D": "只放資料庫連線設定"
-    },
-    "answer": "C",
-    "metadata": {
-      "source": "第一章 基礎概念與語法入門 - 1.2 HTML 文件的結構",
-      "note": "本題考 「<body> 區塊主要放置什麼」的核心概念。正確答案是 B，因為 實際顯示在頁面上的內容 與題目所描述的用途與語意一致。"
-    }
-  },
-  {
-    "id": 12,
-    "chapter": "第一章",
-    "question": "哪個區塊通常放置 <meta> 與 <title>？",
-    "options": {
-      "A": "<body>",
-      "B": "<footer>",
-      "C": "<main>",
-      "D": "<head>"
-    },
-    "answer": "D",
-    "metadata": {
-      "source": "第一章 基礎概念與語法入門 - 1.2 HTML 文件的結構",
-      "note": "本題考 「哪個區塊通常放置 <meta> 與 <title>」的核心概念。正確答案是 C，因為 <head> 與題目所描述的用途與語意一致。"
-    }
-  },
-  {
-    "id": 13,
-    "chapter": "第一章",
-    "question": "最大標題的標籤是？",
-    "options": {
-      "A": "<h1>",
-      "B": "<h6>",
-      "C": "<p>",
-      "D": "<title>"
-    },
-    "answer": "A",
-    "metadata": {
-      "source": "第一章 基礎概念與語法入門 - 1.3 文字與段落的呈現",
-      "note": "本題考「最大標題的標籤是」的核心概念。正確答案是 D，因為 <h1> 與題目所描述的用途與語意一致。"
-    }
-  },
-  {
-    "id": 14,
-    "chapter": "第一章",
-    "question": "書中建議一份文件的 <h1> 通常使用幾次？",
-    "options": {
-      "A": "無限制",
-      "B": "1 次",
-      "C": "0 次",
-      "D": "6 次"
-    },
-    "answer": "B",
-    "metadata": {
-      "source": "第一章 基礎概念與語法入門 - 1.3 文字與段落的呈現",
-      "note": "本題考 「書中建議一份文件的 <h1> 通常使用幾次」的核心概念。正確答案是 C，因為 1 次 與題目所描述的用途與語意一致。"
-    }
-  },
-  {
-    "id": 15,
-    "chapter": "第一章",
-    "question": "下列哪個標籤用來強調「內容的重要性或緊急性」？",
-    "options": {
-      "A": "<b>",
-      "B": "<i>",
-      "C": "<strong>",
-      "D": "<u>"
-    },
-    "answer": "C",
-    "metadata": {
-      "source": "第一章 基礎概念與語法入門 - 1.3 文字與段落的呈現",
-      "note": "本題考「下列哪個標籤用來強調「內容的重要性或緊急性」」的核心概念。正確答案是 B，因為 <strong> 與題目所描述的用途與語意一致。"
-    }
-  },
-  {
-    "id": 16,
-    "chapter": "第一章",
-    "question": "若要在畫面上顯示 <br> 文字本身，而不是被瀏覽器當成標籤解析，應使用哪個字元實體？",
-    "options": {
-      "A": "&gt;br&lt;",
-      "B": "&amp;br&amp;",
-      "C": "&quot;br&quot;",
-      "D": "&lt;br&gt;"
-    },
-    "answer": "D",
-    "metadata": {
-      "source": "第一章 基礎概念與語法入門 - 1.4 特殊符號與 HTML Entities",
-      "note": "本題考 「若要在畫面上顯示 <br> 文字本身，而不是被瀏覽器當成標籤解析，應使用哪個字元實體」的核心概念。正確答案是 B，因為 &lt;br&gt; 與題目所描述的用途與語意一致。"
-    }
-  },
-  {
-    "id": 121,
-    "chapter": "第一章",
-    "question": "HTML 文件中共分為幾個標題等級(Heading Levels)？",
-    "options": {
-      "A": "6 個",
-      "B": "3 個",
-      "C": "5 個",
-      "D": "7 個"
-    },
-    "answer": "A",
-    "metadata": {
-      "source": "第一章 基礎概念與語法入門 - 1.3 文字與段落的呈現",
-      "note": "本題考「HTML 文件中共分為幾個標題等級(Heading Levels)」的核心概念。正確答案是 C，因為 6 個 與題目所描述的用途與語意一致。"
-    }
-  },
-  {
-    "id": 18,
-    "chapter": "第二章",
-    "question": "若要讓連結在新分頁開啟，應使用哪個屬性值？",
-    "options": {
-      "A": "target=\"_self\"",
-      "B": "target=\"_blank\"",
-      "C": "rel=\"open\"",
-      "D": "window=\"new\""
-    },
-    "answer": "B",
-    "metadata": {
-      "source": "第二章 HTML的內容結構 - 2.1 超連結與清單結構",
-      "note": "本題考超連結/清單的正確標記。正確答案是 B，因為 target=\"_blank\" 與題目描述的連結或清單語意相符。"
-    }
-  },
-  {
-    "id": 19,
-    "chapter": "第二章",
-    "question": "若要建立一個有順序的清單，應該使用哪一個標籤？",
-    "options": {
-      "A": "<ul>",
-      "B": "<dl>",
-      "C": "<ol>",
-      "D": "<li>"
-    },
-    "answer": "C",
-    "metadata": {
-      "source": "第二章 HTML的內容結構 - 2.1 超連結與清單結構",
-      "note": "本題考超連結/清單的正確標記。正確答案是 C，因為 <ol> 與題目描述的連結或清單語意相符。"
-    }
-  },
-  {
-    "id": 20,
-    "chapter": "第二章",
-    "question": "<a> 標籤中必填且最重要的屬性是？",
-    "options": {
-      "A": "class",
-      "B": "id",
-      "C": "name",
-      "D": "href"
-    },
-    "answer": "D",
-    "metadata": {
-      "source": "第二章 HTML的內容結構 - 2.1 超連結與清單結構",
-      "note": "本題考超連結/清單的正確標記。正確答案是 C，因為 href 與題目描述的連結或清單語意相符。"
-    }
-  },
-  {
-    "id": 21,
-    "chapter": "第二章",
-    "question": "下列何者屬於描述清單（Definition List）組合？",
-    "options": {
-      "A": "<dl> + <dt> + <dd>",
-      "B": "<ul> + <li>",
-      "C": "<ol> + <li>",
-      "D": "<table> + <tr> + <td>"
-    },
-    "answer": "A",
-    "metadata": {
-      "source": "第二章 HTML的內容結構 - 2.1 超連結與清單結構",
-      "note": "本題考超連結/清單的正確標記。正確答案是 C，因為 <dl> + <dt> + <dd> 與題目描述的連結或清單語意相符。"
-    }
-  },
-  {
-    "id": 22,
-    "chapter": "第二章",
-    "question": "前往指定網頁的超連結標籤是？",
-    "options": {
-      "A": "<link>",
-      "B": "<a>",
-      "C": "<url>",
-      "D": "<href>"
-    },
-    "answer": "B",
-    "metadata": {
-      "source": "第二章 HTML的內容結構 - 2.1 超連結與清單結構",
-      "note": "本題考超連結/清單的正確標記。正確答案是 B，因為 <a> 與題目描述的連結或清單語意相符。"
-    }
-  },
-  {
-    "id": 23,
-    "chapter": "第二章",
-    "question": "錨點連結（同頁跳轉）通常使用哪種寫法？",
-    "options": {
-      "A": "href=\"/section-intro\"",
-      "B": "href=\"section-intro\"",
-      "C": "href=\"#section-intro\"",
-      "D": "href=\"@section-intro\""
-    },
-    "answer": "C",
-    "metadata": {
-      "source": "第二章 HTML的內容結構 - 2.1 超連結與清單結構",
-      "note": "本題考超連結/清單的正確標記。正確答案是 C，因為 href=\"#section-intro\" 與題目描述的連結或清單語意相符。"
-    }
-  },
-  {
-    "id": 24,
-    "chapter": "第二章",
-    "question": "清單內的每一項目使用什麼標籤包裹？",
-    "options": {
-      "A": "<ul>",
-      "B": "<a>",
-      "C": "<p>",
-      "D": "<li>"
-    },
-    "answer": "D",
-    "metadata": {
-      "source": "第二章 HTML的內容結構 - 2.1 超連結與清單結構",
-      "note": "本題考超連結/清單的正確標記。正確答案是 B，因為 <li> 與題目描述的連結或清單語意相符。"
-    }
-  },
-  {
-    "id": 25,
-    "chapter": "第二章",
-    "question": "你要做「購物清單」，項目順序不影響語意，且每個項目都可獨立增減。下列哪段結構最符合語意？",
-    "options": {
-      "A": "<ul><li>牛奶</li><li>麵包</li></ul>",
-      "B": "<ol><li>牛奶</li><li>麵包</li></ol>",
-      "C": "<dl><dt>牛奶</dt><dd>麵包</dd></dl>",
-      "D": "<table><tr><td>牛奶</td></tr><tr><td>麵包</td></tr></table>"
-    },
-    "answer": "A",
-    "metadata": {
-      "source": "第二章 HTML的內容結構 - 2.1 超連結與清單結構",
-      "note": "本題考超連結/清單的正確標記。正確答案是 B，因為 <ul><li>牛奶</li><li>麵包</li></ul> 與題目描述的連結或清單語意相符。"
-    }
-  },
-  {
-    "id": 26,
-    "chapter": "第二章",
-    "question": "在 HTML 連結中，mailto: 是用來做什麼的？",
-    "options": {
-      "A": "寄送表單資料",
-      "B": "建立電子郵件連結",
-      "C": "連結到郵件伺服器",
-      "D": "下載郵件"
-    },
-    "answer": "B",
-    "metadata": {
-      "source": "第二章 HTML的內容結構 - 2.1 超連結與清單結構",
-      "note": "本題考超連結/清單的正確標記。正確答案是 B，因為 建立電子郵件連結 與題目描述的連結或清單語意相符。"
-    }
-  },
-  {
-    "id": 27,
-    "chapter": "第二章",
-    "question": "<img> 標籤中，哪一個屬性用來設定圖片無法顯示時的替代文字？",
-    "options": {
-      "A": "src",
-      "B": "title",
-      "C": "alt",
-      "D": "href"
-    },
-    "answer": "C",
-    "metadata": {
-      "source": "第二章 HTML的內容結構 - 2.2 圖片與多媒體元素",
-      "note": "本題考圖片可及性與語意屬性。正確答案是 B，因為 alt 能在圖片無法顯示時提供替代資訊，也有助螢幕閱讀器理解內容。"
-    }
-  },
-  {
-    "id": 28,
-    "chapter": "第二章",
-    "question": "iframe 的 sandbox 屬性主要用於？",
-    "options": {
-      "A": "提升載入速度",
-      "B": "啟用所有功能",
-      "C": "讓背景變成沙色",
-      "D": "限制嵌入內容的權限 (如禁止執行腳本、表單提交)，提升安全性"
-    },
-    "answer": "D",
-    "metadata": {
-      "source": "第二章 HTML的內容結構 - 2.2 圖片與多媒體元素",
-      "note": "本題考 JavaScript 基礎語法與 DOM 操作。正確答案是 C，因為 限制嵌入內容的權限 (如禁止執行腳本、表單提交)，提升安全性 是題目情境下正確的語法或 API。"
-    }
-  },
-  {
-    "id": 29,
-    "chapter": "第二章",
-    "question": "下列哪種圖片格式支援透明背景？",
-    "options": {
-      "A": "PNG",
-      "B": "JPG",
-      "C": "BMP",
-      "D": "TXT"
-    },
-    "answer": "A",
-    "metadata": {
-      "source": "第二章 HTML的內容結構 - 2.2 圖片與多媒體元素",
-      "note": "本題考「下列哪種圖片格式支援透明背景」的核心概念。正確答案是 B，因為 PNG 與題目所描述的用途與語意一致。"
-    }
-  },
-  {
-    "id": 30,
-    "chapter": "第二章",
-    "question": "網頁嵌入聲音的標籤是？",
-    "options": {
-      "A": "<video>",
-      "B": "<audio>",
-      "C": "<sound>",
-      "D": "<music>"
-    },
-    "answer": "B",
-    "metadata": {
-      "source": "第二章 HTML的內容結構 - 2.2 圖片與多媒體元素",
-      "note": "本題考「網頁嵌入聲音的標籤是」的核心概念。正確答案是 B，因為 <audio> 與題目所描述的用途與語意一致。"
-    }
-  },
-  {
-    "id": 31,
-    "chapter": "第二章",
-    "question": "在 <video> 標籤中放置多個 <source> 的原因是？",
-    "options": {
-      "A": "同時播放多個影片",
-      "B": "備份影片",
-      "C": "提供不同格式 (如 mp4, webm) 讓瀏覽器選擇支援的格式播放",
-      "D": "增加畫質"
-    },
-    "answer": "C",
-    "metadata": {
-      "source": "第二章 HTML的內容結構 - 2.2 圖片與多媒體元素",
-      "note": "本題考 「在 <video> 標籤中放置多個 <source> 的原因是」的核心概念。正確答案是 B，因為 提供不同格式 (如 mp4, webm) 讓瀏覽器選擇支援的格式播放 與題目所描述的用途與語意一致。"
-    }
-  },
-  {
-    "id": 32,
-    "chapter": "第二章",
-    "question": "SVG 圖片的最大優勢是？",
-    "options": {
-      "A": "檔案最小",
-      "B": "點陣圖，色彩豐富",
-      "C": "瀏覽器預設不支援，需外掛",
-      "D": "向量圖，無論放大多少倍都不會失真 (模糊)"
-    },
-    "answer": "D",
-    "metadata": {
-      "source": "第二章 HTML的內容結構 - 2.2 圖片與多媒體元素",
-      "note": "本題考「SVG 圖片的最大優勢是」的核心概念。正確答案是 C，因為 向量圖，無論放大多少倍都不會失真 (模糊) 與題目所描述的用途與語意一致。"
-    }
-  },
-  {
-    "id": 33,
-    "chapter": "第二章",
-    "question": "顯示圖片的 HTML 標籤是？",
-    "options": {
-      "A": "<img>",
-      "B": "<picture>",
-      "C": "<image>",
-      "D": "<figure>"
-    },
-    "answer": "A",
-    "metadata": {
-      "source": "第二章 HTML的內容結構 - 2.2 圖片與多媒體元素",
-      "note": "本題考圖片可及性與語意屬性。正確答案是 A，因為 <img> 能在圖片無法顯示時提供替代資訊，也有助螢幕閱讀器理解內容。"
-    }
-  },
-  {
-    "id": 34,
-    "chapter": "第二章",
-    "question": "<picture> 標籤的主要功能為何？",
-    "options": {
-      "A": "加上相框特效",
-      "B": "用於響應式圖片，可根據不同螢幕尺寸或支援度動態載入不同的 <source>",
-      "C": "直接編輯圖片色彩",
-      "D": "把圖片轉為影片"
-    },
-    "answer": "B",
-    "metadata": {
-      "source": "第二章 HTML的內容結構 - 2.2 圖片與多媒體元素",
-      "note": "本題考 「<picture> 標籤的主要功能為何」的核心概念。正確答案是 B，因為 用於響應式圖片，可根據不同螢幕尺寸或支援度動態載入不同的 <source> 與題目所描述的用途與語意一致。"
-    }
-  },
-  {
-    "id": 35,
-    "chapter": "第二章",
-    "question": "下列哪個寫法同時兼顧「圖片來源指定」與「載入失敗時替代描述」？",
-    "options": {
-      "A": "<img href=\"avatar.jpg\" title=\"使用者頭像\">",
-      "B": "<img source=\"avatar.jpg\" desc=\"使用者頭像\">",
-      "C": "<img src=\"avatar.jpg\" alt=\"使用者頭像\">",
-      "D": "<img file=\"avatar.jpg\" fallback=\"使用者頭像\">"
-    },
-    "answer": "C",
-    "metadata": {
-      "source": "第二章 HTML的內容結構 - 2.2 圖片與多媒體元素",
-      "note": "本題考圖片可及性與語意屬性。正確答案是 B，因為 <img src=\"avatar.jpg\" alt=\"使用者頭像\"> 能在圖片無法顯示時提供替代資訊，也有助螢幕閱讀器理解內容。"
-    }
-  },
-  {
-    "id": 36,
-    "chapter": "第二章",
-    "question": "以下哪一個屬性用來設定圖片資源的來源路徑？",
-    "options": {
-      "A": "link",
-      "B": "file",
-      "C": "path",
-      "D": "src"
-    },
-    "answer": "D",
-    "metadata": {
-      "source": "第二章 HTML的內容結構 - 2.2 圖片與多媒體元素",
-      "note": "本題考「以下哪一個屬性用來設定圖片資源的來源路徑」的核心概念。正確答案是 A，因為 src 與題目所描述的用途與語意一致。"
-    }
-  },
-  {
-    "id": 37,
-    "chapter": "第二章",
-    "question": "嵌入 YouTube 網頁內容的常見標籤？",
-    "options": {
-      "A": "<iframe>",
-      "B": "<embed>",
-      "C": "<video>",
-      "D": "<plugin>"
-    },
-    "answer": "A",
-    "metadata": {
-      "source": "第二章 HTML的內容結構 - 2.2 圖片與多媒體元素",
-      "note": "本題考 JavaScript 基礎語法與 DOM 操作。正確答案是 B，因為 <iframe> 是題目情境下正確的語法或 API。"
-    }
-  },
-  {
-    "id": 38,
-    "chapter": "第二章",
-    "question": "產品卡片中的圖片若載入失敗，且你希望螢幕閱讀器仍能理解內容，最關鍵的作法是？",
-    "options": {
-      "A": "只加 width 與 height",
-      "B": "正確撰寫 alt 替代文字",
-      "C": "用 title 取代所有描述",
-      "D": "把圖片包在 <b> 裡"
-    },
-    "answer": "B",
-    "metadata": {
-      "source": "第二章 HTML的內容結構 - 2.2 圖片與多媒體元素",
-      "note": "本題考圖片可及性與語意屬性。正確答案是 C，因為 正確撰寫 alt 替代文字 能在圖片無法顯示時提供替代資訊，也有助螢幕閱讀器理解內容。"
-    }
-  },
-  {
-    "id": 39,
-    "chapter": "第二章",
-    "question": "<audio> 標籤若要顯示播放控制面板，應加上什麼屬性？",
-    "options": {
-      "A": "display",
-      "B": "show",
-      "C": "controls",
-      "D": "play"
-    },
-    "answer": "C",
-    "metadata": {
-      "source": "第二章 HTML的內容結構 - 2.2 圖片與多媒體元素",
-      "note": "本題考 「<audio> 標籤若要顯示播放控制面板，應加上什麼屬性」的核心概念。正確答案是 C，因為 controls 與題目所描述的用途與語意一致。"
-    }
-  },
-  {
-    "id": 41,
-    "chapter": "第二章",
-    "question": "表格中的資料格標籤是？",
-    "options": {
-      "A": "<td>",
-      "B": "<data>",
-      "C": "<tr>",
-      "D": "<th>"
-    },
-    "answer": "A",
-    "metadata": {
-      "source": "第二章 HTML的內容結構 - 2.3 表格與資料展示",
-      "note": "本題考表格語意結構。正確答案是 B，因為 <td> 符合表頭、資料格或表格結構在 HTML 中的標準用法。"
-    }
-  },
-  {
-    "id": 42,
-    "chapter": "第二章",
-    "question": "表頭標籤 <th> 常用在哪？",
-    "options": {
-      "A": "最後一列",
-      "B": "表格標題",
-      "C": "表格外框",
-      "D": "合併欄位"
-    },
-    "answer": "B",
-    "metadata": {
-      "source": "第二章 HTML的內容結構 - 2.3 表格與資料展示",
-      "note": "本題考表格語意結構。正確答案是 C，因為 表格標題 符合表頭、資料格或表格結構在 HTML 中的標準用法。"
-    }
-  },
-  {
-    "id": 43,
-    "chapter": "第二章",
-    "question": "表頭有加粗顯示特性的標籤是？",
-    "options": {
-      "A": "<td>",
-      "B": "<tr>",
-      "C": "<th>",
-      "D": "<thead>"
-    },
-    "answer": "C",
-    "metadata": {
-      "source": "第二章 HTML的內容結構 - 2.3 表格與資料展示",
-      "note": "本題考表格語意結構。正確答案是 C，因為 <th> 用於標題儲存格，瀏覽器通常會以粗體呈現其預設樣式。"
-    }
-  },
-  {
-    "id": 44,
-    "chapter": "第二章",
-    "question": "課表表格第一列要放「星期一、星期二...」這類欄位標題，應使用哪個標籤最恰當？",
-    "options": {
-      "A": "<td>",
-      "B": "<tr>",
-      "C": "<caption>",
-      "D": "<th>"
-    },
-    "answer": "D",
-    "metadata": {
-      "source": "第二章 HTML的內容結構 - 2.3 表格與資料展示",
-      "note": "本題考表格語意結構。正確答案是 C，因為 <th> 符合表頭、資料格或表格結構在 HTML 中的標準用法。"
-    }
-  },
-  {
-    "id": 45,
-    "chapter": "第二章",
-    "question": "在同一個 <tr> 內，若要放「實際資料值」（例如分數 95），應使用哪個標籤？",
-    "options": {
-      "A": "<td>",
-      "B": "<th>",
-      "C": "<caption>",
-      "D": "<thead>"
-    },
-    "answer": "A",
-    "metadata": {
-      "source": "第二章 HTML的內容結構 - 2.3 表格與資料展示",
-      "note": "本題考表格語意結構。正確答案是 B，因為 <td> 符合表頭、資料格或表格結構在 HTML 中的標準用法。"
-    }
-  },
-  {
-    "id": 46,
-    "chapter": "第二章",
-    "question": "想要合併表格中的「兩行 (Rows)」，要設定哪一個屬性？",
-    "options": {
-      "A": "colspan=\"2\"",
-      "B": "rowspan=\"2\"",
-      "C": "merge=\"2\"",
-      "D": "cross=\"2\""
-    },
-    "answer": "B",
-    "metadata": {
-      "source": "第二章 HTML的內容結構 - 2.3 表格與資料展示",
-      "note": "本題考表格語意結構。正確答案是 B，因為 rowspan=\"2\" 符合表頭、資料格或表格結構在 HTML 中的標準用法。"
-    }
-  },
-  {
-    "id": 47,
-    "chapter": "第二章",
-    "question": "宣告表格中的一列（row）的標籤是？",
-    "options": {
-      "A": "<td>",
-      "B": "<th>",
-      "C": "<tr>",
-      "D": "<table>"
-    },
-    "answer": "C",
-    "metadata": {
-      "source": "第二章 HTML的內容結構 - 2.3 表格與資料展示",
-      "note": "本題考「宣告表格中的一列（row）的標籤是」的核心概念。正確答案是 C，因為 <tr> 與題目所描述的用途與語意一致。"
-    }
-  },
-  {
-    "id": 48,
-    "chapter": "第二章",
-    "question": "若要為表格 (<table>) 加上整體標題，應使用哪個標籤？",
-    "options": {
-      "A": "<title>",
-      "B": "<th>",
-      "C": "<header>",
-      "D": "<caption>"
-    },
-    "answer": "D",
-    "metadata": {
-      "source": "第二章 HTML的內容結構 - 2.3 表格與資料展示",
-      "note": "本題考表格語意結構。正確答案是 B，因為 <caption> 符合表頭、資料格或表格結構在 HTML 中的標準用法。"
-    }
-  },
-  {
-    "id": 49,
-    "chapter": "第二章",
-    "question": "在 <th> 中使用 scope=\"col\" 的目的是？",
-    "options": {
-      "A": "清楚告知螢幕閱讀器該標題是對應哪一「列」或哪一「行」，提升無障礙體驗",
-      "B": "用於合併欄位",
-      "C": "設定欄位寬度",
-      "D": "設定背景顏色"
-    },
-    "answer": "A",
-    "metadata": {
-      "source": "第二章 HTML的內容結構 - 2.3 表格與資料展示",
-      "note": "本題考表格可及性。正確答案是 B，因為 scope=\\\"col\\\" 可標示此表頭對應欄，讓輔助技術更正確解讀資料關係。"
-    }
-  },
-  {
-    "id": 50,
-    "chapter": "第二章",
-    "question": "表格標籤屬性 border=\"1\" 的作用主要是？",
-    "options": {
-      "A": "改變表格寬度",
-      "B": "為表格顯示基礎的邊框",
-      "C": "設定背景色",
-      "D": "取代 CSS 樣式"
-    },
-    "answer": "B",
-    "metadata": {
-      "source": "第二章 HTML的內容結構 - 2.3 表格與資料展示",
-      "note": "本題考 「表格標籤屬性 border=\"1\" 的作用主要是」的核心概念。正確答案是 B，因為 為表格顯示基礎的邊框 與題目所描述的用途與語意一致。"
-    }
-  },
-  {
-    "id": 51,
-    "chapter": "第二章",
-    "question": "下拉選單 <select> 中使用的選項標籤為？",
-    "options": {
-      "A": "<item>",
-      "B": "<choice>",
-      "C": "<option>",
-      "D": "<li>"
-    },
-    "answer": "C",
-    "metadata": {
-      "source": "第二章 HTML的內容結構 - 2.4 表單與使用者輸入",
-      "note": "本題考 「下拉選單 <select> 中使用的選項標籤為」的核心概念。正確答案是 A，因為 <option> 與題目所描述的用途與語意一致。"
-    }
-  },
-  {
-    "id": 52,
-    "chapter": "第二章",
-    "question": "把表單提交後的資料傳送到指定的 URL，該屬性為何？",
-    "options": {
-      "A": "method",
-      "B": "transfer",
-      "C": "href",
-      "D": "action"
-    },
-    "answer": "D",
-    "metadata": {
-      "source": "第二章 HTML的內容結構 - 2.4 表單與使用者輸入",
-      "note": "本題考表單欄位與屬性用途。正確答案是 B，因為 action 正是此情境下對應的表單設定方式。"
-    }
-  },
-  {
-    "id": 53,
-    "chapter": "第二章",
-    "question": "HTML 中的 <form> 標籤主要用途是？",
-    "options": {
-      "A": "收集使用者輸入的資料並傳送至伺服器",
-      "B": "繪製表格",
-      "C": "設定網頁結構",
-      "D": "顯示影片"
-    },
-    "answer": "A",
-    "metadata": {
-      "source": "第二章 HTML的內容結構 - 2.4 表單與使用者輸入",
-      "note": "本題考表單欄位與屬性用途。正確答案是 B，因為 收集使用者輸入的資料並傳送至伺服器 正是此情境下對應的表單設定方式。"
-    }
-  },
-  {
-    "id": 54,
-    "chapter": "第二章",
-    "question": "<datalist> 標籤的主要用途是？",
-    "options": {
-      "A": "建立下拉選單，但不允許使用者自行輸入",
-      "B": "為 <input> 欄位提供預設建議清單，使用者仍可自行輸入",
-      "C": "顯示資料庫內容",
-      "D": "建立表格資料"
-    },
-    "answer": "B",
-    "metadata": {
-      "source": "第二章 HTML的內容結構 - 2.4 表單與使用者輸入",
-      "note": "本題考表單欄位與屬性用途。正確答案是 B，因為 為 <input> 欄位提供預設建議清單，使用者仍可自行輸入 正是此情境下對應的表單設定方式。"
-    }
-  },
-  {
-    "id": 55,
-    "chapter": "第二章",
-    "question": "提升可及性時，表單欄位應優先搭配哪個標籤？",
-    "options": {
-      "A": "<legend>",
-      "B": "<caption>",
-      "C": "<label>",
-      "D": "<code>"
-    },
-    "answer": "C",
-    "metadata": {
-      "source": "第二章 HTML的內容結構 - 2.4 表單與使用者輸入",
-      "note": "本題考表單欄位與屬性用途。正確答案是 B，因為 <label> 正是此情境下對應的表單設定方式。"
-    }
-  },
-  {
-    "id": 56,
-    "chapter": "第二章",
-    "question": "若你需要在表單中夾帶「不顯示給使用者、但送出時要一併傳送」的欄位，應使用哪種輸入類型？",
-    "options": {
-      "A": "<input type=\"text\">",
-      "B": "<input type=\"readonly\">",
-      "C": "<input type=\"placeholder\">",
-      "D": "<input type=\"hidden\">"
-    },
-    "answer": "D",
-    "metadata": {
-      "source": "第二章 HTML的內容結構 - 2.4 表單與使用者輸入",
-      "note": "本題考表單欄位與屬性用途。正確答案是 B，因為 <input type=\"hidden\"> 正是此情境下對應的表單設定方式。"
-    }
-  },
-  {
-    "id": 57,
-    "chapter": "第二章",
-    "question": "<label> 標籤的 for 屬性，通常對應到輸入控制項的哪一個屬性？",
-    "options": {
-      "A": "id",
-      "B": "class",
-      "C": "name",
-      "D": "value"
-    },
-    "answer": "A",
-    "metadata": {
-      "source": "第二章 HTML的內容結構 - 2.4 表單與使用者輸入",
-      "note": "本題考表單欄位與屬性用途。正確答案是 C，因為 id 正是此情境下對應的表單設定方式。"
-    }
-  },
-  {
-    "id": 58,
-    "chapter": "第二章",
-    "question": "如果希望密碼輸入時不顯示明文，應該將 <input> 的 type 設為何值？",
-    "options": {
-      "A": "hidden",
-      "B": "password",
-      "C": "text",
-      "D": "secret"
-    },
-    "answer": "B",
-    "metadata": {
-      "source": "第二章 HTML的內容結構 - 2.4 表單與使用者輸入",
-      "note": "本題考表單欄位與屬性用途。正確答案是 D，因為 password 正是此情境下對應的表單設定方式。"
-    }
-  },
-  {
-    "id": 59,
-    "chapter": "第二章",
-    "question": "表單送出按鈕的推薦寫法？",
-    "options": {
-      "A": "<button type=\"text\">",
-      "B": "<button type=\"send\">",
-      "C": "<button type=\"submit\">",
-      "D": "<input button=\"true\">"
-    },
-    "answer": "C",
-    "metadata": {
-      "source": "第二章 HTML的內容結構 - 2.4 表單與使用者輸入",
-      "note": "本題考表單欄位與屬性用途。正確答案是 A，因為 <button type=\"submit\"> 正是此情境下對應的表單設定方式。"
-    }
-  },
-  {
-    "id": 60,
-    "chapter": "第二章",
-    "question": "不顯示在畫面上但是能夾帶表單資料的 <input> 是？",
-    "options": {
-      "A": "false",
-      "B": "none",
-      "C": "secret",
-      "D": "hidden"
-    },
-    "answer": "D",
-    "metadata": {
-      "source": "第二章 HTML的內容結構 - 2.4 表單與使用者輸入",
-      "note": "本題考表單欄位與屬性用途。正確答案是 C，因為 hidden 正是此情境下對應的表單設定方式。"
-    }
-  },
-  {
-    "id": 61,
-    "chapter": "第二章",
-    "question": "<textarea> 標籤的主要用途是？",
-    "options": {
-      "A": "輸入多行文字",
-      "B": "顯示單行文字",
-      "C": "顯示程式碼片段",
-      "D": "建立文字編輯器軟體"
-    },
-    "answer": "A",
-    "metadata": {
-      "source": "第二章 HTML的內容結構 - 2.4 表單與使用者輸入",
-      "note": "本題考 「<textarea> 標籤的主要用途是」的核心概念。正確答案是 B，因為 輸入多行文字 與題目所描述的用途與語意一致。"
-    }
-  },
-  {
-    "id": 62,
-    "chapter": "第二章",
-    "question": "在 HTML5 中，REQUIRED 屬性用在 INPUT 標籤上的作用是？",
-    "options": {
-      "A": "設為唯讀",
-      "B": "設為必填欄位",
-      "C": "自動完成",
-      "D": "隱藏欄位"
-    },
-    "answer": "B",
-    "metadata": {
-      "source": "第二章 HTML的內容結構 - 2.4 表單與使用者輸入",
-      "note": "本題考表單欄位與屬性用途。正確答案是 B，因為 設為必填欄位 正是此情境下對應的表單設定方式。"
-    }
-  },
-  {
-    "id": 63,
-    "chapter": "第二章",
-    "question": "表單輸入框內預設顯示的提示文字（使用者輸入時會消失），應使用哪個屬性設定？",
-    "options": {
-      "A": "value",
-      "B": "title",
-      "C": "placeholder",
-      "D": "label"
-    },
-    "answer": "C",
-    "metadata": {
-      "source": "第二章 HTML的內容結構 - 2.4 表單與使用者輸入",
-      "note": "本題考表單欄位與屬性用途。正確答案是 C，因為 placeholder 正是此情境下對應的表單設定方式。"
-    }
-  },
-  {
-    "id": 64,
-    "chapter": "第二章",
-    "question": "若要讓欄位成為必填，應加上哪個屬性？",
-    "options": {
-      "A": "must",
-      "B": "necessary",
-      "C": "validate",
-      "D": "required"
-    },
-    "answer": "D",
-    "metadata": {
-      "source": "第二章 HTML的內容結構 - 2.4 表單與使用者輸入",
-      "note": "本題考表單欄位與屬性用途。正確答案是 B，因為 required 正是此情境下對應的表單設定方式。"
-    }
-  },
-  {
-    "id": 65,
-    "chapter": "第二章",
-    "question": "你希望輸入框在尚未輸入時顯示「請輸入 Email」，一旦使用者輸入內容就消失。該用哪個屬性？",
-    "options": {
-      "A": "placeholder",
-      "B": "value",
-      "C": "label",
-      "D": "default"
-    },
-    "answer": "A",
-    "metadata": {
-      "source": "第二章 HTML的內容結構 - 2.4 表單與使用者輸入",
-      "note": "本題考表單欄位與屬性用途。正確答案是 C，因為 placeholder 正是此情境下對應的表單設定方式。"
-    }
-  },
-  {
-    "id": 66,
-    "chapter": "第二章",
-    "question": "若表單要送往伺服器指定路徑，且不綁定特定示範網址，應設定哪個屬性？",
-    "options": {
-      "A": "method",
-      "B": "action",
-      "C": "target",
-      "D": "autocomplete"
-    },
-    "answer": "B",
-    "metadata": {
-      "source": "第二章 HTML的內容結構 - 2.4 表單與使用者輸入",
-      "note": "本題考表單屬性分工。正確答案是 A，因為 action 用來指定送出目的地，而 method 則決定送出方式。"
-    }
-  },
-  {
-    "id": 67,
-    "chapter": "第二章",
-    "question": "若要建立一個多選框供使用者勾選，應使用哪種 type？",
-    "options": {
-      "A": "radio",
-      "B": "select",
-      "C": "checkbox",
-      "D": "switch"
-    },
-    "answer": "C",
-    "metadata": {
-      "source": "第二章 HTML的內容結構 - 2.4 表單與使用者輸入",
-      "note": "本題考表單欄位與屬性用途。正確答案是 C，因為 checkbox 正是此情境下對應的表單設定方式。"
-    }
-  },
-  {
-    "id": 68,
-    "chapter": "第二章",
-    "question": "下列何者常被用來將多個單選按鈕 (Radio Button) 歸為同一個群組，讓使用者只能選其一？",
-    "options": {
-      "A": "給予相同的 id",
-      "B": "給予相同的 class",
-      "C": "放在同一個 div 裡",
-      "D": "給予相同的 name"
-    },
-    "answer": "D",
-    "metadata": {
-      "source": "第二章 HTML的內容結構 - 2.4 表單與使用者輸入",
-      "note": "本題考表單欄位與屬性用途。正確答案是 C，因為 給予相同的 name 正是此情境下對應的表單設定方式。"
-    }
-  },
-  {
-    "id": 70,
-    "chapter": "第二章",
-    "question": "讓使用者在群組中僅能單選的 input type？",
-    "options": {
-      "A": "checkbox",
-      "B": "radio",
-      "C": "select",
-      "D": "text"
-    },
-    "answer": "B",
-    "metadata": {
-      "source": "第二章 HTML的內容結構 - 2.4 表單與使用者輸入",
-      "note": "本題考表單欄位與屬性用途。正確答案是 C，因為 radio 正是此情境下對應的表單設定方式。"
-    }
-  },
-  {
-    "id": 71,
-    "chapter": "第二章",
-    "question": "產生一個單行文字輸入框的寫法？",
-    "options": {
-      "A": "<textarea>",
-      "B": "<input type=\"password\">",
-      "C": "<input type=\"text\">",
-      "D": "<button>"
-    },
-    "answer": "C",
-    "metadata": {
-      "source": "第二章 HTML的內容結構 - 2.4 表單與使用者輸入",
-      "note": "本題考表單欄位與屬性用途。正確答案是 D，因為 <input type=\"text\"> 正是此情境下對應的表單設定方式。"
-    }
-  },
-  {
-    "id": 72,
-    "chapter": "第二章",
-    "question": "<fieldset> 標籤通常會搭配哪個標籤來設定該區塊的標題？",
-    "options": {
-      "A": "<caption>",
-      "B": "<header>",
-      "C": "<title>",
-      "D": "<legend>"
-    },
-    "answer": "D",
-    "metadata": {
-      "source": "第二章 HTML的內容結構 - 2.4 表單與使用者輸入",
-      "note": "本題考 「<fieldset> 標籤通常會搭配哪個標籤來設定該區塊的標題」的核心概念。正確答案是 C，因為 <legend> 與題目所描述的用途與語意一致。"
-    }
-  },
-  {
-    "id": 73,
-    "chapter": "第二章",
-    "question": "為了讓點擊「Email」文字時能自動聚焦到輸入框，下列哪組設定正確？",
-    "options": {
-      "A": "<label for=\"email\"> 搭配 <input id=\"email\">",
-      "B": "<label id=\"email\"> 搭配 <input for=\"email\">",
-      "C": "<label name=\"email\"> 搭配 <input class=\"email\">",
-      "D": "<label target=\"email\"> 搭配 <input src=\"email\">"
-    },
-    "answer": "A",
-    "metadata": {
-      "source": "第二章 HTML的內容結構 - 2.4 表單與使用者輸入",
-      "note": "本題考表單欄位與屬性用途。正確答案是 A，因為 <label for=\"email\"> 搭配 <input id=\"email\"> 正是此情境下對應的表單設定方式。"
-    }
-  },
-  {
-    "id": 75,
-    "chapter": "第二章",
-    "question": "哪個標籤最常作為區塊級通用容器？",
-    "options": {
-      "A": "<span>",
-      "B": "<em>",
-      "C": "<div>",
-      "D": "<small>"
-    },
-    "answer": "C",
-    "metadata": {
-      "source": "第二章 HTML的內容結構 - 2.5 通用容器與與版面概念",
-      "note": "本題考「哪個標籤最常作為區塊級通用容器」的核心概念。正確答案是 B，因為 <div> 與題目所描述的用途與語意一致。"
-    }
-  },
-  {
-    "id": 76,
-    "chapter": "第二章",
-    "question": "下列哪一種標籤預設是行內元素 (Inline Element)？",
-    "options": {
-      "A": "<div>",
-      "B": "<p>",
-      "C": "<section>",
-      "D": "<span>"
-    },
-    "answer": "D",
-    "metadata": {
-      "source": "第二章 HTML的內容結構 - 2.5 通用容器與與版面概念",
-      "note": "本題考「下列哪一種標籤預設是行內元素 (Inline Element)」的核心概念。正確答案是 C，因為 <span> 與題目所描述的用途與語意一致。"
-    }
-  },
-  {
-    "id": 77,
-    "chapter": "第二章",
-    "question": "下列哪一組標籤最符合「行內元素」的典型組合？",
-    "options": {
-      "A": "<span>、<a>",
-      "B": "<div>、<p>",
-      "C": "<section>、<article>",
-      "D": "<table>、<tr>"
-    },
-    "answer": "A",
-    "metadata": {
-      "source": "第二章 HTML的內容結構 - 2.5 通用容器與與版面概念",
-      "note": "本題考元素顯示型態。正確答案是 C，<span> 與 <a> 都是典型行內元素，預設不會獨佔整行。"
-    }
-  },
-  {
-    "id": 78,
-    "chapter": "第二章",
-    "question": "設定 tabindex=\"-1\" 的效果是？",
-    "options": {
-      "A": "該元素成為 Tab 鍵順序的第一個",
-      "B": "該元素可以透過 JS focus() 聚焦，但不會被 Tab 鍵選中",
-      "C": "該元素永遠無法被聚焦",
-      "D": "該元素自動隱藏"
-    },
-    "answer": "B",
-    "metadata": {
-      "source": "第二章 HTML的內容結構 - 2.4 表單與使用者輸入",
-      "note": "本題考 「設定 tabindex=\"-1\" 的效果是」的核心概念。正確答案是 C，因為 該元素可以透過 JS focus() 聚焦，但不會被 Tab 鍵選中 與題目所描述的用途與語意一致。"
-    }
-  },
-  {
-    "id": 79,
-    "chapter": "第三章",
-    "question": "在 HTML 中，若要引用一段較長的文字（如名言或書摘），應使用哪個標籤？",
-    "options": {
-      "A": "<q>",
-      "B": "<cite>",
-      "C": "<blockquote>",
-      "D": "<abbr>"
-    },
-    "answer": "C",
-    "metadata": {
-      "source": "第三章 語意化與進階應用 - 3.1 HTML5 語意標籤與結構化思維",
-      "note": "本題考語意化標籤的用途。正確答案是 B，因為 <blockquote> 能正確表達該內容在文件中的語意角色。"
-    }
-  },
-  {
-    "id": 80,
-    "chapter": "第三章",
-    "question": "下列哪個標籤適合標示縮寫，並可透過 title 屬性提供完整名稱？",
-    "options": {
-      "A": "<cite>",
-      "B": "<q>",
-      "C": "<mark>",
-      "D": "<abbr>"
-    },
-    "answer": "D",
-    "metadata": {
-      "source": "第三章 語意化與進階應用 - 3.1 HTML5 語意標籤與結構化思維",
-      "note": "本題考語意化標籤的用途。正確答案是 C，因為 <abbr> 能正確表達該內容在文件中的語意角色。"
-    }
-  },
-  {
-    "id": 81,
-    "chapter": "第三章",
-    "question": "<abbr title=\"...\"></abbr> 中 title 屬性的作用是？",
-    "options": {
-      "A": "提供縮寫的完整說明",
-      "B": "設定字體顏色",
-      "C": "建立下載連結",
-      "D": "控制段落行高"
-    },
-    "answer": "A",
-    "metadata": {
-      "source": "第三章 語意化與進階應用 - 3.1 HTML5 語意標籤與結構化思維",
-      "note": "本題考 「<abbr title=\"...\"></abbr> 中 title 屬性的作用是」的核心概念。正確答案是 B，因為 提供縮寫的完整說明 與題目所描述的用途與語意一致。"
-    }
-  },
-  {
-    "id": 82,
-    "chapter": "第三章",
-    "question": "若要在圖片下方加入圖說，較合適的語意結構是？",
-    "options": {
-      "A": "<img> + <p>",
-      "B": "<figure> + <figcaption>",
-      "C": "<div> + <span>",
-      "D": "<section> + <h6>"
-    },
-    "answer": "B",
-    "metadata": {
-      "source": "第三章 語意化與進階應用 - 3.1 HTML5 語意標籤與結構化思維",
-      "note": "本題考表格語意結構。正確答案是 B，因為 <figure> + <figcaption> 符合表頭、資料格或表格結構在 HTML 中的標準用法。"
-    }
-  },
-  {
-    "id": 83,
-    "chapter": "第三章",
-    "question": "<article> 標籤適合用來包裹何種內容？",
-    "options": {
-      "A": "版權聲明",
-      "B": "側邊欄",
-      "C": "具有獨立意義的文章或內容區塊",
-      "D": "網頁的背景"
-    },
-    "answer": "C",
-    "metadata": {
-      "source": "第三章 語意化與進階應用 - 3.1 HTML5 語意標籤與結構化思維",
-      "note": "本題考語意化標籤的用途。正確答案是 B，因為 具有獨立意義的文章或內容區塊 能正確表達該內容在文件中的語意角色。"
-    }
-  },
-  {
-    "id": 84,
-    "chapter": "第三章",
-    "question": "標示網頁頂端頁首區塊的標籤是？",
-    "options": {
-      "A": "<footer>",
-      "B": "<aside>",
-      "C": "<section>",
-      "D": "<header>"
-    },
-    "answer": "D",
-    "metadata": {
-      "source": "第三章 語意化與進階應用 - 3.1 HTML5 語意標籤與結構化思維",
-      "note": "本題考語意化標籤的用途。正確答案是 C，因為 <header> 能正確表達該內容在文件中的語意角色。"
-    }
-  },
-  {
-    "id": 85,
-    "chapter": "第三章",
-    "question": "若要標示一段「被螢光筆畫記」的重點文字，應使用哪個語意標籤？",
-    "options": {
-      "A": "<mark>",
-      "B": "<b>",
-      "C": "<em>",
-      "D": "<span>"
-    },
-    "answer": "A",
-    "metadata": {
-      "source": "第三章 語意化與進階應用 - 3.1 HTML5 語意標籤與結構化思維",
-      "note": "本題考語意化標籤的用途。正確答案是 C，因為 <mark> 能正確表達該內容在文件中的語意角色。"
-    }
-  },
-  {
-    "id": 86,
-    "chapter": "第三章",
-    "question": "為了表示文件中的修訂紀錄，刪除的文字用 <del>，新增的文字應用？",
-    "options": {
-      "A": "<add>",
-      "B": "<ins>",
-      "C": "<new>",
-      "D": "<plus>"
-    },
-    "answer": "B",
-    "metadata": {
-      "source": "第三章 語意化與進階應用 - 3.1 HTML5 語意標籤與結構化思維",
-      "note": "本題考 「為了表示文件中的修訂紀錄，刪除的文字用 <del>，新增的文字應用」的核心概念。正確答案是 C，因為 <ins> 與題目所描述的用途與語意一致。"
-    }
-  },
-  {
-    "id": 87,
-    "chapter": "第三章",
-    "question": "若引用了一段長篇文字 (區塊引用)，應使用？",
-    "options": {
-      "A": "<q>",
-      "B": "<cite>",
-      "C": "<blockquote>",
-      "D": "<quote>"
-    },
-    "answer": "C",
-    "metadata": {
-      "source": "第三章 語意化與進階應用 - 3.1 HTML5 語意標籤與結構化思維",
-      "note": "本題考語意化標籤的用途。正確答案是 B，因為 <blockquote> 能正確表達該內容在文件中的語意角色。"
-    }
-  },
-  {
-    "id": 88,
-    "chapter": "第三章",
-    "question": "<address> 標籤的主要用途是？",
-    "options": {
-      "A": "顯示任何地址",
-      "B": "顯示地圖",
-      "C": "顯示 IP 位址",
-      "D": "專指該份文件或文章「作者/聯絡人」的聯絡資訊"
-    },
-    "answer": "D",
-    "metadata": {
-      "source": "第三章 語意化與進階應用 - 3.1 HTML5 語意標籤與結構化思維",
-      "note": "本題考 「<address> 標籤的主要用途是」的核心概念。正確答案是 B，因為 專指該份文件或文章「作者/聯絡人」的聯絡資訊 與題目所描述的用途與語意一致。"
-    }
-  },
-  {
-    "id": 89,
-    "chapter": "第三章",
-    "question": "在 HTML5 語意化標籤中，哪一個通常用於表示頁面或區塊的頁尾區域？",
-    "options": {
-      "A": "<footer>",
-      "B": "<header>",
-      "C": "<nav>",
-      "D": "<aside>"
-    },
-    "answer": "A",
-    "metadata": {
-      "source": "第三章 語意化與進階應用 - 3.1 HTML5 語意標籤與結構化思維",
-      "note": "本題考語意化標籤的用途。正確答案是 A，因為 <footer> 能正確表達該內容在文件中的語意角色。"
-    }
-  },
-  {
-    "id": 90,
-    "chapter": "第三章",
-    "question": "若內容可以獨立轉載、單獨分享，較適合用哪個標籤？",
-    "options": {
-      "A": "<section>",
-      "B": "<article>",
-      "C": "<span>",
-      "D": "<small>"
-    },
-    "answer": "B",
-    "metadata": {
-      "source": "第三章 語意化與進階應用 - 3.1 HTML5 語意標籤與結構化思維",
-      "note": "本題考語意化標籤的用途。正確答案是 B，因為 <article> 能正確表達該內容在文件中的語意角色。"
-    }
-  },
-  {
-    "id": 91,
-    "chapter": "第三章",
-    "question": "<mark> 標籤主要用途是？",
-    "options": {
-      "A": "表示最重要語意（取代 <strong>）",
-      "B": "表示已刪除文字",
-      "C": "突出顯示需要注意或相關內容",
-      "D": "宣告程式碼區塊"
-    },
-    "answer": "C",
-    "metadata": {
-      "source": "第三章 語意化與進階應用 - 3.1 HTML5 語意標籤與結構化思維",
-      "note": "本題考語意化標籤的用途。正確答案是 C，因為 突出顯示需要注意或相關內容 能正確表達該內容在文件中的語意角色。"
-    }
-  },
-  {
-    "id": 92,
-    "chapter": "第三章",
-    "question": "<footer> 標籤最適合放置什麼資訊？",
-    "options": {
-      "A": "主導覽列",
-      "B": "主要內容段落",
-      "C": "表單",
-      "D": "版權與聯絡資訊"
-    },
-    "answer": "D",
-    "metadata": {
-      "source": "第三章 語意化與進階應用 - 3.1 HTML5 語意標籤與結構化思維",
-      "note": "本題考語意化標籤的用途。正確答案是 C，因為 版權與聯絡資訊 能正確表達該內容在文件中的語意角色。"
-    }
-  },
-  {
-    "id": 93,
-    "chapter": "第三章",
-    "question": "使用語意化標籤的好處，不包含下列哪一項？",
-    "options": {
-      "A": "自動幫網頁加上漂亮的配色表",
-      "B": "提升螢幕閱讀器的無障礙體驗",
-      "C": "幫助開發者理解代碼結構",
-      "D": "提升 SEO 排名"
-    },
-    "answer": "A",
-    "metadata": {
-      "source": "第三章 語意化與進階應用 - 3.1 HTML5 語意標籤與結構化思維",
-      "note": "本題考語意化標籤的用途。正確答案是 B，因為 自動幫網頁加上漂亮的配色表 能正確表達該內容在文件中的語意角色。"
-    }
-  },
-  {
-    "id": 94,
-    "chapter": "第三章",
-    "question": "為了良好語意與 SEO，網頁的頁首導覽列通常使用什麼標籤？",
-    "options": {
-      "A": "<top> 和 <menu>",
-      "B": "<header> 和 <nav>",
-      "C": "<div> 和 <ul>",
-      "D": "<section> 和 <a>"
-    },
-    "answer": "B",
-    "metadata": {
-      "source": "第三章 語意化與進階應用 - 3.1 HTML5 語意標籤與結構化思維",
-      "note": "本題考語意化標籤的用途。正確答案是 A，因為 <header> 和 <nav> 能正確表達該內容在文件中的語意角色。"
-    }
-  },
-  {
-    "id": 95,
-    "chapter": "第三章",
-    "question": "<aside> 標籤常用於什麼情境？",
-    "options": {
-      "A": "強調文字",
-      "B": "替換換行符號",
-      "C": "定義主要文章的側邊欄或補充資訊",
-      "D": "內嵌其他網頁"
-    },
-    "answer": "C",
-    "metadata": {
-      "source": "第三章 語意化與進階應用 - 3.1 HTML5 語意標籤與結構化思維",
-      "note": "本題考語意化標籤的用途。正確答案是 B，因為 定義主要文章的側邊欄或補充資訊 能正確表達該內容在文件中的語意角色。"
-    }
-  },
-  {
-    "id": 96,
-    "chapter": "第三章",
-    "question": "標示腳註與版權區域常用的語意標籤是？",
-    "options": {
-      "A": "<bottom>",
-      "B": "<end>",
-      "C": "<nav>",
-      "D": "<footer>"
-    },
-    "answer": "D",
-    "metadata": {
-      "source": "第三章 語意化與進階應用 - 3.1 HTML5 語意標籤與結構化思維",
-      "note": "本題考語意化標籤的用途。正確答案是 A，因為 <footer> 能正確表達該內容在文件中的語意角色。"
-    }
-  },
-  {
-    "id": 97,
-    "chapter": "第三章",
-    "question": "語意化 HTML 的核心概念是？",
-    "options": {
-      "A": "用能表達內容意義的標籤",
-      "B": "只用 <div> 加上 class 命名",
-      "C": "移除所有標籤只留文字",
-      "D": "只在 CSS 中寫語意"
-    },
-    "answer": "A",
-    "metadata": {
-      "source": "第三章 語意化與進階應用 - 3.1 HTML5 語意標籤與結構化思維",
-      "note": "本題考語意化標籤的用途。正確答案是 B，因為 用能表達內容意義的標籤 能正確表達該內容在文件中的語意角色。"
-    }
-  },
-  {
-    "id": 98,
-    "chapter": "第三章",
-    "question": "<time> 標籤的 datetime 屬性主要提供什麼價值？",
-    "options": {
-      "A": "讓字體自動放大",
-      "B": "提供機器可讀的日期時間格式",
-      "C": "自動換算時區顏色",
-      "D": "取代 CSS 動畫"
-    },
-    "answer": "B",
-    "metadata": {
-      "source": "第三章 語意化與進階應用 - 3.1 HTML5 語意標籤與結構化思維",
-      "note": "本題考語意化標籤的用途。正確答案是 B，因為 提供機器可讀的日期時間格式 能正確表達該內容在文件中的語意角色。"
-    }
-  },
-  {
-    "id": 99,
-    "chapter": "第三章",
-    "question": "標示網頁主要導覽列的標籤是？",
-    "options": {
-      "A": "<header>",
-      "B": "<main>",
-      "C": "<nav>",
-      "D": "<links>"
-    },
-    "answer": "C",
-    "metadata": {
-      "source": "第三章 語意化與進階應用 - 3.1 HTML5 語意標籤與結構化思維",
-      "note": "本題考「標示網頁主要導覽列的標籤是」的核心概念。正確答案是 A，因為 <nav> 與題目所描述的用途與語意一致。"
-    }
-  },
-  {
-    "id": 100,
-    "chapter": "第三章",
-    "question": "在語意化頁面中，通常哪個標籤代表主要內容區，且全頁建議唯一？",
-    "options": {
-      "A": "<section>",
-      "B": "<article>",
-      "C": "<aside>",
-      "D": "<main>"
-    },
-    "answer": "D",
-    "metadata": {
-      "source": "第三章 語意化與進階應用 - 3.1 HTML5 語意標籤與結構化思維",
-      "note": "本題考語意化標籤的用途。正確答案是 C，因為 <main> 能正確表達該內容在文件中的語意角色。"
-    }
-  },
-  {
-    "id": 101,
-    "chapter": "第三章",
-    "question": "<img> 標籤中對無障礙與 SEO 最重要的屬性是？",
-    "options": {
-      "A": "alt",
-      "B": "style",
-      "C": "name",
-      "D": "download"
-    },
-    "answer": "A",
-    "metadata": {
-      "source": "第三章 語意化與進階應用 - 3.2 無障礙與 HTML 可及性設計",
-      "note": "本題考圖片可及性與語意屬性。正確答案是 B，因為 alt 能在圖片無法顯示時提供替代資訊，也有助螢幕閱讀器理解內容。"
-    }
-  },
-  {
-    "id": 102,
-    "chapter": "第三章",
-    "question": "<img> 的哪個屬性可讓螢幕閱讀器理解圖片內容？",
-    "options": {
-      "A": "src",
-      "B": "alt",
-      "C": "class",
-      "D": "width"
-    },
-    "answer": "B",
-    "metadata": {
-      "source": "第三章 語意化與進階應用 - 3.2 無障礙與 HTML 可及性設計",
-      "note": "本題考圖片可及性與語意屬性。正確答案是 C，因為 alt 能在圖片無法顯示時提供替代資訊，也有助螢幕閱讀器理解內容。"
-    }
-  },
-  {
-    "id": 103,
-    "chapter": "第三章",
-    "question": "下列何者是無障礙網頁設計 (Web Accessibility) 的重要實踐？",
-    "options": {
-      "A": "所有圖示都必須是紅色的",
-      "B": "隱藏所有的 <input> 標籤",
-      "C": "替 <img> 提供準確的 alt 屬性",
-      "D": "禁止使用 CSS"
-    },
-    "answer": "C",
-    "metadata": {
-      "source": "第三章 語意化與進階應用 - 3.2 無障礙與 HTML 可及性設計",
-      "note": "本題考圖片可及性與語意屬性。正確答案是 B，因為 替 <img> 提供準確的 alt 屬性 能在圖片無法顯示時提供替代資訊，也有助螢幕閱讀器理解內容。"
-    }
-  },
-  {
-    "id": 104,
-    "chapter": "第三章",
-    "question": "在 SEO 友善的結構中，標題層級建議如何使用？",
-    "options": {
-      "A": "只用 <h6>",
-      "B": "隨機跳級，視覺好看即可",
-      "C": "用 <div> 取代所有標題",
-      "D": "依內容層次有序使用 h1 到 h6"
-    },
-    "answer": "D",
-    "metadata": {
-      "source": "第三章 語意化與進階應用 - 3.3 文件品質與 SEO 實務(HTML 層級)",
-      "note": "本題考「在 SEO 友善的結構中，標題層級建議如何使用」的核心概念。正確答案是 C，因為 依內容層次有序使用 h1 到 h6 與題目所描述的用途與語意一致。"
-    }
-  },
-  {
-    "id": 105,
-    "chapter": "第三章",
-    "question": "SEO 代表什麼？",
-    "options": {
-      "A": "Search Engine Optimization",
-      "B": "Site Expansion Output",
-      "C": "Server Environment Organization",
-      "D": "Standard Elements of Objects"
-    },
-    "answer": "A",
-    "metadata": {
-      "source": "第三章 語意化與進階應用 - 3.3 文件品質與 SEO 實務(HTML 層級)",
-      "note": "本題考「SEO 代表什麼」的核心概念。正確答案是 A，因為 Search Engine Optimization (搜尋引擎最佳化) 與題目所描述的用途與語意一致。"
-    }
-  },
-  {
-    "id": 106,
-    "chapter": "第三章",
-    "question": "開發網頁時，常常使用 <meta name=\"viewport\">，其主要目的是？",
-    "options": {
-      "A": "限制網頁載入速度",
-      "B": "讓網站在手機上正常顯示,Google 優先索引行動版網站",
-      "C": "加速資料庫連線",
-      "D": "防止別人複製網址"
-    },
-    "answer": "B",
-    "metadata": {
-      "source": "第三章 語意化與進階應用 - 3.3 文件品質與 SEO 實務(HTML 層級)",
-      "note": "本題考「開發網頁時，常常使用 <meta name=\"viewport\">，其主要目的是」的核心概念。正確答案是 B，因為 讓網頁可以在行動裝置上獲得正確的縮放及排版 與題目所描述的用途與語意一致。"
-    }
-  },
-  {
-    "id": 107,
-    "chapter": "第三章",
-    "question": "<title> 與 <meta name=\"description\"> 對哪個面向最直接？",
-    "options": {
-      "A": "只影響本機儲存空間",
-      "B": "只影響音訊播放速度",
-      "C": "影響 SEO 與搜尋結果呈現",
-      "D": "只影響 Flex 排版"
-    },
-    "answer": "C",
-    "metadata": {
-      "source": "第三章 語意化與進階應用 - 3.3 文件品質與 SEO 實務(HTML 層級)",
-      "note": "本題考 「<title> 與 <meta name=\"description\"> 對哪個面向最直接」的核心概念。正確答案是 B，因為 影響 SEO 與搜尋結果呈現 與題目所描述的用途與語意一致。"
-    }
-  },
-  {
-    "id": 108,
-    "chapter": "第三章",
-    "question": "<s> 與 <del> 的差異，何者正確？",
-    "options": {
-      "A": "兩者完全相同，只是寫法不同",
-      "B": "<s> 表示已刪除內容；<del> 表示不再準確內容",
-      "C": "<del> 只用在 CSS，<s> 只用在 JavaScript",
-      "D": "<s> 表示不再準確但保留的內容；<del> 表示文件修訂中被刪除的內容"
-    },
-    "answer": "D",
-    "metadata": {
-      "source": "第三章 語意化與進階應用 - 3.1 HTML5 語意標籤與結構化思維",
-      "note": "本題考 <s> 與 <del> 的語意差異。正確答案是 C，因為 <s> 偏向內容已不再準確，而 <del> 是修訂語意中的刪除。"
-    }
-  },
-  {
-    "id": 109,
-    "chapter": "第三章",
-    "question": "<small> 標籤最適合用在哪種內容？",
-    "options": {
-      "A": "法律聲明、版權資訊、附註等次要內容",
-      "B": "主要標題",
-      "C": "影片播放控制列",
-      "D": "導覽列主選單"
-    },
-    "answer": "A",
-    "metadata": {
-      "source": "第三章 語意化與進階應用 - 3.1 HTML5 語意標籤與結構化思維",
-      "note": "本題考 <small> 的語意用途。正確答案是 B，因為 <small> 常用於附屬細則與次要資訊。"
-    }
-  },
-  {
-    "id": 110,
-    "chapter": "第三章",
-    "question": "<wbr> 的主要作用是？",
-    "options": {
-      "A": "強制每個位置都換行",
-      "B": "提供建議換行點，空間不足時瀏覽器可在該處斷行",
-      "C": "插入可見的破折號",
-      "D": "移除所有空白字元"
-    },
-    "answer": "B",
-    "metadata": {
-      "source": "第三章 語意化與進階應用 - 3.1 HTML5 語意標籤與結構化思維",
-      "note": "本題考 <wbr> 的實際行為。正確答案是 C，因為它不會顯示內容，只提供可換行的機會點。"
-    }
-  },
-  {
-    "id": 111,
-    "chapter": "第三章",
-    "question": "關於 <details> 與 <summary>，何者正確？",
-    "options": {
-      "A": "<summary> 必須放在 <details> 之外",
-      "B": "<details> 只能放圖片不能放文字",
-      "C": "<details> 可建立可展開內容，<summary> 作為可點擊標題",
-      "D": "兩者只在表格中可用"
-    },
-    "answer": "C",
-    "metadata": {
-      "source": "第三章 語意化與進階應用 - 3.1 HTML5 語意標籤與結構化思維",
-      "note": "本題考可展開內容的語意標記。正確答案是 B，符合 <details> 和 <summary> 的標準用法。"
-    }
-  },
-  {
-    "id": 112,
-    "chapter": "第三章",
-    "question": "<data value=\"100\">NT$ 100</data> 中 value 的語意是？",
-    "options": {
-      "A": "設定文字顏色",
-      "B": "控制字型大小",
-      "C": "設定連結目標",
-      "D": "提供機器可讀的原始值"
-    },
-    "answer": "D",
-    "metadata": {
-      "source": "第三章 語意化與進階應用 - 3.1 HTML5 語意標籤與結構化思維",
-      "note": "本題考 <data> 的用途。正確答案是 A，因為 <data> 用來包裝人類可讀文字與機器可讀值。"
-    }
-  },
-  {
-    "id": 113,
-    "chapter": "第三章",
-    "question": "<data> 與 data-* 自訂屬性的差異是？",
-    "options": {
-      "A": "<data> 是語意標籤；data-* 是自訂資料屬性",
-      "B": "兩者都只能用在 <img>",
-      "C": "兩者都只能存數字",
-      "D": "data-* 不能被 JavaScript 讀取"
-    },
-    "answer": "A",
-    "metadata": {
-      "source": "第三章 語意化與進階應用 - 3.1 HTML5 語意標籤與結構化思維",
-      "note": "本題考 <data> 與 data-* 的定位差異。正確答案是 A，分別對應語意標記與自訂資料儲存。"
-    }
-  },
-  {
-    "id": 114,
-    "chapter": "第三章",
-    "question": "下列何者屬於 WCAG 的四大原則之一？",
-    "options": {
-      "A": "Beautiful",
-      "B": "Perceivable（可感知）",
-      "C": "Compressible",
-      "D": "Monetizable"
-    },
-    "answer": "B",
-    "metadata": {
-      "source": "第三章 語意化與進階應用 - 3.2 無障礙與 HTML 可及性設計",
-      "note": "本題考 WCAG 核心概念。正確答案是 B，WCAG 四原則為可感知、可操作、可理解與穩健性。"
-    }
-  },
-  {
-    "id": 115,
-    "chapter": "第三章",
-    "question": "為了鍵盤可及性，對焦樣式（focus outline）最佳實務是？",
-    "options": {
-      "A": "一律 outline: none",
-      "B": "只有滑鼠操作才需要焦點樣式",
-      "C": "可移除，但需提供清晰替代焦點提示",
-      "D": "只在手機版保留焦點"
-    },
-    "answer": "C",
-    "metadata": {
-      "source": "第三章 語意化與進階應用 - 3.2 無障礙與 HTML 可及性設計",
-      "note": "本題考鍵盤導航可及性。正確答案是 B，焦點可視性是操作可及性的關鍵。"
-    }
-  },
-  {
-    "id": 116,
-    "chapter": "第三章",
-    "question": "aria-describedby 最常用來做什麼？",
-    "options": {
-      "A": "設定元素背景圖",
-      "B": "讓元素自動提交表單",
-      "C": "讓元素變成唯讀",
-      "D": "指定元素的額外說明文字"
-    },
-    "answer": "D",
-    "metadata": {
-      "source": "第三章 語意化與進階應用 - 3.2 無障礙與 HTML 可及性設計",
-      "note": "本題考 ARIA 屬性用途。正確答案是 B，aria-describedby 會關聯補充說明給輔助技術。"
-    }
-  },
-  {
-    "id": 117,
-    "chapter": "第三章",
-    "question": "Open Graph 標籤主要用於哪個情境？",
-    "options": {
-      "A": "優化社群平台分享預覽內容",
-      "B": "設定資料庫索引",
-      "C": "壓縮圖片檔案大小",
-      "D": "產生 CSS 動畫"
-    },
-    "answer": "A",
-    "metadata": {
-      "source": "第三章 語意化與進階應用 - 3.3 文件品質與 SEO 實務(HTML 層級)",
-      "note": "本題考 Open Graph 的目的。正確答案是 A，OG 主要控制分享時的標題、描述與縮圖。"
-    }
-  },
-  {
-    "id": 118,
-    "chapter": "第三章",
-    "question": "下列何者最可能出現在 robots.txt？",
-    "options": {
-      "A": "<meta name=\"description\" content=\"...\">",
-      "B": "User-agent: *",
-      "C": "@media (max-width: 768px)",
-      "D": "SELECT * FROM pages"
-    },
-    "answer": "B",
-    "metadata": {
-      "source": "第三章 語意化與進階應用 - 3.3 文件品質與 SEO 實務(HTML 層級)",
-      "note": "本題考 SEO 基礎檔案。正確答案是 B，robots.txt 透過 User-agent 等規則控制爬蟲行為。"
-    }
-  },
-  {
-    "id": 119,
-    "chapter": "第三章",
-    "question": "sitemap.xml 的主要用途是？",
-    "options": {
-      "A": "儲存使用者密碼",
-      "B": "記錄 CSS 變數",
-      "C": "列出網站重要頁面，幫助搜尋引擎索引",
-      "D": "提供 JavaScript 套件清單"
-    },
-    "answer": "C",
-    "metadata": {
-      "source": "第三章 語意化與進階應用 - 3.3 文件品質與 SEO 實務(HTML 層級)",
-      "note": "本題考 SEO 索引機制。正確答案是 B，網站地圖能協助搜尋引擎更完整掌握站內頁面。"
-    }
-  },
-  {
-    "id": 120,
-    "chapter": "第四章",
-    "question": "<script src=\"app.js\"></script> 這行程式碼通常建議放在哪裡？",
-    "options": {
-      "A": "<head> 裡面",
-      "B": "任何地方都可以",
-      "C": "<html> 標籤之後",
-      "D": "<body> 結尾標籤之前"
-    },
-    "answer": "D",
-    "metadata": {
-      "source": "第四章 CSS與JavaScript整合入門 - 4.1 HTML 與前端整合入門",
-      "note": "教材說明 JavaScript 放在 <body> 結尾，可確保 DOM 已載入完成，程式碼才能正確操作元素。"
-    }
-  },
-  {
-    "id": 122,
-    "chapter": "第四章",
-    "question": "在 HTML 中引入外部 CSS 檔案，應使用哪個標籤？",
-    "options": {
-      "A": "<style src=\"style.css\">",
-      "B": "<link rel=\"stylesheet\" href=\"style.css\">",
-      "C": "<css link=\"style.css\">",
-      "D": "<script src=\"style.css\">"
-    },
-    "answer": "B",
-    "metadata": {
-      "source": "第四章 CSS與JavaScript整合入門 - 4.1 HTML 與前端整合入門",
-      "note": "教材在外部樣式表範例中使用 <link rel=\"stylesheet\" href=\"style.css\"> 引入 CSS 檔案。"
-    }
-  },
-  {
-    "id": 123,
-    "chapter": "第四章",
-    "question": "下列哪個標籤是用來定義 CSS 的「內部樣式表」？",
-    "options": {
-      "A": "<script>",
-      "B": "<link>",
-      "C": "<style>",
-      "D": "<css>"
-    },
-    "answer": "C",
-    "metadata": {
-      "source": "第四章 CSS與JavaScript整合入門 - 4.1 HTML 與前端整合入門",
-      "note": "教材說明內部樣式表是在 <head> 區塊內使用 <style> 標籤。"
-    }
-  },
-  {
-    "id": 124,
-    "chapter": "第四章",
-    "question": "以下哪一個 CSS 選擇器可以選取 HTML 中的 id=\"header\" 元素？",
-    "options": {
-      "A": ".header",
-      "B": "*header",
-      "C": "@header",
-      "D": "#header"
-    },
-    "answer": "D",
-    "metadata": {
-      "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
-      "note": "教材在 ID 選擇器範例中使用 #header 選取特定 ID 的元素。"
-    }
-  },
-  {
-    "id": 126,
-    "chapter": "第四章",
-    "question": "width: 50% 通常是指？",
-    "options": {
-      "A": "100px",
-      "B": "父元素的一半寬",
-      "C": "填滿整個螢幕寬度",
-      "D": "圖片原始寬度"
-    },
-    "answer": "B",
-    "metadata": {
-      "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
-      "note": "教材說明 % 主要相對於父元素大小，並以 width: 50% 表示父元素的一半寬。"
-    }
-  },
-  {
-    "id": 128,
-    "chapter": "第四章",
-    "question": "將標籤內文字置中對齊的 CSS 屬性是？",
-    "options": {
-      "A": "align-items: center",
-      "B": "vertical-align: middle",
-      "C": "center: true",
-      "D": "text-align: center"
-    },
-    "answer": "D",
-    "metadata": {
-      "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
-      "note": "教材在文字排版屬性中說明 text-align 可設定文字對齊方式，center 代表置中。"
-    }
-  },
-  {
-    "id": 129,
-    "chapter": "第四章",
-    "question": "下列哪個單位是相對單位，適合用於響應式字體大小？",
-    "options": {
-      "A": "rem",
-      "B": "px",
-      "C": "pt",
-      "D": "cm"
-    },
-    "answer": "A",
-    "metadata": {
-      "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
-      "note": "教材建議字體大小使用 rem，讓文字能隨瀏覽器預設字體設定縮放。"
-    }
-  },
-  {
-    "id": 130,
-    "chapter": "第四章",
-    "question": "若要讓 <a> 超連結變成按鈕的樣子，通常需要設定？",
-    "options": {
-      "A": "display: table",
-      "B": "display: inline-block 或 block，搭配 padding 與背景色",
-      "C": "text-decoration: underline",
-      "D": "list-style: none"
-    },
-    "answer": "B",
-    "metadata": {
-      "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
-      "note": "教材提醒若要讓 <a> 連結變成有寬高的大按鈕，可設定 display: inline-block 或 display: block。"
-    }
-  },
-  {
-    "id": 131,
-    "chapter": "第四章",
-    "question": "當我們寫 font-family: Arial, sans-serif; 時，sans-serif 的作用是？",
-    "options": {
-      "A": "指定特定字體名稱",
-      "B": "強制設定為襯線體",
-      "C": "當 Arial 無法顯示時的通用後備字體 (無襯線體)",
-      "D": "設定字體顏色"
-    },
-    "answer": "C",
-    "metadata": {
-      "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
-      "note": "教材說明 font-family 會依序尋找可用字體，Arial 找不到時會使用系統無襯線字體。"
-    }
-  },
-  {
-    "id": 132,
-    "chapter": "第四章",
-    "question": "內容與外框間的內部距離 CSS 屬性是？",
-    "options": {
-      "A": "margin",
-      "B": "border",
-      "C": "height",
-      "D": "padding"
-    },
-    "answer": "D",
-    "metadata": {
-      "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
-      "note": "教材說明 Padding 是內容與邊框之間的距離。"
-    }
-  },
-  {
-    "id": 133,
-    "chapter": "第四章",
-    "question": "Flexbox 的 display: flex; 預設方向為何？",
-    "options": {
-      "A": "水平",
-      "B": "垂直",
-      "C": "重疊",
-      "D": "對角"
-    },
-    "answer": "A",
-    "metadata": {
-      "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
-      "note": "教材說明 flex-direction: row 是預設值，主軸為橫向，項目從左到右排列。"
-    }
-  },
-  {
-    "id": 136,
-    "chapter": "第四章",
-    "question": "改變字體顏色的 CSS 屬性為？",
-    "options": {
-      "A": "text-color",
-      "B": "font-color",
-      "C": "text",
-      "D": "color"
-    },
-    "answer": "D",
-    "metadata": {
-      "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
-      "note": "教材在文字排版範例中使用 color 設定文字顏色。"
-    }
-  },
-  {
-    "id": 138,
-    "chapter": "第四章",
-    "question": "建立 HTML 文件時，CSS 樣式表最好放在？",
-    "options": {
-      "A": "<body> 尾端",
-      "B": "<head> 區塊內",
-      "C": "<footer> 內",
-      "D": "隨意"
-    },
-    "answer": "B",
-    "metadata": {
-      "source": "第四章 CSS與JavaScript整合入門 - 4.1 HTML 與前端整合入門",
-      "note": "教材說明 CSS 放在 <head>，可確保網頁解析時已經有樣式。"
-    }
-  },
-  {
-    "id": 139,
-    "chapter": "第四章",
-    "question": "CSS 設定背景顏色的屬性是？",
-    "options": {
-      "A": "color",
-      "B": "font",
-      "C": "background-color",
-      "D": "border"
-    },
-    "answer": "C",
-    "metadata": {
-      "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
-      "note": "教材在背景處理範例中使用 background-color 設定背景顏色。"
-    }
-  },
-  {
-    "id": 140,
-    "chapter": "第四章",
-    "question": "讓 Flexbox 內容自動換行的屬性設定為？",
-    "options": {
-      "A": "overflow: auto",
-      "B": "block: true",
-      "C": "wrap: auto",
-      "D": "flex-wrap: wrap"
-    },
-    "answer": "D",
-    "metadata": {
-      "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
-      "note": "教材說明 flex-wrap: wrap 會讓項目在空間不足時自動換到下一行。"
-    }
-  },
-  {
-    "id": 141,
-    "chapter": "第四章",
-    "question": "CSS 中 box-sizing: border-box 的主要作用是？",
-    "options": {
-      "A": "讓 Padding 和 Border 包含在設定的 Width 內",
-      "B": "增加邊框厚度",
-      "C": "讓 Margin 包含在 Width 內",
-      "D": "取消邊框樣式"
-    },
-    "answer": "A",
-    "metadata": {
-      "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
-      "note": "教材說明 border-box 會讓 padding 和 border 被包在 width 裡，不會撐大盒子。"
-    }
-  },
-  {
-    "id": 142,
-    "chapter": "第四章",
-    "question": "在 Flexbox 中，若要將排列方向改為「由上而下」，應設定？",
-    "options": {
-      "A": "flex-direction: row",
-      "B": "flex-direction: column",
-      "C": "align-items: center",
-      "D": "display: grid"
-    },
-    "answer": "B",
-    "metadata": {
-      "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
-      "note": "教材說明 flex-direction: column 會讓主軸改為直向，項目從上到下排列。"
-    }
-  },
-  {
-    "id": 143,
-    "chapter": "第四章",
-    "question": "若只想改變背景圖在容器中的對齊位置（例如置中），應優先使用哪個屬性？",
-    "options": {
-      "A": "background-size",
-      "B": "background-repeat",
-      "C": "background-position",
-      "D": "background-clip"
-    },
-    "answer": "C",
-    "metadata": {
-      "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
-      "note": "教材說明 background-position 可設定背景圖片的位置，center 代表圖片置中。"
-    }
-  },
-  {
-    "id": 145,
-    "chapter": "第四章",
-    "question": "下列哪個 CSS 屬性是用來設定「外距」？",
-    "options": {
-      "A": "margin",
-      "B": "padding",
-      "C": "border",
-      "D": "spacing"
-    },
-    "answer": "A",
-    "metadata": {
-      "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
-      "note": "教材在盒模型中說明 Margin 是盒子與外部的距離。"
-    }
-  },
-  {
-    "id": 146,
-    "chapter": "第四章",
-    "question": "想要讓行內元素可以設定寬高，應將 display 設定為？",
-    "options": {
-      "A": "block",
-      "B": "inline-block",
-      "C": "flex",
-      "D": "grid"
-    },
-    "answer": "B",
-    "metadata": {
-      "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
-      "note": "教材說明 inline-block 能和其他元素排在同一行，同時也能設定寬高。"
-    }
-  },
-  {
-    "id": 149,
-    "chapter": "第四章",
-    "question": "若要讓文字變粗，應設定哪個屬性？",
-    "options": {
-      "A": "font-weight",
-      "B": "line-height",
-      "C": "letter-spacing",
-      "D": "text-indent"
-    },
-    "answer": "A",
-    "metadata": {
-      "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
-      "note": "教材說明 font-weight 用來設定文字粗細，常見值包含 bold 與 normal。"
-    }
-  },
-  {
-    "id": 150,
-    "chapter": "第四章",
-    "question": "關於 CSS 盒模型（Box Model），由內而外的正確順序是？",
-    "options": {
-      "A": "Content → Border → Padding → Margin",
-      "B": "Content → Padding → Border → Margin",
-      "C": "Margin → Border → Padding → Content",
-      "D": "Padding → Content → Border → Margin"
-    },
-    "answer": "B",
-    "metadata": {
-      "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
-      "note": "教材說明盒模型由內而外依序為 Content、Padding、Border、Margin。"
-    }
-  },
-  {
-    "id": 153,
-    "chapter": "第四章",
-    "question": "在 CSS 中，哪一個屬性用來設定文字的字體？",
-    "options": {
-      "A": "font-family",
-      "B": "font-size",
-      "C": "font-weight",
-      "D": "text-align"
-    },
-    "answer": "A",
-    "metadata": {
-      "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
-      "note": "教材在文字排版範例中使用 font-family 設定字體。"
-    }
-  },
-  {
-    "id": 155,
-    "chapter": "第四章",
-    "question": "在 Flex 排版中，要讓項目在主軸置中對齊，應設定？",
-    "options": {
-      "A": "align-items: center",
-      "B": "text-align: center",
-      "C": "justify-content: center",
-      "D": "margin: 0 auto"
-    },
-    "answer": "C",
-    "metadata": {
-      "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
-      "note": "教材說明 justify-content: center 會讓項目在主軸上置中對齊。"
-    }
-  },
-  {
-    "id": 156,
-    "chapter": "第四章",
-    "question": "在 Flexbox 排版中，若想讓導覽列的 Logo 靠左、選單靠右，最適合設定主軸對齊為？",
-    "options": {
-      "A": "justify-content: center",
-      "B": "justify-content: flex-start",
-      "C": "justify-content: space-around",
-      "D": "justify-content: space-between"
-    },
-    "answer": "D",
-    "metadata": {
-      "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
-      "note": "教材說明 justify-content: space-between 會讓第一個與最後一個項目貼齊容器邊緣，中間空白平均分配。"
-    }
-  },
-  {
-    "id": 161,
-    "chapter": "第四章",
-    "question": "CSS 的 border-radius: 50% 通常用於製作什麼形狀？",
-    "options": {
-      "A": "正圓形 (若寬高相等)",
-      "B": "圓角矩形",
-      "C": "三角形",
-      "D": "梯形"
-    },
-    "answer": "A",
-    "metadata": {
-      "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
-      "note": "教材說明 border-radius: 50% 可以讓正方形元素變成圓形，常用於頭像。"
-    }
-  },
-  {
-    "id": 169,
-    "chapter": "第四章",
-    "question": "關於 display: none，下列敘述何者正確？",
-    "options": {
-      "A": "元素會被隱藏，且不佔據任何空間",
-      "B": "元素會變成透明，但仍佔據空間",
-      "C": "元素會變成灰色",
-      "D": "元素會縮小到 0px"
-    },
-    "answer": "A",
-    "metadata": {
-      "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
-      "note": "教材說明 display: none 代表元素完全消失，不佔據空間。"
-    }
-  },
-  {
-    "id": 174,
-    "chapter": "第四章",
-    "question": "在 CSS 中，若要設定文字大小，應使用哪個屬性？",
-    "options": {
-      "A": "font-family",
-      "B": "font-size",
-      "C": "font-style",
-      "D": "line-height"
-    },
-    "answer": "B",
-    "metadata": {
-      "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
-      "note": "教材在 CSS 範例與 rem 說明中使用 font-size 設定文字大小。"
-    }
-  },
-  {
-    "id": 178,
-    "chapter": "第四章",
-    "question": "想要選取所有擁有 \"btn\" 類別的元素，在 CSS 中的選擇器是？",
-    "options": {
-      "A": "#btn",
-      "B": ".btn",
-      "C": "btn",
-      "D": "*btn"
-    },
-    "answer": "B",
-    "metadata": {
-      "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
-      "note": "教材說明類別選擇器使用點號，例如 .highlight 會選取有特定 class 的元素。"
-    }
-  },
-  {
-    "id": 180,
-    "chapter": "第四章",
-    "question": "CSS 中設定元素的寬度屬性為？",
-    "options": {
-      "A": "height",
-      "B": "size",
-      "C": "area",
-      "D": "width"
-    },
-    "answer": "D",
-    "metadata": {
-      "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
-      "note": "教材在盒模型與範例中使用 width 設定元素寬度。"
-    }
-  },
-  {
-    "id": 182,
-    "chapter": "第四章",
-    "question": "CSS 裡面控制滑鼠移到元素上方時游標形狀的屬性是？",
-    "options": {
-      "A": "mouse",
-      "B": "cursor",
-      "C": "pointer",
-      "D": "icon"
-    },
-    "answer": "B",
-    "metadata": {
-      "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
-      "note": "教材說明 cursor 可設定滑鼠移到元素上方時的游標樣式。"
-    }
-  },
-  {
-    "id": 184,
-    "chapter": "第四章",
-    "question": "下列哪個 CSS 設定可以讓按鈕在滑鼠滑過時顯示「手指」游標？",
-    "options": {
-      "A": "cursor: hand",
-      "B": "cursor: click",
-      "C": "mouse: finger",
-      "D": "cursor: pointer"
-    },
-    "answer": "D",
-    "metadata": {
-      "source": "第四章 CSS與JavaScript整合入門 - 4.2 基礎 CSS 入門學習",
-      "note": "教材說明 cursor: pointer 會顯示手指形狀，表示元素可以點擊。"
-    }
-  },
-  {
-    "id": 189,
-    "chapter": "第四章",
-    "question": "條件判斷執行的基礎語句是？",
-    "options": {
-      "A": "if ... else",
-      "B": "Function",
-      "C": "Listener",
-      "D": "Push"
-    },
-    "answer": "A",
-    "metadata": {
-      "source": "第四章 CSS與JavaScript整合入門 - 4.3 基礎 JavaScript 入門學習",
-      "note": "教材說明 If...Else 可讓程式根據情況做不同的事。"
-    }
-  },
-  {
-    "id": 190,
-    "chapter": "第四章",
-    "question": "JavaScript 中印出訊息到控制台的方法是？",
-    "options": {
-      "A": "alert()",
-      "B": "console.log()",
-      "C": "document.write()",
-      "D": "print()"
-    },
-    "answer": "B",
-    "metadata": {
-      "source": "第四章 CSS與JavaScript整合入門 - 4.3 基礎 JavaScript 入門學習",
-      "note": "教材在條件判斷與事件監聽範例中使用 console.log() 輸出訊息。"
-    }
-  },
-  {
-    "id": 191,
-    "chapter": "第四章",
-    "question": "JavaScript 的 addEventListener() 方法主要用來？",
-    "options": {
-      "A": "增加數學運算",
-      "B": "將元素隱藏",
-      "C": "註冊事件監聽器以處理互動",
-      "D": "檢查變數型別"
-    },
-    "answer": "C",
-    "metadata": {
-      "source": "第四章 CSS與JavaScript整合入門 - 4.3 基礎 JavaScript 入門學習",
-      "note": "教材在事件監聽段落使用 addEventListener('click', ...) 偵測按鈕點擊。"
-    }
-  },
-  {
-    "id": 196,
-    "chapter": "第四章",
-    "question": "JavaScript 宣告可重新設定數值的變數關鍵字？",
-    "options": {
-      "A": "const",
-      "B": "final",
-      "C": "static",
-      "D": "let"
-    },
-    "answer": "D",
-    "metadata": {
-      "source": "第四章 CSS與JavaScript整合入門 - 4.3 基礎 JavaScript 入門學習",
-      "note": "教材說明推薦使用 const 與 let，其中 let 用於會變動的資料。"
-    }
-  },
-  {
-    "id": 199,
-    "chapter": "第四章",
-    "question": "JavaScript 中宣告不變常數的關鍵字？",
-    "options": {
-      "A": "var",
-      "B": "let",
-      "C": "const",
-      "D": "function"
-    },
-    "answer": "C",
-    "metadata": {
-      "source": "第四章 CSS與JavaScript整合入門 - 4.3 基礎 JavaScript 入門學習",
-      "note": "教材說明 const 用於不會變的資料。"
-    }
-  },
-  {
-    "id": 200,
-    "chapter": "第四章",
-    "question": "彈出警告對話框顯示的方法？",
-    "options": {
-      "A": "console.log()",
-      "B": "warning()",
-      "C": "show()",
-      "D": "alert()"
-    },
-    "answer": "D",
-    "metadata": {
-      "source": "第四章 CSS與JavaScript整合入門 - 4.3 基礎 JavaScript 入門學習",
-      "note": "教材在函式範例與按鈕互動範例中使用 alert() 顯示警告對話框。"
-    }
-  },
-  {
-    "id": 204,
-    "chapter": "第四章",
-    "question": "input.value.trim() 的 trim() 函式用途是？",
-    "options": {
-      "A": "將文字轉為大寫",
-      "B": "移除文字中的所有空白",
-      "C": "驗證文字格式",
-      "D": "移除文字前後的空白"
-    },
-    "answer": "D",
-    "metadata": {
-      "source": "第四章 CSS與JavaScript整合入門 - 4.4 前端進階整合應用",
-      "note": "教材在 Todo List 範例中使用 input.value.trim() 取得輸入內容並去除空白。"
-    }
-  },
-  {
-    "id": 208,
-    "chapter": "第四章",
-    "question": "若要在 JavaScript 中取得 <input> 欄位目前輸入的文字，應讀取哪個屬性？",
-    "options": {
-      "A": "input.text",
-      "B": "input.content",
-      "C": "input.data",
-      "D": "input.value"
-    },
-    "answer": "D",
-    "metadata": {
-      "source": "第四章 CSS與JavaScript整合入門 - 4.3 基礎 JavaScript 入門學習",
-      "note": "教材在表單輸入值範例中使用 input.value 取得使用者輸入的內容。"
-    }
-  },
-  {
-    "id": 209,
-    "chapter": "第四章",
-    "question": "下列哪一段程式碼可以正確地「建立」一個新的 div 元素？",
-    "options": {
-      "A": "document.createElement('div')",
-      "B": "document.add('div')",
-      "C": "document.newElement('div')",
-      "D": "document.make('div')"
-    },
-    "answer": "A",
-    "metadata": {
-      "source": "第四章 CSS與JavaScript整合入門 - 4.3 基礎 JavaScript 入門學習",
-      "note": "教材在動態新增與移除元素段落中使用 document.createElement('div') 建立新元素。"
-    }
-  },
-  {
-    "id": 210,
-    "chapter": "第四章",
-    "question": "建立元素後，若要將它「加入」到 body 的最後面，應使用？",
-    "options": {
-      "A": "document.body.push(newDiv)",
-      "B": "document.body.appendChild(newDiv)",
-      "C": "document.body.appendElement(newDiv)",
-      "D": "document.body.insert(newDiv)"
-    },
-    "answer": "B",
-    "metadata": {
-      "source": "第四章 CSS與JavaScript整合入門 - 4.3 基礎 JavaScript 入門學習",
-      "note": "教材在動態 DOM 範例中使用 document.body.appendChild(newDiv) 將新元素加入 body 最後面。"
-    }
-  },
-  {
-    "id": 217,
-    "chapter": "第四章",
-    "question": "在 DOM 操作中，element.textContent = \"Hi\" 會發生什麼事？",
-    "options": {
-      "A": "改變元素的內部文字內容",
-      "B": "改變元素的背景顏色",
-      "C": "改變元素的 ID",
-      "D": "產生語法錯誤"
-    },
-    "answer": "A",
-    "metadata": {
-      "source": "第四章 CSS與JavaScript整合入門 - 4.3 基礎 JavaScript 入門學習",
-      "note": "教材在修改內容與樣式段落中使用 textContent 修改文字內容。"
-    }
-  },
-  {
-    "id": 219,
-    "chapter": "第四章",
-    "question": "若要偵測使用者「點擊」某個元素，應監聽哪個事件？",
-    "options": {
-      "A": "hover",
-      "B": "press",
-      "C": "click",
-      "D": "touch"
-    },
-    "answer": "C",
-    "metadata": {
-      "source": "第四章 CSS與JavaScript整合入門 - 4.3 基礎 JavaScript 入門學習",
-      "note": "教材在事件監聽範例中使用 addEventListener('click', ...) 偵測點擊事件。"
-    }
-  },
-  {
-    "id": 231,
-    "chapter": "第四章",
-    "question": "在 To-Do List 範例中，我們使用什麼事件來偵測使用者按下「Enter」鍵？",
-    "options": {
-      "A": "click",
-      "B": "submit",
-      "C": "keypress (並檢查 e.key === 'Enter')",
-      "D": "change"
-    },
-    "answer": "C",
-    "metadata": {
-      "source": "第四章 CSS與JavaScript整合入門 - 4.4 前端進階整合應用",
-      "note": "教材在 To-Do List 範例中使用 keypress 事件，並檢查 e.key === 'Enter' 來讓 Enter 鍵也能新增項目。"
-    }
-  },
-  {
-    "id": 232,
-    "chapter": "第五章",
-    "question": "學習網頁開發，根據書中建議哪種心態最重要？",
-    "options": {
-      "A": "背誦所有語法",
-      "B": "複製貼上就好",
-      "C": "依賴工具自動生成",
-      "D": "理解原理並動手實作"
-    },
-    "answer": "D",
-    "metadata": {
-      "source": "第五章 AI 輔助開發與學習 - 5.1 AI 是你的助教：用 AI 學 HTML",
-      "note": "本題考「學習網頁開發，根據書中建議哪種心態最重要」的核心概念。正確答案是 C，因為 理解原理並動手實作 與題目所描述的用途與語意一致。"
-    }
-  },
-  {
-    "id": 233,
-    "chapter": "第五章",
-    "question": "AI 自動完成時產生了「幻覺」 (Hallucination) 是指？",
-    "options": {
-      "A": "AI 生成了看似正確但實際上不存在的函式庫或錯誤的語法",
-      "B": "AI 寫出了 3D 動畫代碼",
-      "C": "程式因為電腦過熱而出現亂碼",
-      "D": "網頁加上了特效濾鏡"
-    },
-    "answer": "A",
-    "metadata": {
-      "source": "第五章 AI 輔助開發與學習 - 5.1 AI 是你的助教：用 AI 學 HTML",
-      "note": "本題考 AI 輔助開發的使用原則。正確答案是 C，因為 AI 生成了看似正確但實際上不存在的函式庫或錯誤的語法 符合書中強調的提問、驗證與協作方式。"
-    }
-  },
-  {
-    "id": 234,
-    "chapter": "第五章",
-    "question": "透過 AI 輔助建立響應式版面最有用的條件？",
-    "options": {
-      "A": "幫我做一個網頁",
-      "B": "說明 HTML 結構與希望的排版 Flexbox 要求",
-      "C": "直接寫程式",
-      "D": "給我最好看的"
-    },
-    "answer": "B",
-    "metadata": {
-      "source": "第五章 AI 輔助開發與學習 - 5.1 AI 是你的助教：用 AI 學 HTML",
-      "note": "本題考 CSS 屬性與排版行為。正確答案是 B，因為 說明 HTML 結構與希望的排版 Flexbox 要求 正是題目所描述效果的正確設定。"
-    }
-  },
-  {
-    "id": 235,
-    "chapter": "第五章",
-    "question": "向 AI 工具尋求除錯時的重點？",
-    "options": {
-      "A": "把所有程式丟給它",
-      "B": "跟他說不會動",
-      "C": "說明目的、局部程式碼及遇到的錯誤",
-      "D": "要求重新寫"
-    },
-    "answer": "C",
-    "metadata": {
-      "source": "第五章 AI 輔助開發與學習 - 5.1 AI 是你的助教：用 AI 學 HTML",
-      "note": "本題考 AI 輔助開發的使用原則。正確答案是 B，因為 說明目的、局部程式碼及遇到的錯誤 符合書中強調的提問、驗證與協作方式。"
-    }
-  },
-  {
-    "id": 236,
-    "chapter": "第五章",
-    "question": "GitHub Copilot 在編輯器中的主要功能是？",
-    "options": {
-      "A": "取代瀏覽器",
-      "B": "替換整個作業系統",
-      "C": "自動回覆電子郵件",
-      "D": "提供程式碼自動補全或建議"
-    },
-    "answer": "D",
-    "metadata": {
-      "source": "第五章 AI 輔助開發與學習 - 5.1 AI 是你的助教：用 AI 學 HTML",
-      "note": "本題考 AI 輔助開發的使用原則。正確答案是 B，因為 提供程式碼自動補全或建議 符合書中強調的提問、驗證與協作方式。"
-    }
-  },
-  {
-    "id": 237,
-    "chapter": "第五章",
-    "question": "面對 AI 寫出的程式碼，開發者應有的正確態度是？",
-    "options": {
-      "A": "先行檢閱邏輯並測試後再整合，理解其運作原理",
-      "B": "毫無懷疑直接貼到正式環境",
-      "C": "忽略所有 AI 工具",
-      "D": "把所有錯誤歸咎於 AI"
-    },
-    "answer": "A",
-    "metadata": {
-      "source": "第五章 AI 輔助開發與學習 - 5.1 AI 是你的助教：用 AI 學 HTML",
-      "note": "本題考 AI 輔助開發的使用原則。正確答案是 C，因為 先行檢閱邏輯並測試後再整合，理解其運作原理 符合書中強調的提問、驗證與協作方式。"
-    }
-  },
-  {
-    "id": 238,
-    "chapter": "第五章",
-    "question": "書中建議驗證 AI 答案時，下列何者正確？",
-    "options": {
-      "A": "直接複製貼上，不需確認",
-      "B": "實際測試程式碼並查閱官方文件",
-      "C": "只看語法顏色是否漂亮",
-      "D": "只要 AI 說可以就算正確"
-    },
-    "answer": "B",
-    "metadata": {
-      "source": "第五章 AI 輔助開發與學習 - 5.1 AI 是你的助教：用 AI 學 HTML",
-      "note": "本題考 AI 輔助開發的使用原則。正確答案是 C，因為 實際測試程式碼並查閱官方文件 符合書中強調的提問、驗證與協作方式。"
-    }
-  },
-  {
-    "id": 239,
-    "chapter": "第五章",
-    "question": "書中建議在使用 AI 產生程式碼後，下一步最關鍵的是？",
-    "options": {
-      "A": "直接部署到正式環境",
-      "B": "全部刪掉重寫",
-      "C": "先檢閱邏輯並實際測試",
-      "D": "只看程式碼長度"
-    },
-    "answer": "C",
-    "metadata": {
-      "source": "第五章 AI 輔助開發與學習 - 5.1 AI 是你的助教：用 AI 學 HTML",
-      "note": "本題考 AI 協作流程。正確答案是 B，書中強調 AI 輸出必須經過人工理解與測試驗證。"
-    }
-  },
-  {
-    "id": 240,
-    "chapter": "第五章",
-    "question": "若希望 AI 幫你寫出特定風格的 CSS，最佳的提問方法是？",
-    "options": {
-      "A": "「幫我寫個網頁」",
-      "B": "「我要一個紅色的網站」",
-      "C": "「請取代開發者」",
-      "D": "「產生一個包含紅色導覽列與三個並排區塊的登入頁面 CSS，使用 Flexbox」"
-    },
-    "answer": "D",
-    "metadata": {
-      "source": "第五章 AI 輔助開發與學習 - 5.2 提示詞設計入門（Prompt Design for HTML）",
-      "note": "本題考 CSS 屬性與排版行為。正確答案是 C，因為 「產生一個包含紅色導覽列與三個並排區塊的登入頁面 CSS，使用 Flexbox」 正是題目所描述效果的正確設定。"
-    }
-  },
-  {
-    "id": 241,
-    "chapter": "第五章",
-    "question": "在使用 ChatGPT 或 GitHub Copilot 輔助開發時，何謂「提示詞 (Prompt)」？",
-    "options": {
-      "A": "給予 AI 以便它理解並產出對應內容的文字指令",
-      "B": "一種新的程式語言",
-      "C": "資料庫的查詢系統",
-      "D": "一種前端框架"
-    },
-    "answer": "A",
-    "metadata": {
-      "source": "第五章 AI 輔助開發與學習 - 5.2 提示詞設計入門（Prompt Design for HTML）",
-      "note": "本題考 AI 輔助開發的使用原則。正確答案是 C，因為 給予 AI 以便它理解並產出對應內容的文字指令 符合書中強調的提問、驗證與協作方式。"
-    }
-  },
-  {
-    "id": 242,
-    "chapter": "第五章",
-    "question": "提示詞（Prompt）基本結構中，哪一項是書中列出的核心元素之一？",
-    "options": {
-      "A": "GPU 型號",
-      "B": "角色設定",
-      "C": "作業系統版本",
-      "D": "螢幕更新率"
-    },
-    "answer": "B",
-    "metadata": {
-      "source": "第五章 AI 輔助開發與學習 - 5.2 提示詞設計入門（Prompt Design for HTML）",
-      "note": "本題考 AI 輔助開發的使用原則。正確答案是 B，因為 角色設定 符合書中強調的提問、驗證與協作方式。"
-    }
-  }
 ]
