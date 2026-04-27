@@ -4,6 +4,8 @@ import quizData from '@/src/data/quiz.json';
 import Link from 'next/link';
 import type { CSSProperties } from 'react';
 import { useMemo, useState } from 'react';
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+import { oneDark } from 'react-syntax-highlighter/dist/cjs/styles/prism';
 
 type QuizQuestion = {
   id: number;
@@ -20,6 +22,7 @@ type QuizQuestion = {
 const questions: QuizQuestion[] = quizData as QuizQuestion[];
 const PAGE_SIZE = 30;
 const OPTION_ORDER: string[] = ['A', 'B', 'C', 'D'];
+const FENCED_CODE_BLOCK_PATTERN = /```(\w+)?\n([\s\S]*?)```/g;
 
 export default function QuizDemoPage() {
   const [selectedChapter, setSelectedChapter] = useState<string>('全部章節');
@@ -270,15 +273,7 @@ export default function QuizDemoPage() {
                   正確答案：{item.answer}
                 </span>
               </div>
-              <h3
-                style={{
-                  fontSize: '1.05rem',
-                  fontWeight: 700,
-                  lineHeight: 1.55,
-                }}
-              >
-                {item.question}
-              </h3>
+              <QuestionContent content={item.question} />
               <ul
                 style={{ listStyle: 'none', display: 'grid', gap: '0.45rem' }}
               >
@@ -368,6 +363,78 @@ export default function QuizDemoPage() {
   );
 }
 
+function QuestionContent({ content }: { content: string }) {
+  const parts = parseQuestionContent(content);
+
+  return (
+    <div style={questionContentStyle}>
+      {parts.map((part, index) => {
+        if (part.type === 'code') {
+          return (
+            <SyntaxHighlighter
+              key={`${part.type}-${index}`}
+              language={part.language || 'text'}
+              style={oneDark}
+              customStyle={codeBlockStyle}
+              codeTagProps={{ style: codeTagStyle }}
+              wrapLongLines
+            >
+              {part.code}
+            </SyntaxHighlighter>
+          );
+        }
+
+        return part.text.split('\n').map((line, lineIndex) => {
+          if (!line.trim()) {
+            return null;
+          }
+
+          return (
+            <p key={`${part.type}-${index}-${lineIndex}`} style={questionTextStyle}>
+              {line}
+            </p>
+          );
+        });
+      })}
+    </div>
+  );
+}
+
+function parseQuestionContent(content: string) {
+  const parts: Array<
+    | { type: 'text'; text: string }
+    | { type: 'code'; language: string; code: string }
+  > = [];
+  let lastIndex = 0;
+
+  for (const match of content.matchAll(FENCED_CODE_BLOCK_PATTERN)) {
+    const matchIndex = match.index ?? 0;
+
+    if (matchIndex > lastIndex) {
+      parts.push({
+        type: 'text',
+        text: content.slice(lastIndex, matchIndex),
+      });
+    }
+
+    parts.push({
+      type: 'code',
+      language: match[1] ?? 'text',
+      code: match[2].trimEnd(),
+    });
+    lastIndex = matchIndex + match[0].length;
+  }
+
+  if (lastIndex < content.length) {
+    parts.push({
+      type: 'text',
+      text: content.slice(lastIndex),
+    });
+  }
+
+  return parts.length > 0 ? parts : [{ type: 'text' as const, text: content }];
+}
+
 const statCardStyle: CSSProperties = {
   borderRadius: '0.9rem',
   border: '1px solid var(--border)',
@@ -385,4 +452,33 @@ const statLabelStyle: CSSProperties = {
 const statValueStyle: CSSProperties = {
   fontSize: '1.6rem',
   lineHeight: 1.2,
+};
+
+const questionContentStyle: CSSProperties = {
+  display: 'flex',
+  flexDirection: 'column',
+  gap: '0.65rem',
+};
+
+const questionTextStyle: CSSProperties = {
+  fontSize: '1.05rem',
+  fontWeight: 700,
+  lineHeight: 1.55,
+  margin: 0,
+  whiteSpace: 'pre-wrap',
+};
+
+const codeBlockStyle: CSSProperties = {
+  margin: 0,
+  borderRadius: '0.85rem',
+  border: '1px solid rgba(255,255,255,0.14)',
+  background: 'rgba(15,23,42,0.92)',
+  padding: '0.9rem 1rem',
+  fontSize: '0.88rem',
+  lineHeight: 1.6,
+};
+
+const codeTagStyle: CSSProperties = {
+  fontFamily:
+    'ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace',
 };
